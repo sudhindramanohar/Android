@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nirapp"
+    package="com.bSecure"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -34,7 +34,7 @@
         android:theme="@style/AppTheme" >
         
         <activity
-            android:name="com.example.nirapp.Reg"
+            android:name="com.bSecure.Reg"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name="com.example.nirapp.WidgetActivity" >
+        <receiver android:name="com.bSecure.WidgetActivity" >
             <intent-filter >
                 <action 
                     android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -54,7 +54,7 @@
         </receiver>
        
          <receiver
-    android:name="com.example.nirapp.WidgetReceiver"
+    android:name="com.bSecure.WidgetReceiver"
     android:label="Nirbhaya" >
     <intent-filter>
         <action android:name="CHANGE_PICTUREG" />
@@ -72,12 +72,12 @@
         android:resource="@xml/widgetprovide" />
 </receiver>
 
-         <service android:name="send_msg"></service>
+         <service android:name="com.bSecure.send_msg"></service>
          <!--<activity android:name="Reg"></activity>-->
-         <activity android:name="wid_act_setting"></activity>
-         <activity android:name="act_setting"></activity>
-         <service android:name="audiorec"></service>
-         <service android:name="ShakeWakeupService"></service>
+         <activity android:name="com.bSecure.wid_act_setting"></activity>
+         <activity android:name="com.bSecure.act_setting"></activity>
+         <service android:name="com.bSecure.audiorec"></service>
+         <service android:name="com.bSecure.ShakeWakeupService"></service>
          
            </application>
 

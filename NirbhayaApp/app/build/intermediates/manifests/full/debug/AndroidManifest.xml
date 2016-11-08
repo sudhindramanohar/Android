@@ -36,7 +36,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.nirapp.Reg"
+            android:name="com.bSecure.Reg"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.example.nirapp.WidgetActivity" >
+        <receiver android:name="com.bSecure.WidgetActivity" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -55,7 +55,7 @@
                 android:resource="@xml/widgetprovide" />
         </receiver>
         <receiver
-            android:name="com.example.nirapp.WidgetReceiver"
+            android:name="com.bSecure.WidgetReceiver"
             android:label="Nirbhaya" >
             <intent-filter>
                 <action android:name="CHANGE_PICTUREG" />
@@ -72,13 +72,13 @@
                 android:resource="@xml/widgetprovide" />
         </receiver>
 
-        <service android:name="com.example.nirapp.send_msg" />
+        <service android:name="com.bSecure.send_msg" />
         <!-- <activity android:name="Reg"></activity> -->
-        <activity android:name="com.example.nirapp.wid_act_setting" />
-        <activity android:name="com.example.nirapp.act_setting" />
+        <activity android:name="com.bSecure.wid_act_setting" />
+        <activity android:name="com.bSecure.act_setting" />
 
-        <service android:name="com.example.nirapp.audiorec" />
-        <service android:name="com.example.nirapp.ShakeWakeupService" />
+        <service android:name="com.bSecure.audiorec" />
+        <service android:name="com.bSecure.ShakeWakeupService" />
     </application>
 
 </manifest>
