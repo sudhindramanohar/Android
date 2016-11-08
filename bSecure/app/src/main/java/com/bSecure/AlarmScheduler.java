@@ -53,14 +53,12 @@ public class AlarmScheduler {
 		db = new Database(ctxt);
 		Log.v("contxt", String.valueOf(ctxt));
 		mgr = (AlarmManager) ctxt.getSystemService(Context.ALARM_SERVICE);
-
 		// GREEN
 		if (msg.equals("green")) {
 
 			set_msg("green");
 			sm = get_msg();
 			Log.v("hi", "gcreate" + sm);
-			// getlc(ctxt,"green");
 			gmsg = asetting.getString("gmsg1", "");
 			String g = gmsg;
 			String s = asetting.getString("gmsg", "") + " " + g;
