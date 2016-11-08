@@ -23,10 +23,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bSecure.R;
-
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-public class wid_act_setting extends FragmentActivity implements
+public class WidgetSettings extends FragmentActivity implements
 		ActionBar.TabListener {
 
 	AppSectionsPagerAdapter mAppSectionsPagerAdapter;
@@ -48,7 +46,7 @@ public class wid_act_setting extends FragmentActivity implements
 	static WidgetReceiver wm = new WidgetReceiver();
 	// static SharedPreferences settings;
 
-	static getlocation gl = new getlocation();
+	static LocationFinder gl = new LocationFinder();
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,7 +56,7 @@ public class wid_act_setting extends FragmentActivity implements
 		mode = getSharedPreferences(PREFS_NAME, 0);
 		editor = mode.edit();
 		try {
-			Intent intent = new Intent(getApplicationContext(), audiorec.class);
+			Intent intent = new Intent(getApplicationContext(), AudioRecorder.class);
 			// add infos for the service which file to download and where to
 			// store
 			intent.putExtra("audio", "loc");
@@ -110,13 +108,13 @@ public class wid_act_setting extends FragmentActivity implements
 					.setTabListener(this));
 		}
 
-		ig = new Intent(wid_act_setting.this, WidgetReceiver.class);
+		ig = new Intent(WidgetSettings.this, WidgetReceiver.class);
 		ig.setAction("CHANGE_PICTUREG");
 
-		iy = new Intent(wid_act_setting.this, WidgetReceiver.class);
+		iy = new Intent(WidgetSettings.this, WidgetReceiver.class);
 		iy.setAction("CHANGE_PICTUREY");
 
-		ir = new Intent(wid_act_setting.this, WidgetReceiver.class);
+		ir = new Intent(WidgetSettings.this, WidgetReceiver.class);
 		ir.setAction("CHANGE_PICTURER");
 
 	}
@@ -275,7 +273,7 @@ public class wid_act_setting extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
 									.show();
-							Intent i = new Intent(con, act_setting.class);
+							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "green");
 							startActivity(i);
 						}
@@ -367,7 +365,7 @@ public class wid_act_setting extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
 									.show();
-							Intent i = new Intent(con, act_setting.class);
+							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "yellow");
 							startActivity(i);
 
@@ -459,7 +457,7 @@ public class wid_act_setting extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
 									.show();
-							Intent i = new Intent(con, act_setting.class);
+							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "red");
 							startActivity(i);
 						}

@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 
-import com.bSecure.R;
-
 public class MainSplashScreen extends Activity {
 	ImageView im;
 	Animation an;
@@ -34,7 +32,7 @@ public class MainSplashScreen extends Activity {
 
 					// After 5 seconds redirect to another intent
 
-					Intent i = new Intent(getBaseContext(), Reg.class);
+					Intent i = new Intent(getBaseContext(), UserRegistration.class);
 					startActivity(i);
 
 					// Remove activity

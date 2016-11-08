@@ -1,6 +1,6 @@
 package com.bSecure;
 
-public class nir_data {
+public class BSecureData {
 	int _id;
 	String _name;
 	/*
@@ -9,12 +9,12 @@ public class nir_data {
 
 	String _cname;
 
-	public nir_data(int id, String cname) {
+	public BSecureData(int id, String cname) {
 		this._id = id;
 		this._cname = cname;
 	}
 
-	public nir_data(String cname) {
+	public BSecureData(String cname) {
 		this._cname = cname;
 	}
 
@@ -34,16 +34,16 @@ public class nir_data {
 		this._cname = cname;
 	}
 
-	public nir_data() {
+	public BSecureData() {
 
 	}
 
 	/*
-	 * public nir_data(int id,String name,String password,String address,String
+	 * public BSecureData(int id,String name,String password,String address,String
 	 * phone) { this._id=id; this._name=name; this._address=address;
 	 * this._password=password; this._phone=phone; }
 	 * 
-	 * public nir_data(String name,String password,String address,String phone)
+	 * public BSecureData(String name,String password,String address,String phone)
 	 * {
 	 * 
 	 * this._name=name; this._address=address; this._password=password;

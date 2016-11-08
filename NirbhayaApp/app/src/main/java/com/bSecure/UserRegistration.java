@@ -11,9 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.bSecure.R;
-
-public class Reg extends Activity {
+public class UserRegistration extends Activity {
 	EditText name, uname, email;
 	SharedPreferences regpage;
 	SharedPreferences.Editor edit;
@@ -59,13 +57,13 @@ public class Reg extends Activity {
 				public void onClick(View arg0) {
 					try {
 
-						// Toast.makeText(Reg.this, "hello",
+						// Toast.makeText(UserRegistration.this, "hello",
 						// Toast.LENGTH_LONG).show();
 
 						if (name.getText().toString().equals("")
 								|| uname.getText().toString().equals("")
 								|| email.getText().toString().equals("")) {
-							Toast.makeText(Reg.this, "Please Fill All Data",
+							Toast.makeText(UserRegistration.this, "Please Fill All Data",
 									Toast.LENGTH_SHORT).show();
 
 						} else
@@ -98,21 +96,21 @@ public class Reg extends Activity {
 
 									showMessage();
 
-									Intent intent_first = new Intent(Reg.this,
-											wid_act_setting.class);
+									Intent intent_first = new Intent(UserRegistration.this,
+											WidgetSettings.class);
 									startActivity(intent_first);
 
 									finish();
 
 								} else {
-									Toast.makeText(Reg.this,
+									Toast.makeText(UserRegistration.this,
 											"Enter Valid Email Address",
 											Toast.LENGTH_SHORT).show();
 								}
 							}
 
 							else {
-								Toast.makeText(Reg.this,
+								Toast.makeText(UserRegistration.this,
 										"Invalid Mobile number",
 										Toast.LENGTH_LONG).show();
 							}
@@ -127,7 +125,7 @@ public class Reg extends Activity {
 
 		} else {
 			Intent in = new Intent(getApplicationContext(),
-					wid_act_setting.class);
+					WidgetSettings.class);
 			startActivity(in);
 			finish();
 		}

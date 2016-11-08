@@ -22,7 +22,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class audiorec extends IntentService implements ConnectionCallbacks,
+public class AudioRecorder extends IntentService implements ConnectionCallbacks,
 		OnConnectionFailedListener {
 
 	static MediaRecorder mRecorder;
@@ -39,8 +39,8 @@ public class audiorec extends IntentService implements ConnectionCallbacks,
 	static String rmsg;
 	static File mediaStorageDir;
 
-	public audiorec() {
-		super("audiorec");
+	public AudioRecorder() {
+		super("AudioRecorder");
 		// TODO Auto-generated constructor stub
 	}
 
@@ -120,7 +120,7 @@ public class audiorec extends IntentService implements ConnectionCallbacks,
 				// GPS or Network is not enabled
 				// Ask user to enable GPS/network in settings
 				Intent in = new Intent(getApplicationContext(),
-						gpsonActivity.class);
+						GPSActivation.class);
 				startActivity(in);
 				// gps.showSettingsAlert();
 			}

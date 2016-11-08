@@ -8,8 +8,6 @@ import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
-import com.bSecure.R;
-
 public class WidgetReceiver extends BroadcastReceiver {
 
 	Context con;
@@ -113,7 +111,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 		if (mode.getBoolean("gimage", false)) {
 
 			Toast.makeText(con, "Green mod off...", Toast.LENGTH_LONG).show();
-			alaram_receiver.cancelAlarm(con);
+			AlarmScheduler.cancelAlarm(con);
 
 			editor.putBoolean("gimage", false);
 			editor.commit();
@@ -127,7 +125,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			meditor.putString("mode", "green");
 			meditor.commit();
 
-			alaram_receiver.scheduleAlarms(con, "green");
+			AlarmScheduler.scheduleAlarms(con, "green");
 
 			editor.putBoolean("gimage", true);
 
@@ -141,7 +139,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 		if (mode.getBoolean("yimage", false)) {
 
 			Toast.makeText(con, "Yellow mod off...", Toast.LENGTH_LONG).show();
-			alaram_receiver.cancelAlarm(con);
+			AlarmScheduler.cancelAlarm(con);
 			Log.v("ymm","fail");
 			editor.putBoolean("yimage", false);
 			editor.commit();
@@ -155,7 +153,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			meditor.putString("mode", "yellow");
 			meditor.commit();
 
-			alaram_receiver.scheduleAlarms(con, "yellow");
+			AlarmScheduler.scheduleAlarms(con, "yellow");
 
 			editor.putBoolean("yimage", true);
 			editor.commit();
@@ -169,7 +167,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 		if (mode.getBoolean("rimage", false)) {
 
 			Toast.makeText(con, "Red mod off...", Toast.LENGTH_LONG).show();
-			alaram_receiver.cancelRAlarm(con);
+			AlarmScheduler.cancelRAlarm(con);
 
 			editor.putBoolean("rimage", false);
 			editor.commit();
@@ -183,7 +181,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			meditor.putString("mode", "red");
 			meditor.commit();
 
-			alaram_receiver.scheduleAlarms(con, "red");
+			AlarmScheduler.scheduleAlarms(con, "red");
 
 			editor.putBoolean("rimage", true);
 			editor.commit();

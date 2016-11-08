@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentActivity;
 
 import com.bSecure.R;
 
-public class gpsonActivity extends FragmentActivity {
+public class GPSActivation extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle arg0) {

@@ -23,7 +23,7 @@ import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailed
 public class send_msg extends IntentService implements ConnectionCallbacks,
 		OnConnectionFailedListener {
 
-	alaram_receiver am;
+	AlarmScheduler am;
 	String mv, msg, smsg, gmsg, ymsg, rmsg;
 	int tim, i = 0, s, counter = 0;
 	Context con = this;
@@ -38,9 +38,9 @@ public class send_msg extends IntentService implements ConnectionCallbacks,
 	static double latitude;
 	static double longitude;
 	String gm;
-	getlocation gl = new getlocation();
+	LocationFinder gl = new LocationFinder();
 
-	// audiorec r=new audiorec();
+	// AudioRecorder r=new AudioRecorder();
 
 	public send_msg() {
 		super("send_msg");
@@ -55,13 +55,13 @@ public class send_msg extends IntentService implements ConnectionCallbacks,
 		SmsManager sms = SmsManager.getDefault();
 		asetting = con.getSharedPreferences("signal", 0);
 
-		msg = alaram_receiver.get_msg();
-		database db = new database(con);
+		msg = AlarmScheduler.get_msg();
+		Database db = new Database(con);
 
 		// Send SMS For Green Signal
 		if (msg.equals("green")) {
 
-			getlocation.getlc(con, "green");
+			LocationFinder.getlc(con, "green");
 			gmsg = asetting.getString("gmsg1", "");
 			String s = asetting.getString("gmsg", "");
 			Log.v("gmsg", s + " " + gmsg);
@@ -99,7 +99,7 @@ public class send_msg extends IntentService implements ConnectionCallbacks,
 		// Send SMS For Yellow Signal
 		if (msg.equals("yellow")) {
 			// getlc("yellow");
-			getlocation.getlc(con, "yellow");
+			LocationFinder.getlc(con, "yellow");
 			ymsg = asetting.getString("ymsg1", "");
 			String s = asetting.getString("ymsg", "");
 			Log.v("ymsg", s + " " + ymsg);
@@ -135,7 +135,7 @@ public class send_msg extends IntentService implements ConnectionCallbacks,
 		if (msg.equals("red")) {
 
 			// getlc("red");
-			getlocation.getlc(con, "red");
+			LocationFinder.getlc(con, "red");
 			rmsg = asetting.getString("rmsg1", "");
 			String s = asetting.getString("rmsg", "");
 			Log.v("rmsg", s + " " + rmsg);

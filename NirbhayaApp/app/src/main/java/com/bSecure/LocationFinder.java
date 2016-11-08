@@ -11,7 +11,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.util.Log;
 
-public class getlocation {
+public class LocationFinder {
 
 	static GPSTracker gps;
 	static double latitude;
@@ -23,7 +23,7 @@ public class getlocation {
 	static String ymsg;
 	static String rmsg;
 
-	public getlocation() {
+	public LocationFinder() {
 		// TODO Auto-generated constructor stub
 
 	}
@@ -45,7 +45,7 @@ public class getlocation {
 			// can't get location
 			// GPS or Network is not enabled
 			// Ask user to enable GPS/network in settings
-			Intent in = new Intent(c, gpsonActivity.class);
+			Intent in = new Intent(c, GPSActivation.class);
 			c.startActivity(in);
 			// gps.showSettingsAlert();
 		}

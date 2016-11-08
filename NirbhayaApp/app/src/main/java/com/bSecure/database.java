@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class database extends SQLiteOpenHelper {
+public class Database extends SQLiteOpenHelper {
 
 	private static final int DATABASE_VERSION = 1;
 	private static final String DATABASE_NAME = "nirbhaya";
@@ -23,7 +23,7 @@ public class database extends SQLiteOpenHelper {
 	// private static final String KEY_PH_NO = "phone_number";
 	Context con;
 
-	public database(Context context) {
+	public Database(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 		// TODO Auto-generated constructor stub
 	}
@@ -61,7 +61,7 @@ public class database extends SQLiteOpenHelper {
 	}
 
 	/*
-	 * public void addData(nir_data data) {
+	 * public void addData(BSecureData data) {
 	 * 
 	 * SQLiteDatabase db = this.getWritableDatabase();
 	 * 
@@ -90,7 +90,7 @@ public class database extends SQLiteOpenHelper {
 	 * mCursor.moveToFirst(); } return mCursor; }
 	 */
 
-	public void addContact(nir_data data, String sig) {
+	public void addContact(BSecureData data, String sig) {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		ContentValues values = new ContentValues();

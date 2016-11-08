@@ -2,8 +2,6 @@ package com.bSecure;
 
 import java.util.ArrayList;
 
-import com.bSecure.R;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,7 +24,7 @@ import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
-public class act_setting extends FragmentActivity {
+public class ApplicationSettings extends FragmentActivity {
 	Context con = this;
 	SharedPreferences asetting,prefs;
 	SharedPreferences.Editor edit,sedit;
@@ -39,7 +37,7 @@ public class act_setting extends FragmentActivity {
 	ArrayAdapter<String> adapter;
 	String[] pno = new String[7];
 	int counter = 0, xc = 0;
-	database db;
+	Database db;
 	private static boolean shakeimg = true;
 	Cursor phoneCursor;
 
@@ -48,7 +46,7 @@ public class act_setting extends FragmentActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
 		setContentView(R.layout.setting);
-		db = new database(con);
+		db = new Database(con);
 		bt = (Button) findViewById(R.id.btnaddcnt);
 		lv = (ListView) findViewById(R.id.liscontact);
 		btnsave = (Button) findViewById(R.id.btnsaveg);
@@ -82,14 +80,14 @@ public class act_setting extends FragmentActivity {
 					sedit.putString("shakeon", "Disable");
 					sedit.commit();
 					btnsake.setText(prefs.getString("shakeon", ""));
-					startService(new Intent(act_setting.this,
+					startService(new Intent(ApplicationSettings.this,
 							ShakeWakeupService.class));
 				} else {
 					sedit.putBoolean("shake", false);
 					sedit.putString("shakeon", "Enable");
 					sedit.commit();
 					btnsake.setText("Enable");
-					stopService(new Intent(act_setting.this,
+					stopService(new Intent(ApplicationSettings.this,
 							ShakeWakeupService.class));
 
 				}
@@ -599,23 +597,23 @@ public class act_setting extends FragmentActivity {
 						try {
 							if (signal.equals("green")) {
 								Log.v("d", "c");
-								db.addContact(new nir_data(phoneNumber),
+								db.addContact(new BSecureData(phoneNumber),
 										"green");
 								sig = "green";
 							}
 							if (signal.equals("yellow")) {
 								Log.v("d", "c");
-								db.addContact(new nir_data(phoneNumber),
+								db.addContact(new BSecureData(phoneNumber),
 										"yellow");
 								sig = "yellow";
 							}
 							if (signal.equals("red")) {
 								Log.v("d", "c");
-								db.addContact(new nir_data(phoneNumber), "red");
+								db.addContact(new BSecureData(phoneNumber), "red");
 								sig = "red";
 							}
 						} catch (Exception e) {
-							Toast.makeText(act_setting.this,
+							Toast.makeText(ApplicationSettings.this,
 									"Date Insert Failed", Toast.LENGTH_SHORT)
 									.show();
 							Log.v("data", "fail");
@@ -927,7 +925,7 @@ public class act_setting extends FragmentActivity {
 				android.R.layout.simple_list_item_1, strarr);
 		lv.setAdapter(adapter);
 		Log.v("sur", "com");
-		db = new database(con);
+		db = new Database(con);
 		Log.v("sur", "com");
 		if (signal.equals("green")) {
 			Log.v("sur", "comg");

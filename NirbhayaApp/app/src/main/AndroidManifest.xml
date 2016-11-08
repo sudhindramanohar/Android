@@ -34,7 +34,7 @@
         android:theme="@style/AppTheme" >
         
         <activity
-            android:name="com.bSecure.Reg"
+            android:name="com.bSecure.UserRegistration"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -73,10 +73,10 @@
 </receiver>
 
          <service android:name="com.bSecure.send_msg"></service>
-         <!--<activity android:name="Reg"></activity>-->
-         <activity android:name="com.bSecure.wid_act_setting"></activity>
-         <activity android:name="com.bSecure.act_setting"></activity>
-         <service android:name="com.bSecure.audiorec"></service>
+         <!--<activity android:name="UserRegistration"></activity>-->
+         <activity android:name="com.bSecure.WidgetSettings"></activity>
+         <activity android:name="com.bSecure.ApplicationSettings"></activity>
+         <service android:name="com.bSecure.AudioRecorder"></service>
          <service android:name="com.bSecure.ShakeWakeupService"></service>
          
            </application>

@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 
-public class alaram_receiver {
+public class AlarmScheduler {
 
 	static AlarmManager mgr;
 	static PendingIntent alarmIntent;
@@ -28,7 +28,7 @@ public class alaram_receiver {
 	static String smsg, gmsg;
 	static String ymsg;
 	static String rmsg;
-	static database db;
+	static Database db;
 	static GPSTracker gps;
 	static double latitude;
 	static double longitude;
@@ -40,7 +40,7 @@ public class alaram_receiver {
 	static int xc = 0, start = 0;
 	static Context con;
 
-	public alaram_receiver() {
+	public AlarmScheduler() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -50,7 +50,7 @@ public class alaram_receiver {
 		asetting = ctxt.getSharedPreferences("signal", 0);
 		edit = asetting.edit();
 		String sm;
-		db = new database(ctxt);
+		db = new Database(ctxt);
 		Log.v("contxt", String.valueOf(ctxt));
 		mgr = (AlarmManager) ctxt.getSystemService(Context.ALARM_SERVICE);
 
@@ -68,7 +68,7 @@ public class alaram_receiver {
 			Log.v("gmsg", s);
 
 			// Toast.makeText(ctxt, gmsg, Toast.LENGTH_SHORT).show();
-			Intent intent = new Intent(ctxt, audiorec.class);
+			Intent intent = new Intent(ctxt, AudioRecorder.class);
 			// add infos for the service which file to download and where to
 			// store
 			intent.putExtra("audio", "loc");
@@ -96,7 +96,7 @@ public class alaram_receiver {
 
 				Log.v("data", "not found");
 
-				Intent ii = new Intent(ctxt, act_setting.class);
+				Intent ii = new Intent(ctxt, ApplicationSettings.class);
 				ii.putExtra("signal", "green");
 				ii.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				ctxt.startActivity(ii);
@@ -141,11 +141,11 @@ public class alaram_receiver {
 
 			Log.v("hi", "ycreate " + msg + sm);
 			/*
-			 * Intent intent = new Intent(ctxt,audiorec.class); // add infos for
+			 * Intent intent = new Intent(ctxt,AudioRecorder.class); // add infos for
 			 * the service which file to download and where to store
 			 * intent.putExtra("audio", "loc"); ctxt.startService(intent);
 			 */
-			getlocation gl = new getlocation();
+			LocationFinder gl = new LocationFinder();
 			gl.getlc(ctxt, "yellow");
 			ymsg = asetting.getString("ymsg1", "");
 			String g = ymsg;
@@ -179,7 +179,7 @@ public class alaram_receiver {
 
 				}
 			} else {
-				Intent ii = new Intent(ctxt, act_setting.class);
+				Intent ii = new Intent(ctxt, ApplicationSettings.class);
 				ii.putExtra("signal", "yellow");
 				ii.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				ctxt.startActivity(ii);
@@ -218,15 +218,15 @@ public class alaram_receiver {
 			set_msg("red");
 			sm = get_msg();
 
-			Intent intent1 = new Intent(ctxt, audiorec.class);
+			Intent intent1 = new Intent(ctxt, AudioRecorder.class);
 			// add infos for the service which file to download and where to
 			// store
 			intent1.putExtra("audio", "loc");
 			ctxt.startService(intent1);
 
-			ctxt.stopService(new Intent(ctxt, audiorec.class));
+			ctxt.stopService(new Intent(ctxt, AudioRecorder.class));
 
-			Intent intent = new Intent(ctxt, audiorec.class);
+			Intent intent = new Intent(ctxt, AudioRecorder.class);
 			// add infos for the service which file to download and where to
 			// store
 			intent.putExtra("audio", "start");
@@ -260,7 +260,7 @@ public class alaram_receiver {
 			} else {
 				Toast.makeText(con, "Add contact in setting page",
 						Toast.LENGTH_SHORT).show();
-				Intent ii = new Intent(con, act_setting.class);
+				Intent ii = new Intent(con, ApplicationSettings.class);
 				ii.putExtra("signal", "red");
 				ii.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				con.startActivity(ii);
@@ -299,7 +299,7 @@ public class alaram_receiver {
 		// If the alarm has been set, cancel it.
 		if (mgr != null) {
 			mgr.cancel(alarmIntent);
-			context.stopService(new Intent(context, audiorec.class));
+			context.stopService(new Intent(context, AudioRecorder.class));
 		}
 	}
 
@@ -309,9 +309,9 @@ public class alaram_receiver {
 			Log.v("v", "com");
 			mgr.cancel(alarmIntent);
 
-			context.stopService(new Intent(context, audiorec.class));
+			context.stopService(new Intent(context, AudioRecorder.class));
 			if (start == 1) {
-				audiorec.stopRec();
+				AudioRecorder.stopRec();
 				start = 0;
 			}
 		}
