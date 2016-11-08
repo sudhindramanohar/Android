@@ -4,16 +4,12 @@
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_normal_dark.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png"
-    },
-    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_tall_off_client.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pauseyellow.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pauseyellow.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bkpage.png",
@@ -24,72 +20,52 @@
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pauseyellow.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\yellowicon.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\yellowicon.png"
-    },
-    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\side_nav_icon_home_d.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\side_nav_icon_home_d.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\redicon.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\redicon.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grnn.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grnn.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png"
-    },
-    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_light.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_focus_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_focus_light.9.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_focus_light.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_focus_light.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\powered_by_google_dark.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\powered_by_google_dark.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_focus_dark.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_focus_dark.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grny.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grny.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greenicon.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greenicon.png"
-    },
-    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pausegreen.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pausegreen.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greeniconon.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greeniconon.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_medium_off_client.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\redsignal.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\redsignal.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_focus_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_focus_dark.9.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\redsignal.png",
@@ -100,12 +76,24 @@
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_small_off_client.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_small_off_client.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_normal_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_normal_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pausered.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pausered.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_small_off_client.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\powered_by_google_light.png",
@@ -124,20 +112,24 @@
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\powered_by_google_dark.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png"
-    },
-    {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pausered.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pausered.png"
-    },
-    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_dark.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_dark.9.png"
     },
     {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_normal_dark.9.png"
+    },
+    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_pressed_light.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_pressed_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_focus_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_focus_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\redicon.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\redicon.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_standard_off_client.png",
@@ -148,19 +140,191 @@
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_dark.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\side_nav_icon_home_d.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\side_nav_icon_home_d.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_standard_off_client.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_tall_off_client.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_tall_off_client.png"
     },
     {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_dark.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_normal_dark.9.png"
     },
     {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\nsymbol.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\nsymbol.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\yellowicon.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\yellowicon.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_focus_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_focus_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\yellowicon.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\yellowicon.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grnn.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grnn.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bkpage.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\bkpage.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grny.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grny.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greenicon.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greenicon.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greeniconon.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greeniconon.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_home_select.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\icon_home_select.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\nsymbol.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\nsymbol.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greeniconon.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greeniconon.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\greenicon.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\greenicon.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_pressed_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_pressed_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grnn.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grnn.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_pressed_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_pressed_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_focus_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\grny.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\grny.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_plusone_small_off_client.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pausered.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pausered.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_normal_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png",
+        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_focus_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\pausegreen.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\pausegreen.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_disabled_dark.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_disabled_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_disabled_light.9.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_disabled_light.9.png"
+    },
+    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_icon_focus_light.9.png",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_icon_focus_light.9.png"
     },
     {
-        "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\nsymbol.png",
-        "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\nsymbol.png"
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\powered_by_google_light.png",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\powered_by_google_light.png"
     }
 ]

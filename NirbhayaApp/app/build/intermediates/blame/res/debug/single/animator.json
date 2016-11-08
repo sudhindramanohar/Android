@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\animator\\anim.xml",
+        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\animator\\anim.xml"
+    },
+    {
         "merged": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\animator\\anim.xml",
         "source": "F:\\Android\\SampleApps\\NirbhayaApp\\app\\src\\main\\res\\animator\\anim.xml"
     }
