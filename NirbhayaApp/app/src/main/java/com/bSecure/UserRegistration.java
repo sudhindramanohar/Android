@@ -24,7 +24,7 @@ public class UserRegistration extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.reg_screen);
+		setContentView(R.layout.user_registration);
 		SharedPreferences wmbPreference = PreferenceManager
 				.getDefaultSharedPreferences(this);
 		// boolean isFirstRun = wmbPreference.getBoolean("FIRSTRUN", true);

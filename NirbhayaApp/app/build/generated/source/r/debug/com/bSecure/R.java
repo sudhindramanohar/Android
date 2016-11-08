@@ -461,10 +461,10 @@ containing a value of this type.
         public static final int fragment_help=0x7f030002;
         public static final int fragment_red=0x7f030003;
         public static final int fragment_yellow=0x7f030004;
-        public static final int gpson=0x7f030005;
+        public static final int gps_activation =0x7f030005;
         public static final int main_splash_screen=0x7f030006;
-        public static final int reg_screen=0x7f030007;
-        public static final int setting=0x7f030008;
+        public static final int user_registration =0x7f030007;
+        public static final int application_settings =0x7f030008;
         public static final int start_page=0x7f030009;
         public static final int tab_layout=0x7f03000a;
         public static final int widget_layout=0x7f03000b;

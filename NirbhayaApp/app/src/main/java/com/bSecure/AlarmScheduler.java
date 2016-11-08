@@ -258,7 +258,7 @@ public class AlarmScheduler {
 
 				}
 			} else {
-				Toast.makeText(con, "Add contact in setting page",
+				Toast.makeText(con, "Add contact in application_settings page",
 						Toast.LENGTH_SHORT).show();
 				Intent ii = new Intent(con, ApplicationSettings.class);
 				ii.putExtra("signal", "red");

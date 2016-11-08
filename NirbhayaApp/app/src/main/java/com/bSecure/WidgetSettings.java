@@ -271,7 +271,7 @@ public class WidgetSettings extends FragmentActivity implements
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
+							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
 									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "green");
@@ -363,7 +363,7 @@ public class WidgetSettings extends FragmentActivity implements
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
+							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
 									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "yellow");
@@ -455,7 +455,7 @@ public class WidgetSettings extends FragmentActivity implements
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "setting", Toast.LENGTH_SHORT)
+							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
 									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "red");

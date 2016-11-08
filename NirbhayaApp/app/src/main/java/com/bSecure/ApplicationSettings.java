@@ -45,7 +45,7 @@ public class ApplicationSettings extends FragmentActivity {
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
-		setContentView(R.layout.setting);
+		setContentView(R.layout.application_settings);
 		db = new Database(con);
 		bt = (Button) findViewById(R.id.btnaddcnt);
 		lv = (ListView) findViewById(R.id.liscontact);
