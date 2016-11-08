@@ -72,7 +72,7 @@
         android:resource="@xml/widgetprovide" />
 </receiver>
 
-         <service android:name="com.bSecure.send_msg"></service>
+         <service android:name="com.bSecure.MessageSender"></service>
          <!--<activity android:name="UserRegistration"></activity>-->
          <activity android:name="com.bSecure.WidgetSettings"></activity>
          <activity android:name="com.bSecure.ApplicationSettings"></activity>

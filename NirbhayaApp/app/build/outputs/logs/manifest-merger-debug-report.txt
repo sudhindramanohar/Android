@@ -159,10 +159,10 @@ action#CHANGE_PICTURER
 ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:67:9-50
 	android:name
 		ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:67:17-47
-service#com.bSecure.send_msg
-ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:75:10-65
+service#com.bSecure.MessageSender
+ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:75:10-70
 	android:name
-		ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:75:19-54
+		ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:75:19-59
 activity#com.bSecure.WidgetSettings
 ADDED from F:\Android\Android\NirbhayaApp\app\src\main\AndroidManifest.xml:77:10-73
 	android:name

@@ -106,7 +106,7 @@ public class AlarmScheduler {
 
 			db.close();
 
-			Intent i = new Intent(ctxt, send_msg.class);
+			Intent i = new Intent(ctxt, MessageSender.class);
 			Log.v("hi", "gcreate");
 			alarmIntent = PendingIntent.getService(ctxt, 0, i, 0);
 
@@ -137,7 +137,7 @@ public class AlarmScheduler {
 		if (msg.equals("yellow")) {
 			set_msg("yellow");
 			sm = get_msg();
-			Intent i = new Intent(ctxt, send_msg.class);
+			Intent i = new Intent(ctxt, MessageSender.class);
 
 			Log.v("hi", "ycreate " + msg + sm);
 			/*
@@ -233,7 +233,7 @@ public class AlarmScheduler {
 			start = 1;
 			ctxt.startService(intent);
 
-			Intent i = new Intent(ctxt, send_msg.class);
+			Intent i = new Intent(ctxt, MessageSender.class);
 
 			Log.v("hi", "rcreate " + msg + sm);
 			rmsg = asetting.getString("rmsg1", "");
