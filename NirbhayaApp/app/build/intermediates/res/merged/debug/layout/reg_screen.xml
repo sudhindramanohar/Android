@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Name" >
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/uname"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Mobile Number" 
+                 android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView1"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:text="User Registration"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <requestFocus />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/AppBaseTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46dp"
+        android:text="Submit" />
+
+</RelativeLayout>

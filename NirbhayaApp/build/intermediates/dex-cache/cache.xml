@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\sudhi\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_59f8a1703419f8f03234bb0e9c35f75fcb1ed88e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="74380946a5c680820bfd5123c462047e7a066ee1">
+        <dex dex="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ef950dd644bbbba91d4dce5810bcd80edb5d01a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="031715cfbc8651ef3a8e35c8f83dd509d8ab5cd3">
+        <dex dex="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9143fd959e752459354b1522b6f9fe4973603104\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Android\SampleApps\NirbhayaApp\app\libs\google-play-services_lib.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ea923d54b5abcba085c4f54e1ac7e7859819e3e0">
+        <dex dex="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-play-services_lib_9774c8bb6d9c839555747929d56a5cb0b7ad4d02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d71573c9c5ea98a8db47ad6ff993a63d492b3bfa">
+        <dex dex="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-5.0.89_2f99fdd46162c326dfed2f81d26d8c7475d8ad69\classes.dex" />
+    </item>
+
+</items>

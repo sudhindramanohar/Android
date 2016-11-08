@@ -1,0 +1,7 @@
+#Tue Nov 08 11:37:42 CST 2016
+base.0=F\:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9143fd959e752459354b1522b6f9fe4973603104
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=F\:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ef950dd644bbbba91d4dce5810bcd80edb5d01a2\\classes.dex
+base.1=F\:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ef950dd644bbbba91d4dce5810bcd80edb5d01a2
+file.0=F\:\\Android\\SampleApps\\NirbhayaApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9143fd959e752459354b1522b6f9fe4973603104\\classes.dex

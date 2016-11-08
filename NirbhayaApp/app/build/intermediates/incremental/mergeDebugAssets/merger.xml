@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="5.0.89"><source path="F:\Android\SampleApps\NirbhayaApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\assets"/></dataSet><dataSet config="main"><source path="F:\Android\SampleApps\NirbhayaApp\app\src\main\assets"/><source path="F:\Android\SampleApps\NirbhayaApp\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\Android\SampleApps\NirbhayaApp\app\src\debug\assets"/></dataSet></merger>
