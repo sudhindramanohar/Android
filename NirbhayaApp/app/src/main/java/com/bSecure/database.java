@@ -11,7 +11,7 @@ import android.util.Log;
 public class Database extends SQLiteOpenHelper {
 
 	private static final int DATABASE_VERSION = 1;
-	private static final String DATABASE_NAME = "nirbhaya";
+	private static final String DATABASE_NAME = "bSecure";
 	// private static final String TABLE_REGISTER = "register";
 	private static final String TABLE_GCONTACT = "green";
 	private static final String TABLE_YCONTACT = "yellow";
