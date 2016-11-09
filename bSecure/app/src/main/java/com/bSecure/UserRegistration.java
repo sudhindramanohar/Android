@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class UserRegistration extends Activity {
-	EditText name, uname, email;
+	EditText name, mobile_no, email;
 	SharedPreferences regpage;
 	SharedPreferences.Editor edit;
 	SharedPreferences asetting;
@@ -46,7 +46,7 @@ public class UserRegistration extends Activity {
 			edit = regpage.edit();
 			// final DBAdapter dba = new DBAdapter(this);
 			name = (EditText) findViewById(R.id.name);
-			uname = (EditText) findViewById(R.id.uname);
+			mobile_no = (EditText) findViewById(R.id.mobile_no);
 
 			email = (EditText) findViewById(R.id.email);
 			addbt = (Button) findViewById(R.id.button1);
@@ -61,7 +61,7 @@ public class UserRegistration extends Activity {
 						// Toast.LENGTH_LONG).show();
 
 						if (name.getText().toString().equals("")
-								|| uname.getText().toString().equals("")
+								|| mobile_no.getText().toString().equals("")
 								|| email.getText().toString().equals("")) {
 							Toast.makeText(UserRegistration.this, "Please Fill All Data",
 									Toast.LENGTH_SHORT).show();
@@ -72,23 +72,12 @@ public class UserRegistration extends Activity {
 							SharedPreferences.Editor editor = prefs.edit();
 							editor.putBoolean("firstTime", true);
 							editor.commit();
-							if (uname.getText().toString().matches(regexStr)) {
+							if (mobile_no.getText().toString().matches(regexStr)) {
 								if (email.getText().toString()
 										.matches(emailstr)) {
-
-									/*
-									 * dba.open();
-									 * 
-									 * 
-									 * dba.insertUserdetail(name.getText().toString
-									 * (
-									 * ),uname.getText().toString(),pas.getText(
-									 * ).toString(),cpas.getText().toString());
-									 * dba.close();
-									 */
 									edit.putString("name", name.getText()
 											.toString());
-									edit.putString("mobile", uname.getText()
+									edit.putString("mobile", mobile_no.getText()
 											.toString());
 									edit.putString("email", email.getText()
 											.toString());

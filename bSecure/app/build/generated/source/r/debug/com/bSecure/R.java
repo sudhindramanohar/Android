@@ -418,6 +418,7 @@ containing a value of this type.
         public static final int imgylw=0x7f0b0028;
         public static final int liscontact=0x7f0b0016;
         public static final int match_parent=0x7f0b000c;
+        public static final int mobile_no=0x7f0b003b;
         public static final int monochrome=0x7f0b0013;
         public static final int name=0x7f0b003a;
         public static final int none=0x7f0b0001;
@@ -445,7 +446,6 @@ containing a value of this type.
         public static final int txtredabt=0x7f0b0027;
         public static final int txtstghead=0x7f0b0015;
         public static final int txtyellowabt=0x7f0b002c;
-        public static final int uname=0x7f0b003b;
         public static final int wrap_content=0x7f0b000d;
         public static final int yellowbtn=0x7f0b0040;
     }

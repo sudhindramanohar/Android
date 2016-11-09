@@ -145,6 +145,7 @@ int id imgred 0x7f0b0023
 int id imgylw 0x7f0b0028
 int id liscontact 0x7f0b0016
 int id match_parent 0x7f0b000c
+int id mobile_no 0x7f0b003b
 int id monochrome 0x7f0b0013
 int id name 0x7f0b003a
 int id none 0x7f0b0001
@@ -172,7 +173,6 @@ int id txthelp 0x7f0b0022
 int id txtredabt 0x7f0b0027
 int id txtstghead 0x7f0b0015
 int id txtyellowabt 0x7f0b002c
-int id uname 0x7f0b003b
 int id wrap_content 0x7f0b000d
 int id yellowbtn 0x7f0b0040
 int integer google_play_services_version 0x7f090000
