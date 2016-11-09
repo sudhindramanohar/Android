@@ -56,7 +56,7 @@
         </receiver>
         <receiver
             android:name="com.bSecure.WidgetReceiver"
-            android:label="Nirbhaya" >
+            android:label="bSecure" >
             <intent-filter>
                 <action android:name="CHANGE_PICTUREG" />
             </intent-filter>
