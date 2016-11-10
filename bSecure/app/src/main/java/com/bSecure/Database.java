@@ -26,12 +26,6 @@ public class Database extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
-		/*
-		 * String CREATE_TABLE = "CREATE TABLE " + TABLE_REGISTER + "(" + KEY_ID
-		 * + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT," + KEY_PASSWORD +
-		 * " TEXT," + KEY_ADDRESS + " TEXT," + KEY_PH_NO + " TEXT" + ")";
-		 * db.execSQL(CREATE_TABLE);
-		 */
 		String CREATE_TABLEG = "CREATE TABLE " + TABLE_GCONTACT + "(" + KEY_ID
 				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT)";
 		db.execSQL(CREATE_TABLEG);
