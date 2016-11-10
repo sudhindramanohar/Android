@@ -8,49 +8,36 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 
-import com.bSecure.R;
-
 public class WidgetActivity extends AppWidgetProvider {
 
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
-			int[] appWidgetIds) {
+			int[] appWidgetId) {
 
-		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
-				R.layout.widget_layout);
-		remoteViews.setOnClickPendingIntent(R.id.greenbtn,
-				buildButtonPendingIntentg(context));
-		remoteViews.setOnClickPendingIntent(R.id.yellowbtn,
-				buildButtonPendingIntenty(context));
-		remoteViews.setOnClickPendingIntent(R.id.redbtn,
-				buildButtonPendingIntentr(context));
-
+		RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
+		remoteViews.setOnClickPendingIntent(R.id.greenbutton, buildButtonPendingIntentg(context));
+		remoteViews.setOnClickPendingIntent(R.id.yellowbutton, buildButtonPendingIntenty(context));
+		remoteViews.setOnClickPendingIntent(R.id.redbutton, buildButtonPendingIntentr(context));
 		pushWidgetUpdate(context, remoteViews);
 	}
 
 	public static PendingIntent buildButtonPendingIntentg(Context context) {
 		Intent intent = new Intent();
 		intent.setAction("CHANGE_PICTUREG");
-
-		return PendingIntent.getBroadcast(context, 0, intent,
-				PendingIntent.FLAG_UPDATE_CURRENT);
-
+		return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 
 	public static PendingIntent buildButtonPendingIntenty(Context context) {
 		Intent intent = new Intent();
 		intent.setAction("CHANGE_PICTUREY");
 
-		return PendingIntent.getBroadcast(context, 0, intent,
-				PendingIntent.FLAG_UPDATE_CURRENT);
+		return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 
 	public static PendingIntent buildButtonPendingIntentr(Context context) {
 		Intent intent = new Intent();
-
 		intent.setAction("CHANGE_PICTURER");
-		return PendingIntent.getBroadcast(context, 0, intent,
-				PendingIntent.FLAG_UPDATE_CURRENT);
+		return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 
 	public static void pushWidgetUpdate(Context context, RemoteViews remoteViews) {
