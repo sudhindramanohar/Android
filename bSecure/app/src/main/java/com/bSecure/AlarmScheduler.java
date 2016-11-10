@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class AlarmScheduler {
 
-    static AlarmManager mgr;
+    static AlarmManager alarmManager;
     static PendingIntent alarmIntent;
     static SharedPreferences appSetting;
     static String sig_msg;
@@ -25,7 +25,7 @@ public class AlarmScheduler {
     static String ymsg;
     static String rmsg;
     static Database db;
-    static SharedPreferences.Editor edit;
+    static SharedPreferences.Editor sharedPrefEditor;
     static int xc = 0, start = 0;
     static Context con;
 
@@ -37,11 +37,11 @@ public class AlarmScheduler {
         SmsManager sms = SmsManager.getDefault();
         con = ctxt;
         appSetting = ctxt.getSharedPreferences("signal", 0);
-        edit = appSetting.edit();
+        sharedPrefEditor = appSetting.edit();
         String sm;
         db = new Database(ctxt);
         Log.v("contxt", String.valueOf(ctxt));
-        mgr = (AlarmManager) ctxt.getSystemService(Context.ALARM_SERVICE);
+        alarmManager = (AlarmManager) ctxt.getSystemService(Context.ALARM_SERVICE);
         // GREEN
         if (msg.equals("green")) {
 
@@ -88,7 +88,7 @@ public class AlarmScheduler {
             greenTime = appSetting.getInt("gtime", 0);
             Log.v("greenTime", greenTime.toString());
             if (xc == 1) {
-                mgr.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
+                alarmManager.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
 
                 xc = 0;
             } else {
@@ -96,11 +96,11 @@ public class AlarmScheduler {
 
                     Log.v("set", "time");
 
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, 5000,
                             alarmIntent);
                 } else {
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, greenTime * 1000,
                             alarmIntent);
                 }
@@ -143,8 +143,8 @@ public class AlarmScheduler {
                                     + String.valueOf(timeStamp.charAt(3)));
                             Log.v("mm", t.toString());
                             Log.v("msg", timeStamp);
-                            edit.putInt("starttime", t);
-                            edit.commit();
+                            sharedPrefEditor.putInt("starttime", t);
+                            sharedPrefEditor.commit();
                         } catch (Exception e) {
                             Log.v("msg", "send fail!");
                         }
@@ -163,22 +163,22 @@ public class AlarmScheduler {
             db.close();
             alarmIntent = PendingIntent.getService(ctxt, 0, i, 0);
             if (xc == 1) {
-                mgr.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
-                edit.putString("cset", "false");
-                edit.commit();
+                alarmManager.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
+                sharedPrefEditor.putString("cset", "false");
+                sharedPrefEditor.commit();
                 xc = 0;
             } else {
-                edit.putString("cset", "true");
-                edit.commit();
+                sharedPrefEditor.putString("cset", "true");
+                sharedPrefEditor.commit();
                 yellowtime = appSetting.getInt("ytime", 0);
                 if (yellowtime == 0) {
 
                     Log.v("set", "time");
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, 600 * 1000,
                             alarmIntent);
                 } else {
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, yellowtime * 1000,
                             alarmIntent);
                 }
@@ -245,7 +245,7 @@ public class AlarmScheduler {
             alarmIntent = PendingIntent.getService(ctxt, 0, i, 0);
             if (xc == 1) {
                 Log.v("red", "come");
-                mgr.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
+                alarmManager.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
 
                 xc = 0;
             } else {
@@ -253,12 +253,12 @@ public class AlarmScheduler {
                 if (redtime == 0) {
 
                     Log.v("set", "time");
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, 900 * 1000,
                             alarmIntent);
                 } else {
                     Log.v("set", "time");
-                    mgr.setRepeating(AlarmManager.ELAPSED_REALTIME,
+                    alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
                             SystemClock.elapsedRealtime() + 5000, redtime * 1000,
                             alarmIntent);
                 }
@@ -268,17 +268,17 @@ public class AlarmScheduler {
 
     static public void cancelAlarm(Context context) {
         // If the alarm has been set, cancel it.
-        if (mgr != null) {
-            mgr.cancel(alarmIntent);
+        if (alarmManager != null) {
+            alarmManager.cancel(alarmIntent);
             context.stopService(new Intent(context, AudioRecorder.class));
         }
     }
 
     static public void cancelRAlarm(Context context) {
         // If the alarm has been set, cancel it.
-        if (mgr != null) {
+        if (alarmManager != null) {
             Log.v("v", "com");
-            mgr.cancel(alarmIntent);
+            alarmManager.cancel(alarmIntent);
 
             context.stopService(new Intent(context, AudioRecorder.class));
             if (start == 1) {
