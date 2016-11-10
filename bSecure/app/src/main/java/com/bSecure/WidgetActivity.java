@@ -30,7 +30,6 @@ public class WidgetActivity extends AppWidgetProvider {
 	public static PendingIntent buildButtonPendingIntenty(Context context) {
 		Intent intent = new Intent();
 		intent.setAction("CHANGE_PICTUREY");
-
 		return PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 	}
 
