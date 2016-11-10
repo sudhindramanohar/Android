@@ -2,29 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    
     android:background="@android:drawable/alert_dark_frame"
     android:orientation="horizontal" >
 
     <ImageButton
-        android:id="@+id/greenbtn"
+        android:id="@+id/greenbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
-        
-       
         android:src="@drawable/greenicon" />
      <ImageButton
-        android:id="@+id/yellowbtn"
+        android:id="@+id/yellowbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       
         android:src="@drawable/yellowicon" />
       <ImageButton
-        android:id="@+id/redbtn"
+        android:id="@+id/redbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       
         android:src="@drawable/redicon" />
 
 </LinearLayout>
