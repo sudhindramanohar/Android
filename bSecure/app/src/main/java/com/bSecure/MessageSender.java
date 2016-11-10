@@ -23,25 +23,10 @@ import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailed
 public class MessageSender extends IntentService implements ConnectionCallbacks,
 		OnConnectionFailedListener {
 
-	AlarmScheduler am;
-	String mv, msg, smsg, gmsg, ymsg, rmsg;
-	int tim, i = 0, s, counter = 0;
+	String msg, gmsg, ymsg, rmsg;
 	Context con = this;
 	SharedPreferences asetting;
 	SharedPreferences.Editor edit;
-	static MediaRecorder mRecorder;
-	String mFileName;
-	String gcnt[] = new String[3];
-	MediaPlayer mPlayer;
-	boolean rec = false;
-	GPSTracker gps;
-	static double latitude;
-	static double longitude;
-	String gm;
-	LocationFinder gl = new LocationFinder();
-
-	// AudioRecorder r=new AudioRecorder();
-
 	public MessageSender() {
 		super("MessageSender");
 
@@ -71,29 +56,22 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
 				if (c1.moveToLast()) {
 					for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
 						Log.v("con", c1.getString(1));
-
 						try {
 							Log.v("msg", c1.getString(1));
-
 							sms.sendTextMessage(c1.getString(1), null, s + " "
 									+ gmsg, null, null);
 						}
-
 						catch (Exception e) {
 							Log.v("msg", "send fail!");
 						}
-
 					}
-
 				}
 			} else {
-
 				inten.setAction("CHANGE_PICTUREG");
 				wr.onReceive(getApplicationContext(), inten);
 				Log.v("data", "not found");
 			}
 			db.close();
-
 		}
 
 		// Send SMS For Yellow Signal
@@ -114,15 +92,11 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
 			Log.v("ti", String.valueOf(t));
 			if (cget.equals("true")) {
 				if (t >= yt) {
-
 					inten.setAction("CHANGE_PICTURER");
 					wr.onReceive(getApplicationContext(), inten);
-
 				} else {
-
 				}
 			} else {
-
 				inten.setAction("CHANGE_PICTUREY");
 				wr.onReceive(getApplicationContext(), inten);
 				Log.v("data", "not found");
@@ -130,10 +104,8 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
 			db.close();
 			// sms.sendTextMessage(ycntact, null, ymsg, null, null);
 		}
-
 		// Send SMS For Red Signal
 		if (msg.equals("red")) {
-
 			// getlc("red");
 			LocationFinder.getlc(con, "red");
 			rmsg = asetting.getString("rmsg1", "");
@@ -145,27 +117,21 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
 					for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
 						Log.v("con", c1.getString(1));
 						try {
-
 							sms.sendTextMessage(c1.getString(1), null, s + " "
 									+ rmsg, null, null);
 							Log.v("msg", c1.getString(1));
 						}
-
 						catch (Exception e) {
 							Log.v("msg", "send fail!");
 						}
 					}
-
 				}
 			} else {
-
 				inten.setAction("CHANGE_PICTURER");
 				wr.onReceive(getApplicationContext(), inten);
 				Log.v("data", "not found");
 			}
 			db.close();
-
-			// sms.sendTextMessage(rcntact, null, ymsg, null, null);
 		}
 	}
 
