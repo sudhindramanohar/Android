@@ -1,34 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\startpage.jpg",
-        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\startpage.jpg"
-    },
-    {
-        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gabt.jpg",
-        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\gabt.jpg"
-    },
-    {
         "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gstng.jpg",
         "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\gstng.jpg"
     },
     {
         "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gabt.jpg",
         "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\gabt.jpg"
-    },
-    {
-        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gstng.jpg",
-        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\gstng.jpg"
-    },
-    {
-        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\page.jpg",
-        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\page.jpg"
-    },
-    {
-        "merged": "F:\\Android\\Android\\NirbhayaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\startpage.jpg",
-        "source": "F:\\Android\\Android\\NirbhayaApp\\app\\src\\main\\res\\drawable-hdpi\\startpage.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\page.jpg",
-        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\page.jpg"
     }
 ]
