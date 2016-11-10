@@ -50,7 +50,7 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
 				.format(new Date());
 		
 		String root=Environment.getExternalStorageDirectory().toString();
-    	 File mediaStorageDir = new File(root+"/NIRBHAYA/AUDIO_RECORD");
+    	 File mediaStorageDir = new File(root+"/bSecure/AUDIO_RECORD");
     	
 	    File mediaFile;
         mediaFile = new File(mediaStorageDir.getPath() + File.separator +
