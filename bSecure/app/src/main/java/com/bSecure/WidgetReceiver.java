@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class WidgetReceiver extends BroadcastReceiver {
 
 	Context con;
-
 	SharedPreferences mode;
 	SharedPreferences mmode;
 	SharedPreferences gmode;
@@ -35,34 +34,32 @@ public class WidgetReceiver extends BroadcastReceiver {
 		editor = mode.edit();
 
 		meditor = mmode.edit();
-		
-		//intent.getAction().equals("");
 
 		if (intent.getAction().equals("CHANGE_PICTUREG")) {
 
-			if (mode.getBoolean("yimage", false)) {
+			if (mode.getBoolean("yellowimage", false)) {
 				updateWidgetPictureAndButtonListenery(context);
 
 			}
-			if (mode.getBoolean("rimage", false)) {
+			if (mode.getBoolean("redimage", false)) {
 				updateWidgetPictureAndButtonListenerr(context);
 			}
 			updateWidgetPictureAndButtonListenerg(context);
 		}
 		if (intent.getAction().equals("CHANGE_PICTUREY")) {
-			if (mode.getBoolean("gimage", false)) {
+			if (mode.getBoolean("greenimage", false)) {
 				updateWidgetPictureAndButtonListenerg(context);
 			}
-			if (mode.getBoolean("rimage", false)) {
+			if (mode.getBoolean("redimage", false)) {
 				updateWidgetPictureAndButtonListenerr(context);
 			}
 			updateWidgetPictureAndButtonListenery(context);
 		}
 		if (intent.getAction().equals("CHANGE_PICTURER")) {
-			if (mode.getBoolean("gimage", false)) {
+			if (mode.getBoolean("greenimage", false)) {
 				updateWidgetPictureAndButtonListenerg(context);
 			}
-			if (mode.getBoolean("yimage", false)) {
+			if (mode.getBoolean("yellowimage", false)) {
 				updateWidgetPictureAndButtonListenery(context);
 			}
 			updateWidgetPictureAndButtonListenerr(context);
@@ -74,8 +71,8 @@ public class WidgetReceiver extends BroadcastReceiver {
 		con = context;
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
 				R.layout.widget_layout);
-		remoteViews.setImageViewResource(R.id.greenbtn, getImageToSetg());
-		remoteViews.setOnClickPendingIntent(R.id.greenbtn,
+		remoteViews.setImageViewResource(R.id.greenbutton, getImageToSetg());
+		remoteViews.setOnClickPendingIntent(R.id.greenbutton,
 				WidgetActivity.buildButtonPendingIntentg(context));
 		WidgetActivity.pushWidgetUpdate(context.getApplicationContext(),
 				remoteViews);
@@ -86,9 +83,9 @@ public class WidgetReceiver extends BroadcastReceiver {
 		con = context;
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
 				R.layout.widget_layout);
-		remoteViews.setImageViewResource(R.id.yellowbtn, getImageToSety());
+		remoteViews.setImageViewResource(R.id.yellowbutton, getImageToSety());
 
-		remoteViews.setOnClickPendingIntent(R.id.yellowbtn,
+		remoteViews.setOnClickPendingIntent(R.id.yellowbutton,
 				WidgetActivity.buildButtonPendingIntenty(context));
 		WidgetActivity.pushWidgetUpdate(context.getApplicationContext(),
 				remoteViews);
@@ -98,9 +95,9 @@ public class WidgetReceiver extends BroadcastReceiver {
 		con = context;
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
 				R.layout.widget_layout);
-		remoteViews.setImageViewResource(R.id.redbtn, getImageToSetr());
+		remoteViews.setImageViewResource(R.id.redbutton, getImageToSetr());
 
-		remoteViews.setOnClickPendingIntent(R.id.redbtn,
+		remoteViews.setOnClickPendingIntent(R.id.redbutton,
 				WidgetActivity.buildButtonPendingIntentr(context));
 		WidgetActivity.pushWidgetUpdate(context.getApplicationContext(),
 				remoteViews);
@@ -108,26 +105,26 @@ public class WidgetReceiver extends BroadcastReceiver {
 
 	private int getImageToSetg() {
 
-		if (mode.getBoolean("gimage", false)) {
+		if (mode.getBoolean("greenimage", false)) {
 
-			Toast.makeText(con, "Green mod off...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Green Mode OFF...", Toast.LENGTH_LONG).show();
 			AlarmScheduler.cancelAlarm(con);
 
-			editor.putBoolean("gimage", false);
+			editor.putBoolean("greenimage", false);
 			editor.commit();
 
 			return R.drawable.greenicon;
 
 		} else {
 
-			Toast.makeText(con, "Green mod on...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Green Mode ON...", Toast.LENGTH_LONG).show();
 
 			meditor.putString("mode", "green");
 			meditor.commit();
 
 			AlarmScheduler.scheduleAlarms(con, "green");
 
-			editor.putBoolean("gimage", true);
+			editor.putBoolean("greenimage", true);
 
 			editor.commit();
 
@@ -136,26 +133,26 @@ public class WidgetReceiver extends BroadcastReceiver {
 	}
 
 	private int getImageToSety() {
-		if (mode.getBoolean("yimage", false)) {
+		if (mode.getBoolean("yellowimage", false)) {
 
-			Toast.makeText(con, "Yellow mod off...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Yellow Mode OFF...", Toast.LENGTH_LONG).show();
 			AlarmScheduler.cancelAlarm(con);
 			Log.v("ymm","fail");
-			editor.putBoolean("yimage", false);
+			editor.putBoolean("yellowimage", false);
 			editor.commit();
 
 			return R.drawable.yellowicon;
 
 		} else {
 
-			Toast.makeText(con, "Yellow mod on...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Yellow Mode ON...", Toast.LENGTH_LONG).show();
 
 			meditor.putString("mode", "yellow");
 			meditor.commit();
 
 			AlarmScheduler.scheduleAlarms(con, "yellow");
 
-			editor.putBoolean("yimage", true);
+			editor.putBoolean("yellowimage", true);
 			editor.commit();
 
 			return R.drawable.pauseyellow;
@@ -164,29 +161,29 @@ public class WidgetReceiver extends BroadcastReceiver {
 	}
 
 	private int getImageToSetr() {
-		if (mode.getBoolean("rimage", false)) {
+		if (mode.getBoolean("redimage", false)) {
 
-			Toast.makeText(con, "Red mod off...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Red Mode OFF...", Toast.LENGTH_LONG).show();
 			AlarmScheduler.cancelRAlarm(con);
 
-			editor.putBoolean("rimage", false);
+			editor.putBoolean("redimage", false);
 			editor.commit();
 
 			return R.drawable.redicon;
 
 		} else {
 
-			Toast.makeText(con, "Red mod on...", Toast.LENGTH_LONG).show();
+			Toast.makeText(con, "Red Mode ON...", Toast.LENGTH_LONG).show();
 
 			meditor.putString("mode", "red");
 			meditor.commit();
 
 			AlarmScheduler.scheduleAlarms(con, "red");
 
-			editor.putBoolean("rimage", true);
+			editor.putBoolean("redimage", true);
 			editor.commit();
 
-			return R.drawable.pausered;
+			return R.drawable.pause;
 		}
 	}
 }
