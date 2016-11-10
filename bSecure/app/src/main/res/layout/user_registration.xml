@@ -4,6 +4,17 @@
     android:layout_height="fill_parent"
     android:background="#ffffff" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:text="User Registration"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
@@ -49,29 +60,16 @@ s
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/AppBaseTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="46dp"
+                android:text="Submit" />
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_above="@+id/scrollView1"
-        android:layout_centerHorizontal="true"
-        android:text="User Registration"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <requestFocus />
-
-    <Button
-        android:id="@+id/submit"
-        style="@style/AppBaseTheme"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="46dp"
-        android:text="Submit" />
 
 </RelativeLayout>
