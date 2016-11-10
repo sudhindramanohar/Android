@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.os.Handler;
 import android.os.SystemClock;
 import android.telephony.gsm.SmsManager;
 import android.util.Log;
@@ -14,29 +13,19 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Timer;
 
 public class AlarmScheduler {
 
 	static AlarmManager mgr;
 	static PendingIntent alarmIntent;
-	static SharedPreferences asetting;
+	static SharedPreferences appSetting;
 	static String sig_msg;
 	static Integer tim, ytim, rtim;
-	String msg;
-	static String cntact;
-	static String smsg, gmsg;
+	static String gmsg;
 	static String ymsg;
 	static String rmsg;
 	static Database db;
-	static GPSTracker gps;
-	static double latitude;
-	static double longitude;
-	static String gm;
 	static SharedPreferences.Editor edit;
-	static Handler h;
-	static Runnable r;
-	static Timer t;
 	static int xc = 0, start = 0;
 	static Context con;
 
@@ -47,8 +36,8 @@ public class AlarmScheduler {
 	static void scheduleAlarms(Context ctxt, String msg) {
 		SmsManager sms = SmsManager.getDefault();
 		con = ctxt;
-		asetting = ctxt.getSharedPreferences("signal", 0);
-		edit = asetting.edit();
+		appSetting = ctxt.getSharedPreferences("signal", 0);
+		edit = appSetting.edit();
 		String sm;
 		db = new Database(ctxt);
 		Log.v("contxt", String.valueOf(ctxt));
@@ -59,27 +48,21 @@ public class AlarmScheduler {
 			set_msg("green");
 			sm = get_msg();
 			Log.v("hi", "gcreate" + sm);
-			gmsg = asetting.getString("gmsg1", "");
+			gmsg = appSetting.getString("gmsg1", "");
 			String g = gmsg;
-			String s = asetting.getString("gmsg", "") + " " + g;
-
+			String s = appSetting.getString("gmsg", "") + " " + g;
 			Log.v("gmsg", s);
-
-			// Toast.makeText(ctxt, gmsg, Toast.LENGTH_SHORT).show();
 			Intent intent = new Intent(ctxt, AudioRecorder.class);
 			// add infos for the service which file to download and where to
 			// store
 			intent.putExtra("audio", "loc");
-
 			ctxt.startService(intent);
-
 			Cursor c1 = db.getContact("green");
 			if (c1.getCount() > 0) {
 				if (c1.moveToLast()) {
 					for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
 						Log.v("con", c1.getString(1));
 						try {
-
 							Log.v("msg", c1.getString(1));
 
 						}
@@ -108,7 +91,7 @@ public class AlarmScheduler {
 			Log.v("hi", "gcreate");
 			alarmIntent = PendingIntent.getService(ctxt, 0, i, 0);
 
-			tim = asetting.getInt("gtime", 0);
+			tim = appSetting.getInt("gtime", 0);
 			Log.v("tim", tim.toString());
 			if (xc == 1) {
 				mgr.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
@@ -145,9 +128,9 @@ public class AlarmScheduler {
 			 */
 			LocationFinder gl = new LocationFinder();
 			gl.getlc(ctxt, "yellow");
-			ymsg = asetting.getString("ymsg1", "");
+			ymsg = appSetting.getString("ymsg1", "");
 			String g = ymsg;
-			String s = asetting.getString("ymsg", "") + " " + g;
+			String s = appSetting.getString("ymsg", "") + " " + g;
 			Log.v("ymsg1", s);
 			Cursor c1 = db.getContact("yellow");
 			if (c1.getCount() > 0) {
@@ -195,7 +178,7 @@ public class AlarmScheduler {
 			} else {
 				edit.putString("cset", "true");
 				edit.commit();
-				ytim = asetting.getInt("ytime", 0);
+				ytim = appSetting.getInt("ytime", 0);
 				if (ytim == 0) {
 
 					Log.v("set", "time");
@@ -234,9 +217,9 @@ public class AlarmScheduler {
 			Intent i = new Intent(ctxt, MessageSender.class);
 
 			Log.v("hi", "rcreate " + msg + sm);
-			rmsg = asetting.getString("rmsg1", "");
+			rmsg = appSetting.getString("rmsg1", "");
 			String g = rmsg;
-			String s = asetting.getString("rmsg", "") + " " + g;
+			String s = appSetting.getString("rmsg", "") + " " + g;
 			Log.v("red", s);
 
 			Cursor c1 = db.getContact("red");
@@ -276,7 +259,7 @@ public class AlarmScheduler {
 
 				xc = 0;
 			} else {
-				rtim = asetting.getInt("rtime", 0);
+				rtim = appSetting.getInt("rtime", 0);
 				if (rtim == 0) {
 
 					Log.v("set", "time");
