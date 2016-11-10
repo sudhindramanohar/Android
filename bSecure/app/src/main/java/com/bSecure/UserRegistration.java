@@ -33,12 +33,12 @@ public class UserRegistration extends Activity {
 
 			setting = getSharedPreferences("signal", 0);
 			editor = setting.edit();
-			editor.putString("message1", "Hi I am saafe !");
-			editor.putString("message2", "Hi I am in critical situation !");
-			editor.putString("message3", "Hi I am in trouble, please help me !");
-			editor.putInt("m1time", 0);
-			editor.putInt("m2time", 0);
-			editor.putInt("m3time", 0);
+			editor.putString("greenmessage", "Hi I am safe !");
+			editor.putString("yellowmessage", "Hi I am in critical situation !");
+			editor.putString("redmessage", "Hi I am in trouble, please help me !");
+			editor.putInt("greentime", 0);
+			editor.putInt("yellowtime", 0);
+			editor.putInt("redtime", 0);
 			editor.commit();
 
 			regpage = getSharedPreferences("reg", 0);
