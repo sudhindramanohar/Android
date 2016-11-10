@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "com.example.nirapp"
+        applicationId "com.bSecure"
         minSdkVersion 11
         targetSdkVersion 19
     }
