@@ -8,8 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.media.MediaPlayer;
-import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.telephony.gsm.SmsManager;
 import android.util.Log;
@@ -21,136 +19,127 @@ import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailed
 
 @SuppressWarnings("deprecation")
 public class MessageSender extends IntentService implements ConnectionCallbacks,
-		OnConnectionFailedListener {
+        OnConnectionFailedListener {
 
-	String msg, gmsg, ymsg, rmsg;
-	Context con = this;
-	SharedPreferences asetting;
-	SharedPreferences.Editor edit;
-	public MessageSender() {
-		super("MessageSender");
+    String msg, gmsg, ymsg, rmsg;
+    Context con = this;
+    SharedPreferences appSettings;
 
-	}
+    public MessageSender() {
+        super("MessageSender");
 
-	@Override
-	protected void onHandleIntent(Intent intent) {
-		// TODO Auto-generated method stub
-		WidgetReceiver wr = new WidgetReceiver();
-		Intent inten = new Intent();
-		SmsManager sms = SmsManager.getDefault();
-		asetting = con.getSharedPreferences("signal", 0);
+    }
 
-		msg = AlarmScheduler.get_msg();
-		Database db = new Database(con);
+    @Override
+    protected void onHandleIntent(Intent intent) {
+        // TODO Auto-generated method stub
+        WidgetReceiver wr = new WidgetReceiver();
+        Intent inten = new Intent();
+        SmsManager sms = SmsManager.getDefault();
+        appSettings = con.getSharedPreferences("signal", 0);
 
-		// Send SMS For Green Signal
-		if (msg.equals("green")) {
+        msg = AlarmScheduler.get_msg();
+        Database db = new Database(con);
 
-			LocationFinder.getlc(con, "green");
-			gmsg = asetting.getString("gmsg1", "");
-			String s = asetting.getString("gmsg", "");
-			Log.v("gmsg", s + " " + gmsg);
-			Toast.makeText(con, gmsg, Toast.LENGTH_SHORT).show();
-			Cursor c1 = db.getContact("green");
-			if (c1.getCount() > 0) {
-				if (c1.moveToLast()) {
-					for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-						Log.v("con", c1.getString(1));
-						try {
-							Log.v("msg", c1.getString(1));
-							sms.sendTextMessage(c1.getString(1), null, s + " "
-									+ gmsg, null, null);
-						}
-						catch (Exception e) {
-							Log.v("msg", "send fail!");
-						}
-					}
-				}
-			} else {
-				inten.setAction("CHANGE_PICTUREG");
-				wr.onReceive(getApplicationContext(), inten);
-				Log.v("data", "not found");
-			}
-			db.close();
-		}
+        // Send SMS For Green Signal
+        if (msg.equals("green")) {
 
-		// Send SMS For Yellow Signal
-		if (msg.equals("yellow")) {
-			// getlc("yellow");
-			LocationFinder.getlc(con, "yellow");
-			ymsg = asetting.getString("ymsg1", "");
-			String s = asetting.getString("ymsg", "");
-			Log.v("ymsg", s + " " + ymsg);
-			Cursor c1 = db.getContact("yellow");
-			int yt = asetting.getInt("starttime", 0) + 10;
-			Log.v("ti", String.valueOf(yt));
-			String cget = asetting.getString("cset", "");
-			String timeStamp = new SimpleDateFormat("HHmmss")
-					.format(new Date());
-			Integer t = Integer.parseInt(String.valueOf(timeStamp.charAt(2))
-					+ String.valueOf(timeStamp.charAt(3)));
-			Log.v("ti", String.valueOf(t));
-			if (cget.equals("true")) {
-				if (t >= yt) {
-					inten.setAction("CHANGE_PICTURER");
-					wr.onReceive(getApplicationContext(), inten);
-				} else {
-				}
-			} else {
-				inten.setAction("CHANGE_PICTUREY");
-				wr.onReceive(getApplicationContext(), inten);
-				Log.v("data", "not found");
-			}
-			db.close();
-			// sms.sendTextMessage(ycntact, null, ymsg, null, null);
-		}
-		// Send SMS For Red Signal
-		if (msg.equals("red")) {
-			// getlc("red");
-			LocationFinder.getlc(con, "red");
-			rmsg = asetting.getString("rmsg1", "");
-			String s = asetting.getString("rmsg", "");
-			Log.v("rmsg", s + " " + rmsg);
-			Cursor c1 = db.getContact("red");
-			if (c1.getCount() > 0) {
-				if (c1.moveToLast()) {
-					for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-						Log.v("con", c1.getString(1));
-						try {
-							sms.sendTextMessage(c1.getString(1), null, s + " "
-									+ rmsg, null, null);
-							Log.v("msg", c1.getString(1));
-						}
-						catch (Exception e) {
-							Log.v("msg", "send fail!");
-						}
-					}
-				}
-			} else {
-				inten.setAction("CHANGE_PICTURER");
-				wr.onReceive(getApplicationContext(), inten);
-				Log.v("data", "not found");
-			}
-			db.close();
-		}
-	}
+            LocationFinder.getlc(con, "green");
+            gmsg = appSettings.getString("gmsg1", "");
+            String s = appSettings.getString("gmsg", "");
+            Log.v("gmsg", s + " " + gmsg);
+            Toast.makeText(con, gmsg, Toast.LENGTH_SHORT).show();
+            Cursor c1 = db.getContact("green");
+            if (c1.getCount() > 0) {
+                if (c1.moveToLast()) {
+                    for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
+                        Log.v("con", c1.getString(1));
+                        try {
+                            Log.v("msg", c1.getString(1));
+                            sms.sendTextMessage(c1.getString(1), null, s + " "
+                                    + gmsg, null, null);
+                        } catch (Exception e) {
+                            Log.v("msg", "send fail!");
+                        }
+                    }
+                }
+            } else {
+                inten.setAction("CHANGE_PICTUREG");
+                wr.onReceive(getApplicationContext(), inten);
+                Log.v("data", "not found");
+            }
+            db.close();
+        }
 
-	@Override
-	public void onConnected(Bundle arg0) {
-		// TODO Auto-generated method stub
+        // Send SMS For Yellow Signal
+        if (msg.equals("yellow")) {
+            LocationFinder.getlc(con, "yellow");
+            ymsg = appSettings.getString("ymsg1", "");
+            String s = appSettings.getString("ymsg", "");
+            Log.v("ymsg", s + " " + ymsg);
+            int yt = appSettings.getInt("starttime", 0) + 10;
+            Log.v("ti", String.valueOf(yt));
+            String cget = appSettings.getString("cset", "");
+            String timeStamp = new SimpleDateFormat("HHmmss")
+                    .format(new Date());
+            Integer t = Integer.parseInt(String.valueOf(timeStamp.charAt(2))
+                    + String.valueOf(timeStamp.charAt(3)));
+            Log.v("ti", String.valueOf(t));
+            if (cget.equals("true")) {
+                if (t >= yt) {
+                    inten.setAction("CHANGE_PICTURER");
+                    wr.onReceive(getApplicationContext(), inten);
+                } else {
+                }
+            } else {
+                inten.setAction("CHANGE_PICTUREY");
+                wr.onReceive(getApplicationContext(), inten);
+                Log.v("data", "not found");
+            }
+            db.close();
+        }
+        // Send SMS For Red Signal
+        if (msg.equals("red")) {
+            LocationFinder.getlc(con, "red");
+            rmsg = appSettings.getString("rmsg1", "");
+            String s = appSettings.getString("rmsg", "");
+            Log.v("rmsg", s + " " + rmsg);
+            Cursor c1 = db.getContact("red");
+            if (c1.getCount() > 0) {
+                if (c1.moveToLast()) {
+                    for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
+                        Log.v("con", c1.getString(1));
+                        try {
+                            sms.sendTextMessage(c1.getString(1), null, s + " "
+                                    + rmsg, null, null);
+                            Log.v("msg", c1.getString(1));
+                        } catch (Exception e) {
+                            Log.v("msg", "send fail!");
+                        }
+                    }
+                }
+            } else {
+                inten.setAction("CHANGE_PICTURER");
+                wr.onReceive(getApplicationContext(), inten);
+                Log.v("data", "not found");
+            }
+            db.close();
+        }
+    }
 
-	}
+    @Override
+    public void onConnected(Bundle arg0) {
+        // TODO Auto-generated method stub
+    }
 
-	@Override
-	public void onDisconnected() {
-		// TODO Auto-generated method stub
+    @Override
+    public void onDisconnected() {
+        // TODO Auto-generated method stub
+    }
 
-	}
-
-	@Override
-	public void onConnectionFailed(ConnectionResult arg0) {
-		// TODO Auto-generated method stub
-
-	}
+    @Override
+    public void onConnectionFailed(ConnectionResult arg0) {
+        // TODO Auto-generated method stub
+    }
 
 }
