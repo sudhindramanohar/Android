@@ -32,12 +32,9 @@
 	</string>
 	
 	<string name="help">
-	    first add widget on home sreen from widget store into smart phone
-	   
-	    after set the message,contacts and time duration in setting page of
-	    perticular signal in activty.
-	   
-	    First on Data enable for internet
-	    Put Gps On(Check all the check box of Location service in setting menu)
+	    Try to add widget on home sreen from widget store into smart phone
+	   	Then set the message, contacts and time duration in setting page.
+		Enable data for internet
+	    Enable GPS (Check all the check box of Location Service in settings menu)
 	</string>
 </resources>
