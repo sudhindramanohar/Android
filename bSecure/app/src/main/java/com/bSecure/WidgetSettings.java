@@ -24,35 +24,29 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-public class WidgetSettings extends FragmentActivity implements
-		ActionBar.TabListener {
+public class WidgetSettings extends FragmentActivity implements ActionBar.TabListener {
 
 	AppSectionsPagerAdapter mAppSectionsPagerAdapter;
-
 	ViewPager mViewPager;
 	static Context con;
 	static Intent intent;
-	static Intent ig;
-	static Intent iy;
-	static Intent ir;
-	static ImageButton ibg;
-	static ImageButton iby;
-	static ImageButton ibr;
-	static TextView tg, ty, tr;
+	static Intent intentg;
+	static Intent intenty;
+	static Intent intentr;
+	static ImageButton buttongreen;
+	static ImageButton buttonyellow;
+	static ImageButton buttonred;
+	static TextView textgreen, textyellow, textred;
 	static SharedPreferences mode;
 	static SharedPreferences.Editor editor;
 	public static final String PREFS_NAME = "MyPrefs";
 
 	static WidgetReceiver wm = new WidgetReceiver();
-	// static SharedPreferences settings;
-
-	static LocationFinder gl = new LocationFinder();
+	//static LocationFinder gl = new LocationFinder();
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		// settings = getSharedPreferences("set_signal", 0);
-
 		mode = getSharedPreferences(PREFS_NAME, 0);
 		editor = mode.edit();
 		try {
@@ -104,18 +98,17 @@ public class WidgetSettings extends FragmentActivity implements
 
 			actionBar.addTab(actionBar.newTab()
 					.setText(mAppSectionsPagerAdapter.getPageTitle(i))
-					// .setIcon(R.drawable.ic_launcher)
 					.setTabListener(this));
 		}
 
-		ig = new Intent(WidgetSettings.this, WidgetReceiver.class);
-		ig.setAction("CHANGE_PICTUREG");
+		intentg = new Intent(WidgetSettings.this, WidgetReceiver.class);
+		intentg.setAction("CHANGE_PICTUREG");
 
-		iy = new Intent(WidgetSettings.this, WidgetReceiver.class);
-		iy.setAction("CHANGE_PICTUREY");
+		intenty = new Intent(WidgetSettings.this, WidgetReceiver.class);
+		intenty.setAction("CHANGE_PICTUREY");
 
-		ir = new Intent(WidgetSettings.this, WidgetReceiver.class);
-		ir.setAction("CHANGE_PICTURER");
+		intentr = new Intent(WidgetSettings.this, WidgetReceiver.class);
+		intentr.setAction("CHANGE_PICTURER");
 
 	}
 
@@ -197,16 +190,16 @@ public class WidgetSettings extends FragmentActivity implements
 
 			final View rootView = inflater.inflate(R.layout.fragment_green,
 					container, false);
-			tg = (TextView) rootView.findViewById(R.id.txtgreenabt);
-			tg.setVisibility(rootView.INVISIBLE);
-			ibg = (ImageButton) rootView.findViewById(R.id.imggreen);
+			textgreen = (TextView) rootView.findViewById(R.id.txtgreenabt);
+			textgreen.setVisibility(rootView.INVISIBLE);
+			buttongreen = (ImageButton) rootView.findViewById(R.id.imggreen);
 			
 
-			if (!mode.getBoolean("gimage", false)) {
-				ibg.setBackgroundResource(R.drawable.greenicon);
+			if (!mode.getBoolean("greenimage", false)) {
+				buttongreen.setBackgroundResource(R.drawable.greenicon);
 
 			} else {
-				ibg.setBackgroundResource(R.drawable.pausegreen);
+				buttongreen.setBackgroundResource(R.drawable.pausegreen);
 
 			}
 
@@ -215,26 +208,26 @@ public class WidgetSettings extends FragmentActivity implements
 						@Override
 						public void onClick(View view) {
 
-							if (mode.getBoolean("gimage", false)) {
+							if (mode.getBoolean("greenimage", false)) {
 								Log.v("in App image green true",
-										"" + mode.getBoolean("gimage", false));
+										"" + mode.getBoolean("greenimage", false));
 
-								ibg.setBackgroundResource(R.drawable.greenicon);
+								buttongreen.setBackgroundResource(R.drawable.greenicon);
 
 							} else {
 
-								if (mode.getBoolean("yimage", false)) {
+								if (mode.getBoolean("yellowimage", false)) {
 
-									iby.setBackgroundResource(R.drawable.yellowicon);
+									buttonyellow.setBackgroundResource(R.drawable.yellowicon);
 
 								}
-								if (mode.getBoolean("rimage", false)) {
-									ibr.setBackgroundResource(R.drawable.redicon);
+								if (mode.getBoolean("redimage", false)) {
+									buttonred.setBackgroundResource(R.drawable.redicon);
 								}
 
-								ibg.setBackgroundResource(R.drawable.pausegreen);
+								buttongreen.setBackgroundResource(R.drawable.pausegreen);
 							}
-							wm.onReceive(con, ig);
+							wm.onReceive(con, intentg);
 						}
 
 					});
@@ -247,8 +240,8 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
 									.show();
-							tg.setVisibility(rootView.VISIBLE);
-							ibg.setVisibility(rootView.INVISIBLE);
+							textgreen.setVisibility(rootView.VISIBLE);
+							buttongreen.setVisibility(rootView.INVISIBLE);
 						}
 					});
 
@@ -260,8 +253,8 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
 									.show();
-							tg.setVisibility(rootView.INVISIBLE);
-							ibg.setVisibility(rootView.VISIBLE);
+							textgreen.setVisibility(rootView.INVISIBLE);
+							buttongreen.setVisibility(rootView.VISIBLE);
 						}
 					});
 
@@ -289,14 +282,14 @@ public class WidgetSettings extends FragmentActivity implements
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.fragment_yellow,
 					container, false);
-			ty = (TextView) rootView.findViewById(R.id.txtyellowabt);
-			ty.setVisibility(rootView.INVISIBLE);
-			iby = (ImageButton) rootView.findViewById(R.id.imgylw);
-			if (!mode.getBoolean("yimage", false)) {
-				iby.setBackgroundResource(R.drawable.yellowicon);
+			textyellow = (TextView) rootView.findViewById(R.id.txtyellowabt);
+			textyellow.setVisibility(rootView.INVISIBLE);
+			buttonyellow = (ImageButton) rootView.findViewById(R.id.imgylw);
+			if (!mode.getBoolean("yellowimage", false)) {
+				buttonyellow.setBackgroundResource(R.drawable.yellowicon);
 
 			} else {
-				iby.setBackgroundResource(R.drawable.pauseyellow);
+				buttonyellow.setBackgroundResource(R.drawable.pauseyellow);
 
 			}
 
@@ -306,25 +299,24 @@ public class WidgetSettings extends FragmentActivity implements
 						@Override
 						public void onClick(View view) {
 
-							if (mode.getBoolean("yimage", false)) {
+							if (mode.getBoolean("yellowimage", false)) {
 
-								iby.setBackgroundResource(R.drawable.yellowicon);
+								buttonyellow.setBackgroundResource(R.drawable.yellowicon);
 							} else {
 
-								Log.v("in App image yellow false",
-										"" + mode.getBoolean("yimage", false));
-								if (mode.getBoolean("gimage", false)) {
+								Log.v("App image yellow false", "" + mode.getBoolean("yellowimage", false));
+								if (mode.getBoolean("greenimage", false)) {
 
-									ibg.setBackgroundResource(R.drawable.greenicon);
+									buttongreen.setBackgroundResource(R.drawable.greenicon);
 
 								}
-								if (mode.getBoolean("rimage", false)) {
-									ibr.setBackgroundResource(R.drawable.redicon);
+								if (mode.getBoolean("redimage", false)) {
+									buttonred.setBackgroundResource(R.drawable.redicon);
 								}
 
-								iby.setBackgroundResource(R.drawable.pauseyellow);
+								buttonyellow.setBackgroundResource(R.drawable.pauseyellow);
 							}
-							wm.onReceive(con, iy);
+							wm.onReceive(con, intenty);
 						}
 
 					});
@@ -337,10 +329,10 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
 									.show();
-							ty.setVisibility(rootView.VISIBLE);
-							iby.setVisibility(rootView.INVISIBLE);
-							tg.setVisibility(rootView.INVISIBLE);
-							tr.setVisibility(rootView.INVISIBLE);
+							textyellow.setVisibility(rootView.VISIBLE);
+							buttonyellow.setVisibility(rootView.INVISIBLE);
+							textgreen.setVisibility(rootView.INVISIBLE);
+							textred.setVisibility(rootView.INVISIBLE);
 						}
 					});
 
@@ -352,8 +344,8 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
 									.show();
-							ty.setVisibility(rootView.INVISIBLE);
-							iby.setVisibility(rootView.VISIBLE);
+							textyellow.setVisibility(rootView.INVISIBLE);
+							buttonyellow.setVisibility(rootView.VISIBLE);
 						}
 					});
 
@@ -383,14 +375,14 @@ public class WidgetSettings extends FragmentActivity implements
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.fragment_red,
 					container, false);
-			tr = (TextView) rootView.findViewById(R.id.txtredabt);
-			tr.setVisibility(rootView.INVISIBLE);
-			ibr = (ImageButton) rootView.findViewById(R.id.imgred);
-			if (!mode.getBoolean("rimage", false)) {
-				ibr.setBackgroundResource(R.drawable.redicon);
+			textred = (TextView) rootView.findViewById(R.id.txtredabt);
+			textred.setVisibility(rootView.INVISIBLE);
+			buttonred = (ImageButton) rootView.findViewById(R.id.imgred);
+			if (!mode.getBoolean("redimage", false)) {
+				buttonred.setBackgroundResource(R.drawable.redicon);
 
 			} else {
-				ibr.setBackgroundResource(R.drawable.pausered);
+				buttonred.setBackgroundResource(R.drawable.pause);
 
 			}
 
@@ -399,25 +391,25 @@ public class WidgetSettings extends FragmentActivity implements
 					new View.OnClickListener() {
 						@Override
 						public void onClick(View view) {
-							if (mode.getBoolean("rimage", false)) {
+							if (mode.getBoolean("redimage", false)) {
 								Log.v("in App image red true",
-										"" + mode.getBoolean("rimage", false));
+										"" + mode.getBoolean("redimage", false));
 
-								ibr.setBackgroundResource(R.drawable.redicon);
+								buttonred.setBackgroundResource(R.drawable.redicon);
 							} else {
 
-								if (mode.getBoolean("yimage", false)) {
+								if (mode.getBoolean("yellowimage", false)) {
 
-									iby.setBackgroundResource(R.drawable.yellowicon);
+									buttonyellow.setBackgroundResource(R.drawable.yellowicon);
 
 								}
-								if (mode.getBoolean("gimage", false)) {
-									ibg.setBackgroundResource(R.drawable.greenicon);
+								if (mode.getBoolean("greenimage", false)) {
+									buttongreen.setBackgroundResource(R.drawable.greenicon);
 								}
 
-								ibr.setBackgroundResource(R.drawable.pausered);
+								buttonred.setBackgroundResource(R.drawable.pause);
 							}
-							wm.onReceive(con, ir);
+							wm.onReceive(con, intentr);
 						}
 					});
 
@@ -429,9 +421,9 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
 									.show();
-							tr.setVisibility(rootView.VISIBLE);
-							ibr.setVisibility(rootView.INVISIBLE);
-							tg.setVisibility(rootView.INVISIBLE);
+							textred.setVisibility(rootView.VISIBLE);
+							buttonred.setVisibility(rootView.INVISIBLE);
+							textgreen.setVisibility(rootView.INVISIBLE);
 							//ty.setVisibility(rootView.INVISIBLE);
 						}
 					});
@@ -444,8 +436,8 @@ public class WidgetSettings extends FragmentActivity implements
 							// TODO Auto-generated method stub
 							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
 									.show();
-							tr.setVisibility(rootView.INVISIBLE);
-							ibr.setVisibility(rootView.VISIBLE);
+							textred.setVisibility(rootView.INVISIBLE);
+							buttonred.setVisibility(rootView.VISIBLE);
 						}
 					});
 
