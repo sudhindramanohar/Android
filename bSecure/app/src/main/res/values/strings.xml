@@ -20,15 +20,13 @@
 	</string>
 	
 	<string name="yellowabout">
-	    This SOS button is for sending critical situation message to added 
-	    contact numbers with define or pre-defined message in 
-	    setable time duration with current location!
+	    This SOS button is for sending critical pre-defined message to added
+	    contact numbers and set time duration with current location!
 	</string>
 	
 	<string name="redabout">
-	    This SOS button is for sending trouble (for help) message to added 
-	    contact numbers with define or pre-defined message in 
-	    setable time duration with current location!
+	    This SOS button is for sending trouble (for help) pre-defined message to added
+	    contact numbers and set time duration with current location!
 	</string>
 	
 	<string name="help">
