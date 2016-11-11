@@ -89,7 +89,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 				.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
 					@Override
 					public void onPageSelected(int position) {
-
 						actionBar.setSelectedNavigationItem(position);
 					}
 				});

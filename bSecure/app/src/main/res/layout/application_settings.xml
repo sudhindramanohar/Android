@@ -3,42 +3,49 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-  <TextView android:layout_height="wrap_content" 
-      		android:layout_width="wrap_content" 
-      		android:textSize="20sp" android:textColor="@android:color/black"
-      		android:text="Setting Page" 
-      		android:layout_marginTop="15dp" 
-      		android:layout_marginLeft="30dp" 
-      		android:layout_alignParentTop="true" 
-      		android:layout_alignParentLeft="true" 
-      		android:id="@+id/txtstghead"/> 
-      		
-  <ListView android:layout_height="wrap_content" 
-      		android:layout_width="match_parent" 
-      		android:id="@+id/liscontact" 
-      		android:layout_below="@+id/btnaddcnt" 
-      		android:layout_alignRight="@+id/btnminute" 
-      		android:layout_alignLeft="@+id/btnhour" 
-      		android:layout_above="@+id/btnminute"
-      		android:background="@android:drawable/alert_dark_frame"> 
-  </ListView> 
-  
-  <Button android:layout_height="wrap_content" 
-      	  android:layout_width="wrap_content" 
-      	  android:text="Set Hour" 
-      	  android:id="@+id/btnhour" 
-      	  android:layout_alignRight="@+id/txtstghead" 
-      	  android:layout_alignLeft="@+id/btnsaveg" 
-      	  android:layout_above="@+id/btnsaveg" style="?android:attr/buttonStyleSmall"/>
-  <Button android:layout_height="wrap_content" 
-          android:layout_width="wrap_content" 
-          android:text="Add Contact" 
-          android:id="@+id/btnaddcnt" 
-          android:layout_below="@+id/btnsetmsg" 
-          android:layout_alignRight="@+id/btnsaveg" 
-          android:layout_alignLeft="@+id/liscontact" 
-          style="?android:attr/buttonStyleSmall"/>
-  <Button
+    <TextView
+        android:id="@+id/txtstghead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Setting Page"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnminute"
+        android:layout_alignLeft="@+id/btnhour"
+        android:layout_alignRight="@+id/btnminute"
+        android:layout_below="@+id/btnaddcnt"
+        android:background="@android:drawable/alert_dark_frame"></ListView>
+
+    <Button
+        android:id="@+id/btnhour"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsaveg"
+        android:layout_alignLeft="@+id/btnsaveg"
+        android:layout_alignRight="@+id/txtstghead"
+        android:text="Set Hour" />
+
+    <Button
+        android:id="@+id/btnaddcnt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listViewContact"
+        android:layout_alignRight="@+id/btnsaveg"
+        android:layout_below="@+id/btnsetmsg"
+        android:text="Add Contact" />
+
+    <Button
         android:id="@+id/btnsetmsg"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -48,33 +55,36 @@
         android:layout_below="@+id/txtstghead"
         android:layout_marginTop="19dp"
         android:text="Set Message" />
- 
- <Button android:layout_height="wrap_content" 
-         android:layout_width="wrap_content" 
-         android:text="Save" android:id="@+id/btnsaveg" 
-         android:layout_alignLeft="@+id/txtstghead" 
-         android:layout_marginRight="44dp" 
-         android:layout_marginBottom="48dp" 
-         android:layout_alignParentRight="true" 
-         android:layout_alignParentBottom="true"/>
- 
- <Button android:layout_height="wrap_content" 
-     	 android:layout_width="wrap_content" 
-     	 android:text="Set Minute" 
-     	 android:id="@+id/btnminute" 
-     	 android:layout_alignRight="@+id/btnsaveg" 
-     	 style="?android:attr/buttonStyleSmall" 
-     	 android:layout_toRightOf="@+id/btnhour" 
-     	 android:layout_alignBottom="@+id/btnhour" 
-     	 android:layout_alignBaseline="@+id/btnhour"/>
 
- <Button
-     android:id="@+id/btnshake"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_above="@+id/btnaddcnt"
-     android:layout_alignLeft="@+id/btnminute"
-     android:layout_alignRight="@+id/btnaddcnt"
-     android:text="Enable" />
+    <Button
+        android:id="@+id/btnsaveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtstghead"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="44dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnminute"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnhour"
+        android:layout_alignBottom="@+id/btnhour"
+        android:layout_alignRight="@+id/btnsaveg"
+        android:layout_toRightOf="@+id/btnhour"
+        android:text="Set Minute" />
+
+    <Button
+        android:id="@+id/btnshake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnaddcnt"
+        android:layout_alignLeft="@+id/btnminute"
+        android:layout_alignRight="@+id/btnaddcnt"
+        android:text="Enable" />
 
 </RelativeLayout>

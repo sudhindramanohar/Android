@@ -12,23 +12,23 @@
     <Button
         android:id="@+id/btnabtylw"
         android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_gravity="bottom|center"
-        android:text="About" />
+        android:background="@drawable/yellow_about_icon" />
 
     <Button
         android:id="@+id/btnsettingylw"
         android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_gravity="bottom|right"
-        android:text="Setting" />
+        android:background="@drawable/yellow_settings_icon" />
 
     <Button
         android:id="@+id/btnhomeylw"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|left"
-        android:text="Home" />
+        android:background="@drawable/yellow_home_icon" />
 
     <TextView
         android:id="@+id/txtyellowabt"
