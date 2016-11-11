@@ -89,7 +89,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 				.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
 					@Override
 					public void onPageSelected(int position) {
-
 						actionBar.setSelectedNavigationItem(position);
 					}
 				});
@@ -238,8 +237,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
-									.show();
 							textgreen.setVisibility(rootView.VISIBLE);
 							buttongreen.setVisibility(rootView.INVISIBLE);
 						}
@@ -251,8 +248,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
-									.show();
 							textgreen.setVisibility(rootView.INVISIBLE);
 							buttongreen.setVisibility(rootView.VISIBLE);
 						}
@@ -264,8 +259,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
-									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "green");
 							startActivity(i);
@@ -327,8 +320,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
-									.show();
 							textyellow.setVisibility(rootView.VISIBLE);
 							buttonyellow.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -342,8 +333,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
-									.show();
 							textyellow.setVisibility(rootView.INVISIBLE);
 							buttonyellow.setVisibility(rootView.VISIBLE);
 						}
@@ -355,8 +344,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
-									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "yellow");
 							startActivity(i);
@@ -419,8 +406,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "abt", Toast.LENGTH_SHORT)
-									.show();
 							textred.setVisibility(rootView.VISIBLE);
 							buttonred.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -434,8 +419,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "home", Toast.LENGTH_SHORT)
-									.show();
 							textred.setVisibility(rootView.INVISIBLE);
 							buttonred.setVisibility(rootView.VISIBLE);
 						}
@@ -447,8 +430,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							Toast.makeText(con, "application_settings", Toast.LENGTH_SHORT)
-									.show();
 							Intent i = new Intent(con, ApplicationSettings.class);
 							i.putExtra("signal", "red");
 							startActivity(i);
