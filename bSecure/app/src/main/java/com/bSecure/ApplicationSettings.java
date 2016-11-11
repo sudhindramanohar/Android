@@ -26,13 +26,13 @@ import android.widget.Toast;
 
 public class ApplicationSettings extends FragmentActivity {
     Context con = this;
-    SharedPreferences asetting, prefs;
+    SharedPreferences appSettingSharedPref, prefs;
     SharedPreferences.Editor edit, sedit;
     Button btnsave, btnsetmsg, btnh, btnm, bt, btnShake;
     Integer sec = 0, secm, mh, gsec, ysec, rsec, hour = 0, minute = 0, th, tm;
     String phoneNumber, gvalue, yvalue, rvalue, total;
     ListView lv;
-    ArrayList<String> strarr;
+    ArrayList<String> stringArrayList;
     ArrayAdapter<String> adapter;
     int xc = 0;
     Database db;
@@ -53,21 +53,21 @@ public class ApplicationSettings extends FragmentActivity {
         btnShake = (Button) findViewById(R.id.btnshake);
 
         Intent i = getIntent();
-        strarr = new ArrayList<String>();
+        stringArrayList = new ArrayList<String>();
         adapter = new ArrayAdapter<String>(getApplicationContext(),
-                android.R.layout.simple_list_item_1, strarr);
+                android.R.layout.simple_list_item_1, stringArrayList);
         lv.setAdapter(adapter);
-        asetting = getSharedPreferences("signal", 0);
+        appSettingSharedPref = getSharedPreferences("signal", 0);
         String msg = i.getStringExtra("signal");
         int flg = i.getFlags();
         Log.v("flag", String.valueOf(flg));
         Log.v("msg", msg);
-        edit = asetting.edit();
+        edit = appSettingSharedPref.edit();
         prefs = getSharedPreferences("shake", 0);
         sedit = prefs.edit();
 
-       /* if (prefs.getBoolean("shake", false) == false) {
-            btnShake.setText(prefs.getString("shakeon", "Disable"));
+       /* if (prefs.getBoolean("shake",true) == false) {
+            btnShake.setText("Disable");
         }*/
         btnShake.setOnClickListener(new View.OnClickListener() {
 
@@ -97,20 +97,20 @@ public class ApplicationSettings extends FragmentActivity {
         // Green Signal
         if (msg.equals("green")) {
             listcall("green");
-            int GHour = asetting.getInt("GHour", 0);
+            int GHour = appSettingSharedPref.getInt("GHour", 0);
 
             if (GHour == 0) {
                 btnh.setText("Set Hour");
             } else {
-                btnh.setText(asetting.getInt("GHour", 0) + " " + "Hour");
+                btnh.setText(appSettingSharedPref.getInt("GHour", 0) + " " + "Hour");
             }
 
-            int GMin = asetting.getInt("GMin", 0);
+            int GMin = appSettingSharedPref.getInt("GMin", 0);
 
             if (GMin == 0) {
                 btnm.setText("Set Minute");
             } else {
-                btnm.setText(asetting.getInt("GMin", 0) + " " + "Minute");
+                btnm.setText(appSettingSharedPref.getInt("GMin", 0) + " " + "Minute");
             }
             btnsetmsg.setOnClickListener(new View.OnClickListener() {
 
@@ -126,7 +126,7 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-                    int i = strarr.size();
+                    int i = stringArrayList.size();
                     if (i == 3 || i > 3) {
                         Toast.makeText(getApplicationContext(),
                                 "Maximum 3 Added !", Toast.LENGTH_SHORT).show();
@@ -155,7 +155,7 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    String s = strarr.get(index).toString();
+                                    String s = stringArrayList.get(index).toString();
                                     String in = String.valueOf(s.charAt(0));
                                     db.deletContact(in, "green");
                                     listcall("green");
@@ -202,7 +202,7 @@ public class ApplicationSettings extends FragmentActivity {
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
 
-                    if (strarr.size() > 0) {
+                    if (stringArrayList.size() > 0) {
 
                         gsec = getTime("green");
                         if (gsec == 0) {
@@ -229,20 +229,20 @@ public class ApplicationSettings extends FragmentActivity {
         // Yellow Signal
         if (msg.equals("yellow")) {
             listcall("yellow");
-            int YHour = asetting.getInt("YHour", 0);
+            int YHour = appSettingSharedPref.getInt("YHour", 0);
 
             if (YHour == 0) {
                 btnh.setText("Set Hour");
             } else {
-                btnh.setText(asetting.getInt("YHour", 0) + " " + "Hour");
+                btnh.setText(appSettingSharedPref.getInt("YHour", 0) + " " + "Hour");
             }
 
-            int YMin = asetting.getInt("YMin", 0);
+            int YMin = appSettingSharedPref.getInt("YMin", 0);
 
             if (YMin == 0) {
                 btnm.setText("Set Minute");
             } else {
-                btnm.setText(asetting.getInt("YMin", 0) + " " + "Minute");
+                btnm.setText(appSettingSharedPref.getInt("YMin", 0) + " " + "Minute");
             }
             btnsetmsg.setOnClickListener(new View.OnClickListener() {
 
@@ -259,7 +259,7 @@ public class ApplicationSettings extends FragmentActivity {
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
 
-                    int i = strarr.size();
+                    int i = stringArrayList.size();
                     if (i == 5 || i > 5) {
                         Toast.makeText(getApplicationContext(),
                                 "Maximum 5 Added !", Toast.LENGTH_SHORT).show();
@@ -289,7 +289,7 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    String s = strarr.get(index).toString();
+                                    String s = stringArrayList.get(index).toString();
                                     Log.v("s", s);
                                     String in = String.valueOf(s.charAt(0));
 
@@ -337,7 +337,7 @@ public class ApplicationSettings extends FragmentActivity {
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
 
-                    if (strarr.size() > 0) {
+                    if (stringArrayList.size() > 0) {
 
                         ysec = getTime("yellow");
                         if (ysec == 0) {
@@ -361,20 +361,20 @@ public class ApplicationSettings extends FragmentActivity {
         // Red Signal
         if (msg.equals("red")) {
             listcall("red");
-            int RHour = asetting.getInt("RHour", 0);
+            int RHour = appSettingSharedPref.getInt("RHour", 0);
 
             if (RHour == 0) {
                 btnh.setText("Set Hour");
             } else {
-                btnh.setText(asetting.getInt("RHour", 0) + " " + "Hour");
+                btnh.setText(appSettingSharedPref.getInt("RHour", 0) + " " + "Hour");
             }
 
-            int RMin = asetting.getInt("RMin", 0);
+            int RMin = appSettingSharedPref.getInt("RMin", 0);
 
             if (RMin == 0) {
                 btnm.setText("Set Minute");
             } else {
-                btnm.setText(asetting.getInt("RMin", 0) + " " + "Minute");
+                btnm.setText(appSettingSharedPref.getInt("RMin", 0) + " " + "Minute");
             }
             Log.v("msg", "red");
             btnsetmsg.setOnClickListener(new View.OnClickListener() {
@@ -390,7 +390,7 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-                    int i = strarr.size();
+                    int i = stringArrayList.size();
                     if (i == 7 || i > 7) {
                         Toast.makeText(getApplicationContext(),
                                 "Maximum 7 Added !", Toast.LENGTH_SHORT).show();
@@ -420,7 +420,7 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    String s = strarr.get(index).toString();
+                                    String s = stringArrayList.get(index).toString();
                                     String in = String.valueOf(s.charAt(0));
                                     db.deletContact(in, "red");
 
@@ -467,7 +467,7 @@ public class ApplicationSettings extends FragmentActivity {
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stu
 
-                    if (strarr.size() > 0) {
+                    if (stringArrayList.size() > 0) {
                         rsec = getTime("red");
                         if (rsec == 0) {
                             Toast.makeText(
@@ -493,16 +493,16 @@ public class ApplicationSettings extends FragmentActivity {
         String m = minute.toString();
 
         if (sig.equals("green")) {
-            hour = asetting.getInt("GHour", 0);
-            minute = asetting.getInt("GMin", 0);
+            hour = appSettingSharedPref.getInt("GHour", 0);
+            minute = appSettingSharedPref.getInt("GMin", 0);
         }
         if (sig.equals("yellow")) {
-            hour = asetting.getInt("YHour", 0);
-            minute = asetting.getInt("YMin", 0);
+            hour = appSettingSharedPref.getInt("YHour", 0);
+            minute = appSettingSharedPref.getInt("YMin", 0);
         }
         if (sig.equals("red")) {
-            hour = asetting.getInt("RHour", 0);
-            minute = asetting.getInt("RMin", 0);
+            hour = appSettingSharedPref.getInt("RHour", 0);
+            minute = appSettingSharedPref.getInt("RMin", 0);
         }
 
         if (hour > 0) {
@@ -657,9 +657,9 @@ public class ApplicationSettings extends FragmentActivity {
                     // for(c1.moveToFirst(); !c1.isAfterLast();c1.moveToNext()){
                     // Log.v("con",c1.getString(1).toString());
                     // }
-                    int s = strarr.size() - 1;
+                    int s = stringArrayList.size() - 1;
                     if (s >= 0) {
-                        str = strarr.get(s).toString();
+                        str = stringArrayList.get(s).toString();
                         Log.v("last", str);
                     }
 
@@ -669,12 +669,12 @@ public class ApplicationSettings extends FragmentActivity {
                                     + c1.getString(1))) {
                                 Log.v("no", "no selected");
                             } else {
-                                strarr.add(c1.getString(0) + "   "
+                                stringArrayList.add(c1.getString(0) + "   "
                                         + c1.getString(1));
                                 adapter.notifyDataSetChanged();
                             }
                         } else {
-                            strarr.add(c1.getString(0) + "   "
+                            stringArrayList.add(c1.getString(0) + "   "
                                     + c1.getString(1));
                             adapter.notifyDataSetChanged();
                         }
@@ -772,15 +772,15 @@ public class ApplicationSettings extends FragmentActivity {
                 if (tim.equals("hour")) {
                     // hour=0;
                     if (sig.equals("green")) {
-                        hour = asetting.getInt("GHour", 0);
+                        hour = appSettingSharedPref.getInt("GHour", 0);
                         edit.putInt("GHour", hour);
                     }
                     if (sig.equals("yellow")) {
-                        hour = asetting.getInt("YHour", 0);
+                        hour = appSettingSharedPref.getInt("YHour", 0);
                         edit.putInt("YHour", hour);
                     }
                     if (sig.equals("red")) {
-                        hour = asetting.getInt("RHour", 0);
+                        hour = appSettingSharedPref.getInt("RHour", 0);
                         edit.putInt("RHour", hour);
                     }
                     // btnh.setText("Set Hour");
@@ -790,15 +790,15 @@ public class ApplicationSettings extends FragmentActivity {
                 if (tim.equals("minute")) {
                     // minute=0;
                     if (sig.equals("green")) {
-                        minute = asetting.getInt("GMin", 0);
+                        minute = appSettingSharedPref.getInt("GMin", 0);
                         edit.putInt("GMin", minute);
                     }
                     if (sig.equals("yellow")) {
-                        minute = asetting.getInt("YMin", 0);
+                        minute = appSettingSharedPref.getInt("YMin", 0);
                         edit.putInt("YMin", minute);
                     }
                     if (sig.equals("red")) {
-                        minute = asetting.getInt("RMin", 0);
+                        minute = appSettingSharedPref.getInt("RMin", 0);
                         edit.putInt("RMin", minute);
                     }
 
@@ -820,7 +820,7 @@ public class ApplicationSettings extends FragmentActivity {
 
             final EditText input = new EditText(con);
             input.setId(0);
-            input.setText(asetting.getString("gmsg", ""));
+            input.setText(appSettingSharedPref.getString("gmsg", ""));
             builder.setView(input);
 
             builder.setPositiveButton("Ok",
@@ -854,7 +854,7 @@ public class ApplicationSettings extends FragmentActivity {
 
             final EditText input = new EditText(con);
             input.setId(0);
-            input.setText(asetting.getString("ymsg", ""));
+            input.setText(appSettingSharedPref.getString("ymsg", ""));
             builder.setView(input);
 
             builder.setPositiveButton("Ok",
@@ -888,7 +888,7 @@ public class ApplicationSettings extends FragmentActivity {
 
             final EditText input = new EditText(con);
             input.setId(0);
-            input.setText(asetting.getString("rmsg", ""));
+            input.setText(appSettingSharedPref.getString("rmsg", ""));
             builder.setView(input);
 
             builder.setPositiveButton("Ok",
@@ -918,9 +918,9 @@ public class ApplicationSettings extends FragmentActivity {
 
     public void listcall(String signal) {
         Cursor c1 = null;
-        strarr = new ArrayList<String>();
+        stringArrayList = new ArrayList<String>();
         adapter = new ArrayAdapter<String>(getApplicationContext(),
-                android.R.layout.simple_list_item_1, strarr);
+                android.R.layout.simple_list_item_1, stringArrayList);
         lv.setAdapter(adapter);
         Log.v("sur", "com");
         db = new Database(con);
@@ -942,7 +942,7 @@ public class ApplicationSettings extends FragmentActivity {
                 for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
 
                     if (Integer.parseInt(c1.getString(0)) > 0) {
-                        strarr.add(c1.getString(0) + "   " + c1.getString(1));
+                        stringArrayList.add(c1.getString(0) + "   " + c1.getString(1));
                         adapter.notifyDataSetChanged();
                     } else {
                         Log.v("list", "not found!");
