@@ -65,6 +65,10 @@ public class ApplicationSettings extends FragmentActivity {
         edit = asetting.edit();
         prefs = getSharedPreferences("shake", 0);
         sedit = prefs.edit();
+
+       /* if (prefs.getBoolean("shake", false) == false) {
+            btnShake.setText(prefs.getString("shakeon", "Disable"));
+        }*/
         btnShake.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -75,7 +79,7 @@ public class ApplicationSettings extends FragmentActivity {
                     sedit.putBoolean("shake", true);
                     sedit.putString("shakeon", "Disable");
                     sedit.commit();
-                    btnShake.setText(prefs.getString("shakeon", ""));
+                    btnShake.setText(prefs.getString("shakeon", "Disable"));
                     startService(new Intent(ApplicationSettings.this,
                             ShakeWakeupService.class));
                 } else {
