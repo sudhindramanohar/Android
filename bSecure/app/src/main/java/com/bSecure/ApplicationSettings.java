@@ -1,8 +1,6 @@
 package com.bSecure;
 
 import java.util.ArrayList;
-import java.util.StringTokenizer;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -40,7 +38,6 @@ public class ApplicationSettings extends FragmentActivity {
     ListView lv;
     ArrayList<String> stringArrayList;
     ArrayList<myContactData> arrlstContactData = new ArrayList<myContactData>();
-    //ArrayAdapter<String> adapter;
     CustomAdapter adapter;
     int xc = 0;
     Database db;
@@ -62,19 +59,10 @@ public class ApplicationSettings extends FragmentActivity {
         btnShake = (Button) findViewById(R.id.btnshake);
 
         Intent i = getIntent();
-        //stringArrayList = new ArrayList<String>();
-        //custom adapter code needed
-        //adapter = new ArrayAdapter<String>(getApplicationContext(),
-                //android.R.layout.simple_list_item_1, stringArrayList);
-       /* adapter = new ArrayAdapter<myContactData>(getApplicationContext(),
-                android.R.layout.simple_list_item_1, arrlstContactData);*/
-        //lv.setAdapter(adapter);
-        //lvContacts.setChoiceMode (ListView.CHOICE_MODE_MULTIPLE);
         lv.setAdapter (adapter);
 
         appSettingSharedPref = getSharedPreferences("signal", 0);
         String msg = i.getStringExtra("signal");
-        //Added by vicy
         if (msg.equals("green"))
         {
             btnShake.setEnabled(false);
@@ -83,7 +71,6 @@ public class ApplicationSettings extends FragmentActivity {
         {
             btnShake.setEnabled(false);
         }
-        // till here
         int flg = i.getFlags();
         Log.v("flag", String.valueOf(flg));
         Log.v("msg", msg);
@@ -91,16 +78,10 @@ public class ApplicationSettings extends FragmentActivity {
         edit = appSettingSharedPref.edit();
         prefs = getSharedPreferences("shake", 0);
         sedit = prefs.edit();
-
-       /* if (prefs.getBoolean("shake",true) == false) {
-            btnShake.setText("Disable");
-        }*/
-        // Added by Vicky
         String sp = prefs.getString("shakeon",null);
         if (sp != null) {
             btnShake.setText(prefs.getString("shakeon", ""));
         }
-        // till here
         btnShake.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -158,7 +139,6 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-                    //int i = stringArrayList.size();
                     int i = arrlstContactData.size();
                     if (i == 3 || i > 3) {
                         Toast.makeText(getApplicationContext(),
@@ -168,47 +148,9 @@ public class ApplicationSettings extends FragmentActivity {
                         Intent intent = new Intent(Intent.ACTION_PICK,
                                 ContactsContract.Contacts.CONTENT_URI);
                         startActivityForResult(intent, 2);
-                        // counter++;
                     }
                 }
             });
-    /*        lv.setOnItemClickListener(new OnItemClickListener() {
-
-                @Override
-                public void onItemClick(AdapterView<?> arg0, View arg1,
-                                        final int index, long arg3) {
-                    // TODO Auto-generated method stub
-                    AlertDialog.Builder builder = new AlertDialog.Builder(con);
-                    builder.setTitle("Hello User");
-                    builder.setMessage("Are you want delete contact ?");
-
-                    builder.setPositiveButton("Yes",
-                            new DialogInterface.OnClickListener() {
-
-                                @Override
-                                public void onClick(DialogInterface dialog,
-                                                    int whichButton) {
-                                    //String s = stringArrayList.get(index).toString();
-                                    //String in = String.valueOf(s.charAt(0));
-                                    String in = arrlstContactData.get(index).strID;
-                                    db.deletContact(in, "green");
-                                    listcall("green");
-                                }
-                            })
-                            .setNegativeButton("No",
-                                    new DialogInterface.OnClickListener() {
-
-                                        @Override
-                                        public void onClick(
-                                                DialogInterface dialog,
-                                                int which) {
-
-                                        }
-                                    }).show();
-
-                }
-
-            });*/
 
             btnh.setOnClickListener(new View.OnClickListener() {
 
@@ -235,8 +177,6 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-
-                    //if (stringArrayList.size() > 0) {
                     if (arrlstContactData.size() > 0) {
 
                         gsec = getTime("green");
@@ -293,8 +233,6 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-
-                    //int i = stringArrayList.size();
                     int i = arrlstContactData.size();
                     if (i == 5 || i > 5) {
                         Toast.makeText(getApplicationContext(),
@@ -304,7 +242,6 @@ public class ApplicationSettings extends FragmentActivity {
                         Intent intent = new Intent(Intent.ACTION_PICK,
                                 ContactsContract.Contacts.CONTENT_URI);
                         startActivityForResult(intent, 4);
-                        // counter++;
                     }
                 }
             });
@@ -325,11 +262,7 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    //String s = stringArrayList.get(index).toString();
-                                    //Log.v("s", s);
-                                    //String in = String.valueOf(s.charAt(0));
                                     String in = arrlstContactData.get(index).strID;
-
                                     db.deletContact(in, "yellow");
                                     listcall("yellow");
 
@@ -373,8 +306,6 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-
-                    //if (stringArrayList.size() > 0) {
                     if (arrlstContactData.size() > 0) {
 
                         ysec = getTime("yellow");
@@ -428,7 +359,6 @@ public class ApplicationSettings extends FragmentActivity {
                 @Override
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
-                    //int i = stringArrayList.size();
                     int i = arrlstContactData.size();
                     if (i == 7 || i > 7) {
                         Toast.makeText(getApplicationContext(),
@@ -438,7 +368,6 @@ public class ApplicationSettings extends FragmentActivity {
                         Intent intent = new Intent(Intent.ACTION_PICK,
                                 ContactsContract.Contacts.CONTENT_URI);
                         startActivityForResult(intent, 6);
-                        // counter++;
                     }
                 }
             });
@@ -459,8 +388,6 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    //String s = stringArrayList.get(index).toString();
-                                    //String in = String.valueOf(s.charAt(0));
                                     String in = arrlstContactData.get(index).strID;
                                     db.deletContact(in, "red");
 
@@ -505,9 +432,7 @@ public class ApplicationSettings extends FragmentActivity {
 
                 @Override
                 public void onClick(View arg0) {
-                    // TODO Auto-generated method stu
-
-                    //if (stringArrayList.size() > 0) {
+                    // TODO Auto-generated method stub
                     if (arrlstContactData.size() > 0) {
                         rsec = getTime("red");
                         if (rsec == 0) {
@@ -558,7 +483,6 @@ public class ApplicationSettings extends FragmentActivity {
         if (minute > 0) {
             Log.v("m", minute.toString());
             secm = minute * 60;
-            // Toast.makeText(con, secm.toString(), Toast.LENGTH_SHORT).show();
             Log.v("sm", secm.toString());
             sec += secm;
             Log.v("s", sec.toString());
@@ -595,8 +519,6 @@ public class ApplicationSettings extends FragmentActivity {
 
         if (resultCode == Activity.RESULT_OK) {
             String s = data.getData().toString();
-            // Integer n=reqCode;
-            // Log.v("rc",n.toString());
             Uri contactData = data.getData();
 
             @SuppressWarnings("deprecation")
@@ -660,9 +582,6 @@ public class ApplicationSettings extends FragmentActivity {
                                     .show();
                             Log.v("data", "fail");
                         }
-                        // phoneCursor.close();
-
-                        //phoneNumber = null;
 
                         Toast.makeText(getApplicationContext(), name,
                                 Toast.LENGTH_SHORT).show();
@@ -691,21 +610,14 @@ public class ApplicationSettings extends FragmentActivity {
             xc = 0;
             Log.v("concatch", String.valueOf(xc));
         } else {
-            //String str = null;
             myContactData str=null;
             Cursor c1 = db.getContact(signal);
 
             if (c1.getCount() > 0) {
                 if (c1.moveToLast()) {
-                    // for(c1.moveToFirst(); !c1.isAfterLast();c1.moveToNext()){
-                    // Log.v("con",c1.getString(1).toString());
-                    // }
-                    //int s = stringArrayList.size() - 1;
                     int s = arrlstContactData.size() - 1;
                     if (s >= 0) {
-                        //str = stringArrayList.get(s).toString();
                         str = arrlstContactData.get(s);
-                        //Log.v("last", str);
                     }
 
                     if (Integer.parseInt(c1.getString(0)) > 0) {
@@ -713,15 +625,11 @@ public class ApplicationSettings extends FragmentActivity {
                             if ((str!=null)&&(str.strID.equals(c1.getString(0)) && str.strNumber.equals(c1.getString(1))))   {
                                 Log.v("no", "no selected");
                             } else {
-                                //stringArrayList.add(c1.getString(0) + "   "
-                                        //+ c1.getString(1));
                                 myContactData tempContact = new myContactData(name, phoneNumber, contact_id);
                                 arrlstContactData.add(tempContact);
                                 adapter.notifyDataSetChanged();
                             }
                         } else {
-                            //stringArrayList.add(c1.getString(0) + "   "
-                                    //+ c1.getString(1));
                             myContactData tempContact = new myContactData(name, phoneNumber, contact_id);
                             arrlstContactData.add(tempContact);
                             adapter.notifyDataSetChanged();
@@ -831,7 +739,6 @@ public class ApplicationSettings extends FragmentActivity {
                         hour = appSettingSharedPref.getInt("RHour", 0);
                         edit.putInt("RHour", hour);
                     }
-                    // btnh.setText("Set Hour");
 
                 }
 
@@ -1003,9 +910,6 @@ public class ApplicationSettings extends FragmentActivity {
 
     myContactData getContactDetails (String strID, String strName, String strPhoneno)
     {
-        /*Cursor c = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
-                ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = ?",
-                new String[]{strID}, null);*/
         Log.d("Name", strName);
         Log.d("ID", strID);
         Log.d("Number", strPhoneno);
@@ -1073,12 +977,8 @@ public class ApplicationSettings extends FragmentActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int whichButton) {
-                                    //String s = stringArrayList.get(index).toString();
-                                    //String in = String.valueOf(s.charAt(0));
-                                    String in = curContact.strID;//arrlstContactData.get(index).strID;
-                                    //db.deletContact(in, "green");
+                                    String in = curContact.strID;
                                     db.deletContact(in, strSignal);
-                                    //ApplicationSettings a = new ApplicationSettings();
                                     listcall(strSignal);
 
                                 }
