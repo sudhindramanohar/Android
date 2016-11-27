@@ -42,7 +42,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 	public static final String PREFS_NAME = "MyPrefs";
 
 	static WidgetReceiver wm = new WidgetReceiver();
-	//static LocationFinder gl = new LocationFinder();
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
