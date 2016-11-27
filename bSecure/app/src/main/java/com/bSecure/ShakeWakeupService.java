@@ -21,17 +21,12 @@ public class ShakeWakeupService extends Service implements SensorEventListener {
 	private static final int SHAKE_DURATION = 1000;
 	private static final int SHAKE_COUNT = 3;
 	Context context = this;
-
-	// private SensorManager mSensorMgr;
 	private float mLastX = -1.0f, mLastY = -1.0f, mLastZ = -1.0f;
 	private long mLastTime;
-	// private OnShakeListener mShakeListener;
 	private Context mContext;
 	private int mShakeCount = 0;
 	private long mLastShake;
 	private long mLastForce;
-
-	// ----------------------------------------bruno's tutorial stuff
 	SensorManager mSensorEventManager;
 
 	Sensor mSensor;
@@ -42,7 +37,7 @@ public class ShakeWakeupService extends Service implements SensorEventListener {
 		public void onReceive(Context context, Intent intent) {
 			// Check action just to be on the safe side.
 			if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-				Log.v("shake mediator screen off", "trying re-registration");
+				Log.v("bsecure", "bsecure");
 				// Unregisters the listener and registers it again.
 				mSensorEventManager.unregisterListener(ShakeWakeupService.this);
 				mSensorEventManager.registerListener(ShakeWakeupService.this,
@@ -118,8 +113,6 @@ public class ShakeWakeupService extends Service implements SensorEventListener {
 	public void onSensorChanged(SensorEvent event) {
 		if (event.sensor.getType() != Sensor.TYPE_ACCELEROMETER)
 			return;
-
-		// Log.v("sensor", "sensor change is verifying");
 		long now = System.currentTimeMillis();
 
 		if ((now - mLastForce) > SHAKE_TIMEOUT) {
