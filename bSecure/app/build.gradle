@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:19'
-    buildToolsVersion "24.0.3"
+    compileSdkVersion 21
+    buildToolsVersion "21.0.0"
 
     defaultConfig {
         applicationId "com.bSecure"
-        minSdkVersion 11
-        targetSdkVersion 19
+        minSdkVersion 16
+        targetSdkVersion 21
     }
 
     buildTypes {
@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:21.0.0'
     compile 'com.google.android.gms:play-services:5.0.89'
     compile files('libs/google-play-services_lib.jar')
 }

@@ -56,8 +56,7 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
                         Log.v("con", c1.getString(1));
                         try {
                             Log.v("msg", c1.getString(1));
-                            sms.sendTextMessage(c1.getString(1), null, s + " "
-                                    + gmsg, null, null);
+                            sms.sendTextMessage(c1.getString(1), null, s , null, null);
                         } catch (Exception e) {
                             Log.v("msg", "send fail!");
                         }

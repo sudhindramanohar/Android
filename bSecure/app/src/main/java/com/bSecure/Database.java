@@ -17,6 +17,7 @@ public class Database extends SQLiteOpenHelper {
 	private static final String TABLE_RCONTACT = "red";
 	private static final String KEY_ID = "id";
 	private static final String KEY_NAME = "name";
+	private static final String KEY_PHONENO ="phoneno";
 
 	public Database(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -27,15 +28,15 @@ public class Database extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
 		String CREATE_TABLEG = "CREATE TABLE " + TABLE_GCONTACT + "(" + KEY_ID
-				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT)";
+				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT, " + KEY_PHONENO + " TEXT)";
 		db.execSQL(CREATE_TABLEG);
 
 		String CREATE_TABLEY = "CREATE TABLE " + TABLE_YCONTACT + "(" + KEY_ID
-				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT)";
+				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT, " + KEY_PHONENO + " TEXT)";
 		db.execSQL(CREATE_TABLEY);
 
 		String CREATE_TABLER = "CREATE TABLE " + TABLE_RCONTACT + "(" + KEY_ID
-				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT)";
+				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT, " + KEY_PHONENO + " TEXT)";
 		db.execSQL(CREATE_TABLER);
 	}
 
@@ -55,14 +56,17 @@ public class Database extends SQLiteOpenHelper {
 		ContentValues values = new ContentValues();
 		if (sig.equals("green")) {
 			values.put(KEY_NAME, data.getName1());
+			values.put(KEY_PHONENO, data.getPhone_no());
 			db.insert(TABLE_GCONTACT, null, values);
 		}
 		if (sig.equals("yellow")) {
 			values.put(KEY_NAME, data.getName1());
+			values.put(KEY_PHONENO, data.getPhone_no());
 			db.insert(TABLE_YCONTACT, null, values);
 		}
 		if (sig.equals("red")) {
 			values.put(KEY_NAME, data.getName1());
+			values.put(KEY_PHONENO, data.getPhone_no());
 			db.insert(TABLE_RCONTACT, null, values);
 		}
 	}
@@ -81,7 +85,7 @@ public class Database extends SQLiteOpenHelper {
 			table = TABLE_RCONTACT;
 		}
 		Cursor mCursor = db.query(true, table,
-				new String[] { KEY_ID, KEY_NAME }, null, null, null, null,
+				new String[] { KEY_ID, KEY_NAME, KEY_PHONENO}, null, null, null, null,
 				null, null);
 
 		if (mCursor != null) {

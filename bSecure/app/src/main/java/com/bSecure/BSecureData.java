@@ -1,29 +1,20 @@
 package com.bSecure;
 
 public class BSecureData {
-	int _id;
-	String _name;
-	/*
-	 * String _password; String _address; String _phone;
-	 */
 
+	String phone_no;
 	String _cname;
+	public String getPhone_no() {
+		return phone_no;
+	}
 
-	public BSecureData(int id, String cname) {
-		this._id = id;
+	public void setPhone_no(String phone_no) {
+		this.phone_no = phone_no;
+	}
+
+	public BSecureData(String cname, String phone_no) {
 		this._cname = cname;
-	}
-
-	public BSecureData(String cname) {
-		this._cname = cname;
-	}
-
-	public int getId1() {
-		return this._id;
-	}
-
-	public void setId1(int id) {
-		this._id = id;
+		this.phone_no =phone_no;
 	}
 
 	public String getName1() {
