@@ -10,7 +10,6 @@ import android.os.SystemClock;
 import android.telephony.gsm.SmsManager;
 import android.util.Log;
 import android.widget.Toast;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -115,11 +114,6 @@ public class AlarmScheduler {
             Intent i = new Intent(ctxt, MessageSender.class);
 
             Log.v("hi", "ycreate " + msg + sm);
-            /*
-			 * Intent intent = new Intent(ctxt,AudioRecorder.class); // add infos for
-			 * the service which file to download and where to store
-			 * intent.putExtra("audio", "loc"); ctxt.startService(intent);
-			 */
             LocationFinder gl = new LocationFinder();
             gl.getlc(ctxt, "yellow");
             ymsg = appSetting.getString("ymsg1", "");
@@ -200,8 +194,6 @@ public class AlarmScheduler {
             ctxt.stopService(new Intent(ctxt, AudioRecorder.class));
 
             Intent intent = new Intent(ctxt, AudioRecorder.class);
-            // add infos for the service which file to download and where to
-            // store
             intent.putExtra("audio", "start");
             start = 1;
             ctxt.startService(intent);
@@ -298,5 +290,4 @@ public class AlarmScheduler {
     }
 
     // Get Location
-
 }
