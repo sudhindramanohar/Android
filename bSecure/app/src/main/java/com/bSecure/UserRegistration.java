@@ -113,6 +113,6 @@ public class UserRegistration extends Activity {
 	}
 
 	public void showMessage() {
-		Toast.makeText(this, "Data Succesfully Saved", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "User Registered", Toast.LENGTH_LONG).show();
 	}
 }
