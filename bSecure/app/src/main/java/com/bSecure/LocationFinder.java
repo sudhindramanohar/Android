@@ -19,9 +19,8 @@ public class LocationFinder {
 	static String gm;
 	static SharedPreferences asetting;
 	static SharedPreferences.Editor edit;
-	static String smsg, gmsg;
-	static String ymsg;
-	static String rmsg;
+	static String smsg;
+
 
 	public LocationFinder() {
 		// TODO Auto-generated constructor stub
@@ -39,15 +38,12 @@ public class LocationFinder {
 
 			latitude = gps.getLatitude();
 			longitude = gps.getLongitude();
-			// Toast.makeText(c, "Your Location is - \nLat: " + latitude +
-			// "\nLong: " + longitude, Toast.LENGTH_LONG).show();
 		} else {
 			// can't get location
 			// GPS or Network is not enabled
 			// Ask user to enable GPS/network in settings
 			Intent in = new Intent(c, GPSActivation.class);
 			c.startActivity(in);
-			// gps.showSettingsAlert();
 		}
 		Geocoder geocoder;
 		List<Address> addresses = null;
