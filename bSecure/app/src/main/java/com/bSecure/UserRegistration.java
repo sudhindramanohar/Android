@@ -93,7 +93,7 @@ public class UserRegistration extends Activity {
 							}
 
 							else {
-								Toast.makeText(UserRegistration.this, "Invalid Mobile number", Toast.LENGTH_LONG).show();
+								Toast.makeText(UserRegistration.this, "Enter Valid Mobile number", Toast.LENGTH_LONG).show();
 							}
 						}
 
