@@ -21,9 +21,7 @@ public class MainSplashScreen extends Activity {
 		an.reset();
 		im.startAnimation(an);
 
-		// METHOD 1
-
-		/****** Create Thread that will sleep for 5 seconds *************/
+		/****** Create Thread that will sleep for 2 seconds *************/
 		Thread background = new Thread() {
 			public void run() {
 
@@ -31,7 +29,7 @@ public class MainSplashScreen extends Activity {
 					// Thread will sleep for 5 seconds
 					sleep(2 * 1000);
 
-					// After 5 seconds redirect to another intent
+					// After 2 seconds redirect to another intent
 
 					Intent i = new Intent(getBaseContext(), UserRegistration.class);
 					startActivity(i);
@@ -47,19 +45,6 @@ public class MainSplashScreen extends Activity {
 
 		// start thread
 		background.start();
-
-		// METHOD 2
-
-		/*
-		 * new Handler().postDelayed(new Runnable() {
-		 * 
-		 * // Using handler with postDelayed called runnable run method
-		 * 
-		 * @Override public void run() { Intent i = new
-		 * Intent(MainSplashScreen.this, FirstScreen.class); startActivity(i);
-		 * 
-		 * // close this activity finish(); } }, 5*1000); // wait for 5 seconds
-		 */
 	}
 
 	@Override
