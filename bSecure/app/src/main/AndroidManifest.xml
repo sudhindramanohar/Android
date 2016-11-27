@@ -19,7 +19,6 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -73,7 +72,6 @@
         </receiver>
 
         <service android:name="com.bSecure.MessageSender"></service>
-        <!--<activity android:name="UserRegistration"></activity>-->
         <activity android:name="com.bSecure.WidgetSettings"></activity>
         <activity android:name="com.bSecure.UserRegistration"></activity>
         <activity android:name="com.bSecure.ApplicationSettings"></activity>
