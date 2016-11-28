@@ -127,7 +127,7 @@ public class AlarmScheduler {
                         Log.v("con", c1.getString(1));
                         try {
 
-                            sms.sendTextMessage(c1.getString(1), null, s, null,
+                            sms.sendTextMessage(c1.getString(2), null, s, null,
                                     null);
                             Log.v("msg", c1.getString(1));
                             String timeStamp = new SimpleDateFormat("HHmmss")

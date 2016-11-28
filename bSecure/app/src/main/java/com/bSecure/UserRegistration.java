@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class UserRegistration extends Activity {
-	EditText name, mobile_no, email;
+	EditText name, mobile_no, email,emailPassword;;
 	SharedPreferences regpage;
 	SharedPreferences.Editor edit;
 	SharedPreferences setting;
@@ -45,7 +45,7 @@ public class UserRegistration extends Activity {
 			edit = regpage.edit();
 			name = (EditText) findViewById(R.id.name);
 			mobile_no = (EditText) findViewById(R.id.mobile_no);
-
+			emailPassword = (EditText) findViewById(R.id.textEmailPwd);
 			email = (EditText) findViewById(R.id.email);
 			submitbutton = (Button) findViewById(R.id.submit);
 
@@ -56,7 +56,7 @@ public class UserRegistration extends Activity {
 					try {
 						if (name.getText().toString().equals("")
 								|| mobile_no.getText().toString().equals("")
-								|| email.getText().toString().equals("")) {
+								|| email.getText().toString().equals("") || emailPassword.getText().toString().equals("")) {
 							Toast.makeText(UserRegistration.this, "Please Fill All Data",
 									Toast.LENGTH_SHORT).show();
 
@@ -75,6 +75,7 @@ public class UserRegistration extends Activity {
 											.toString());
 									edit.putString("email", email.getText()
 											.toString());
+									edit.putString("emailPassword", emailPassword.getText().toString());
 									edit.commit();
 
 									showMessage();

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 161
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 244
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 317
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 400
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 483
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 556
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 629
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 703
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 776
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 860
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 941
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1012
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1084
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1161
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1227
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1312
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1386
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1456
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 1527
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 1594
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 1662
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 1721
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 1778
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_colors.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 4903
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\dimens.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 4959
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\dimens.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 5026
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\version.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\version.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 5079
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 5126
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 1,
@@ -543,7 +543,7 @@
                     "endOffset": 5171
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 5297
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 5453
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 5578
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 5717
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 5841
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 6029
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 6219
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 6342
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 6507
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 6601
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 6738
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 6879
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 6969
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -809,7 +809,7 @@
                     "endOffset": 7125
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -828,7 +828,7 @@
                     "endOffset": 7273
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -847,7 +847,7 @@
                     "endOffset": 7376
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -866,7 +866,7 @@
                     "endOffset": 7487
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -885,7 +885,7 @@
                     "endOffset": 7650
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -904,7 +904,7 @@
                     "endOffset": 7867
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -923,7 +923,7 @@
                     "endOffset": 7962
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
@@ -942,7 +942,7 @@
                     "endOffset": 8067
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -961,7 +961,7 @@
                     "endOffset": 8223
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -980,7 +980,7 @@
                     "endOffset": 8348
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -999,7 +999,7 @@
                     "endOffset": 8410
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 84,
                         "startColumn": 4,
@@ -1018,7 +1018,7 @@
                     "endOffset": 8489
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -1037,7 +1037,7 @@
                     "endOffset": 8539
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1057,7 +1057,7 @@
                     "endOffset": 8752
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 1,
@@ -1077,7 +1077,7 @@
                     "endOffset": 8805
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1092,32 +1092,32 @@
                     "startLine": 100,
                     "startColumn": 4,
                     "startOffset": 8810,
-                    "endLine": 108,
+                    "endLine": 105,
                     "endColumn": 10,
-                    "endOffset": 9146
+                    "endOffset": 9090
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 33,
+                        "startLine": 31,
                         "startColumn": 1,
-                        "startOffset": 1300,
-                        "endLine": 41,
+                        "startOffset": 1222,
+                        "endLine": 36,
                         "endColumn": 10,
-                        "endOffset": 1644
+                        "endOffset": 1507
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 9151,
+                    "startOffset": 9095,
                     "endColumn": 39,
-                    "endOffset": 9186
+                    "endOffset": 9130
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 1,
@@ -1129,14 +1129,14 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 9191,
+                    "startOffset": 9135,
                     "endColumn": 44,
-                    "endOffset": 9231
+                    "endOffset": 9175
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 1,
@@ -1148,14 +1148,14 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 9236,
+                    "startOffset": 9180,
                     "endColumn": 48,
-                    "endOffset": 9280
+                    "endOffset": 9224
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 1,
@@ -1167,14 +1167,14 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 9285,
+                    "startOffset": 9229,
                     "endColumn": 46,
-                    "endOffset": 9327
+                    "endOffset": 9271
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 1,
@@ -1186,35 +1186,35 @@
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9332,
-                    "endLine": 117,
+                    "startOffset": 9276,
+                    "endLine": 113,
                     "endColumn": 10,
-                    "endOffset": 9550
+                    "endOffset": 9461
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 26,
                         "startColumn": 1,
-                        "startOffset": 1072,
-                        "endLine": 31,
+                        "startOffset": 1028,
+                        "endLine": 29,
                         "endColumn": 10,
-                        "endOffset": 1294
+                        "endOffset": 1216
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 9555,
+                    "startOffset": 9466,
                     "endColumn": 57,
-                    "endOffset": 9608
+                    "endOffset": 9519
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 1,
@@ -1226,14 +1226,14 @@
             },
             {
                 "to": {
-                    "startLine": 119,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 9613,
+                    "startOffset": 9524,
                     "endColumn": 51,
-                    "endOffset": 9660
+                    "endOffset": 9571
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 1,
@@ -1245,14 +1245,14 @@
             },
             {
                 "to": {
-                    "startLine": 120,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 9665,
+                    "startOffset": 9576,
                     "endColumn": 39,
-                    "endOffset": 9700
+                    "endOffset": 9611
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 1,
@@ -1264,14 +1264,14 @@
             },
             {
                 "to": {
-                    "startLine": 121,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 9705,
+                    "startOffset": 9616,
                     "endColumn": 189,
-                    "endOffset": 9890
+                    "endOffset": 9801
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1284,36 +1284,36 @@
             },
             {
                 "to": {
-                    "startLine": 122,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 9895,
-                    "endLine": 126,
+                    "startOffset": 9806,
+                    "endLine": 121,
                     "endColumn": 10,
-                    "endOffset": 10116
+                    "endOffset": 9984
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 1,
                         "startOffset": 841,
-                        "endLine": 25,
+                        "endLine": 24,
                         "endColumn": 10,
-                        "endOffset": 1066
+                        "endOffset": 1022
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 127,
+                    "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 10121,
-                    "endLine": 133,
+                    "startOffset": 9989,
+                    "endLine": 128,
                     "endColumn": 12,
-                    "endOffset": 10407
+                    "endOffset": 10275
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1326,15 +1326,15 @@
             },
             {
                 "to": {
-                    "startLine": 134,
+                    "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 10412,
-                    "endLine": 136,
+                    "startOffset": 10280,
+                    "endLine": 131,
                     "endColumn": 12,
-                    "endOffset": 10567
+                    "endOffset": 10435
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1347,15 +1347,15 @@
             },
             {
                 "to": {
-                    "startLine": 137,
+                    "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 10572,
-                    "endLine": 144,
+                    "startOffset": 10440,
+                    "endLine": 139,
                     "endColumn": 10,
-                    "endOffset": 10991
+                    "endOffset": 10859
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\admob_iap_style.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\admob_iap_style.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 2,
@@ -1368,15 +1368,15 @@
             },
             {
                 "to": {
-                    "startLine": 145,
+                    "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 10996,
-                    "endLine": 152,
+                    "startOffset": 10864,
+                    "endLine": 147,
                     "endColumn": 12,
-                    "endOffset": 11520
+                    "endOffset": 11388
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1389,15 +1389,15 @@
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 11525,
-                    "endLine": 155,
+                    "startOffset": 11393,
+                    "endLine": 150,
                     "endColumn": 12,
-                    "endOffset": 11704
+                    "endOffset": 11572
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1410,15 +1410,15 @@
             },
             {
                 "to": {
-                    "startLine": 156,
+                    "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 11709,
-                    "endLine": 163,
+                    "startOffset": 11577,
+                    "endLine": 158,
                     "endColumn": 12,
-                    "endOffset": 12233
+                    "endOffset": 12101
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1431,15 +1431,15 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 12238,
-                    "endLine": 176,
+                    "startOffset": 12106,
+                    "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 13231
+                    "endOffset": 13099
                 },
                 "from": {
-                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
+                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\values\\wallet_styles.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,

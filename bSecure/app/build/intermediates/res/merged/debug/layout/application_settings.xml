@@ -1,81 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bkpage" >
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-  <TextView android:layout_height="wrap_content" 
-      		android:layout_width="wrap_content" 
-      		android:textSize="20sp" android:textColor="@android:color/white" 
-      		android:text="Setting Page" 
-      		android:layout_marginTop="15dp" 
-      		android:layout_marginLeft="30dp" 
-      		android:layout_alignParentTop="true" 
-      		android:layout_alignParentLeft="true" 
-      		android:id="@+id/txtstghead"/> 
-      		
-  <ListView android:layout_height="wrap_content" 
-      		android:layout_width="match_parent" 
-      		android:id="@+id/liscontact" 
-      		android:layout_below="@+id/btnaddcnt" 
-      		android:layout_alignRight="@+id/btnminute" 
-      		android:layout_alignLeft="@+id/btnhour" 
-      		android:layout_above="@+id/btnminute"
-      		android:background="@android:drawable/alert_dark_frame"> 
-  </ListView> 
-  
-  <Button android:layout_height="wrap_content" 
-      	  android:layout_width="wrap_content" 
-      	  android:text="Set Hour" 
-      	  android:id="@+id/btnhour" 
-      	  android:layout_alignRight="@+id/txtstghead" 
-      	  android:layout_alignLeft="@+id/btnsaveg" 
-      	  android:layout_above="@+id/btnsaveg" style="?android:attr/buttonStyleSmall"/>
-  <Button android:layout_height="wrap_content" 
-          android:layout_width="wrap_content" 
-          android:text="Add Contact" 
-          android:id="@+id/btnaddcnt" 
-          android:layout_below="@+id/btnsetmsg" 
-          android:layout_alignRight="@+id/btnsaveg" 
-          android:layout_alignLeft="@+id/liscontact" 
-          style="?android:attr/buttonStyleSmall"/>
-  <Button
-        android:id="@+id/btnsetmsg"
-        style="?android:attr/buttonStyleSmall"
+    <TextView
+        android:id="@+id/txtstghead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnaddcnt"
-        android:layout_alignRight="@+id/txtstghead"
-        android:layout_below="@+id/txtstghead"
-        android:layout_marginTop="19dp"
-        android:text="Set Message" />
- 
- <Button android:layout_height="wrap_content" 
-         android:layout_width="wrap_content" 
-         android:text="Save" android:id="@+id/btnsaveg" 
-         android:layout_alignLeft="@+id/txtstghead" 
-         android:layout_marginRight="44dp" 
-         android:layout_marginBottom="48dp" 
-         android:layout_alignParentRight="true" 
-         android:layout_alignParentBottom="true"/>
- 
- <Button android:layout_height="wrap_content" 
-     	 android:layout_width="wrap_content" 
-     	 android:text="Set Minute" 
-     	 android:id="@+id/btnminute" 
-     	 android:layout_alignRight="@+id/btnsaveg" 
-     	 style="?android:attr/buttonStyleSmall" 
-     	 android:layout_toRightOf="@+id/btnhour" 
-     	 android:layout_alignBottom="@+id/btnhour" 
-     	 android:layout_alignBaseline="@+id/btnhour"/>
+        android:text="Setting Page"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
- <Button
-     android:id="@+id/btnshake"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_above="@+id/btnaddcnt"
-     android:layout_alignLeft="@+id/btnminute"
-     android:layout_alignRight="@+id/btnaddcnt"
-     android:text="Enable" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnsetmsg"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Message"
+            android:layout_width="187dp"
+            android:layout_weight="0.38" />
+
+        <Button
+            android:id="@+id/btnshake"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Shake Enable"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.29" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnaddcnt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/images"
+        android:text="Add Contact" />
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:layout_weight="0.82"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnhour"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="189dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Hour" />
+
+        <Button
+            android:id="@+id/btnminute"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Minute" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsaveg"
+        android:layout_width="match_parent"
+        android:background="@drawable/images"
+        android:text="Save"
+        android:layout_gravity="bottom"
+        android:layout_height="45dp" />
+
+
+</LinearLayout>

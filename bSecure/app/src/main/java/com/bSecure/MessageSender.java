@@ -53,10 +53,10 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
             if (c1.getCount() > 0) {
                 if (c1.moveToLast()) {
                     for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-                        Log.v("con", c1.getString(1));
+                        Log.v("con", c1.getString(2));
                         try {
-                            Log.v("msg", c1.getString(1));
-                            sms.sendTextMessage(c1.getString(1), null, s , null, null);
+                            Log.v("msg", c1.getString(2));
+                            sms.sendTextMessage(c1.getString(2), null, s , null, null);
                         } catch (Exception e) {
                             Log.v("msg", "send fail!");
                         }
@@ -107,9 +107,9 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
             if (c1.getCount() > 0) {
                 if (c1.moveToLast()) {
                     for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-                        Log.v("con", c1.getString(1));
+                        Log.v("con", c1.getString(2));
                         try {
-                            sms.sendTextMessage(c1.getString(1), null, s + " "
+                            sms.sendTextMessage(c1.getString(2), null, s + " "
                                     + rmsg, null, null);
                             Log.v("msg", c1.getString(1));
                         } catch (Exception e) {
