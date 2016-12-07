@@ -7,9 +7,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.SystemClock;
-import android.telephony.gsm.SmsManager;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Toast;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -124,7 +125,7 @@ public class AlarmScheduler {
             if (c1.getCount() > 0) {
                 if (c1.moveToLast()) {
                     for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-                        Log.v("con", c1.getString(1));
+                        Log.v("con", c1.getString(2));
                         try {
 
                             sms.sendTextMessage(c1.getString(2), null, s, null,

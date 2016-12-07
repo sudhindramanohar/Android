@@ -1,4 +1,7 @@
-#Mon Nov 28 00:34:06 CST 2016
-base.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Tue Dec 06 18:09:39 CST 2016
+base.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_01841766d9dcbf45ebe1387a25c8d7d43a6cac2b
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c8b719c95d59ab7f46c032be01c7b19c7e519432\\classes.dex
+base.1=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c8b719c95d59ab7f46c032be01c7b19c7e519432
+file.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_01841766d9dcbf45ebe1387a25c8d7d43a6cac2b\\classes.dex
