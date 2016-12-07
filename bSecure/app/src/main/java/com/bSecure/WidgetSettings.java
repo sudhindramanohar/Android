@@ -256,7 +256,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 							// TODO Auto-generated method stub
 							if(textgreen.isShown()) {
 								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
-								animation.setDuration(100);
 								textgreen.startAnimation(animation);
 							}
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -356,7 +355,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 							// TODO Auto-generated method stub
 							if(textyellow.isShown()) {
 								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
-								animation.setDuration(100);
 								textyellow.startAnimation(animation);
 							}
 							textyellow.setVisibility(rootView.INVISIBLE);
@@ -456,7 +454,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 							// TODO Auto-generated method stub
 							if(textred.isShown()) {
 								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
-								animation.setDuration(100);
 								textred.startAnimation(animation);
 							}
 							textred.setVisibility(rootView.INVISIBLE);
