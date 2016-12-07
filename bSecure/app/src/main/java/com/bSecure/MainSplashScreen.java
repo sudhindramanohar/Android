@@ -17,19 +17,19 @@ public class MainSplashScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_splash_screen);
 		im = (ImageView) findViewById(R.id.img1);
-		an = AnimationUtils.loadAnimation(this, R.anim.anim);
+		an = AnimationUtils.loadAnimation(this, R.anim.pull_in_from_left);
 		an.reset();
 		im.startAnimation(an);
 
-		/****** Create Thread that will sleep for 2 seconds *************/
+		/****** Create Thread that will sleep for 1 second *************/
 		Thread background = new Thread() {
 			public void run() {
 
 				try {
-					// Thread will sleep for 5 seconds
-					sleep(2 * 1000);
+					// Thread will sleep for 1 second
+					sleep(1000);
 
-					// After 2 seconds redirect to another intent
+					// After 1 seconds redirect to another intent
 
 					Intent i = new Intent(getBaseContext(), UserRegistration.class);
 					startActivity(i);

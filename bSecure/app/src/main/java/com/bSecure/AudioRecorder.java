@@ -9,9 +9,11 @@ import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
 import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -84,10 +86,11 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
             index = index+1;
         }
         //SharedPreferences regpage = getSharedPreferences("reg", 0);
-        SendMail sm = new SendMail(toAddress,registrationSettings.getString("email",""),registrationSettings.getString("emailPassword",""),mFileName);
-
-        //Executing sendmail to send email
-        sm.execute();
+        if(myContactDataList != null && !myContactDataList.isEmpty()){
+            SendMail sm = new SendMail(toAddress,registrationSettings.getString("email",""),registrationSettings.getString("emailPassword",""),mFileName);
+            //Executing sendmail to send email
+            sm.execute();
+        }
     }
 
     @Override

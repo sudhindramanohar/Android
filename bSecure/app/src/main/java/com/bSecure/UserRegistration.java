@@ -22,9 +22,16 @@ public class UserRegistration extends Activity {
 	String regexStr = "^[0-9]{10}$";
 	String emailstr = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 
+	@Override
+	protected void onPause() {
+		overridePendingTransition(R.anim.hold, R.anim.push_out_to_left);
+		super.onPause();
+	}
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.user_registration);
+		overridePendingTransition(R.anim.pull_in_from_left, R.anim.hold); //to add animation
 		SharedPreferences wmbPreference = PreferenceManager
 				.getDefaultSharedPreferences(this);
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
