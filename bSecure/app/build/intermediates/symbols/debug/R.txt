@@ -1,4 +1,7 @@
 int anim anim 0x7f040000
+int anim hold 0x7f040001
+int anim pull_in_from_left 0x7f040002
+int anim push_out_to_left 0x7f040003
 int attr adSize 0x7f010000
 int attr adSizes 0x7f010001
 int attr adUnitId 0x7f010002

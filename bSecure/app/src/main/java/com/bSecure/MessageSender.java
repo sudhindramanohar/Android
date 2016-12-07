@@ -14,9 +14,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
 import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class MessageSender extends IntentService implements ConnectionCallbacks,
         OnConnectionFailedListener {
 
@@ -75,19 +72,19 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
             ymsg = appSettings.getString("ymsg1", "");
             String s = appSettings.getString("ymsg", "");
             Log.v("ymsg", s + " " + ymsg);
-            int yt = appSettings.getInt("starttime", 0) + 10;
-            Log.v("ti", String.valueOf(yt));
-            String cget = appSettings.getString("cset", "");
-            String timeStamp = new SimpleDateFormat("HHmmss")
-                    .format(new Date());
-            Integer t = Integer.parseInt(String.valueOf(timeStamp.charAt(2))
-                    + String.valueOf(timeStamp.charAt(3)));
-            Log.v("ti", String.valueOf(t));
-            if (cget.equals("true")) {
-                if (t >= yt) {
-                    inten.setAction("CHANGE_PICTURER");
-                    wr.onReceive(getApplicationContext(), inten);
-                } else {
+            Cursor c1 = db.getContact("yellow");
+            if (c1.getCount() > 0) {
+                if (c1.moveToLast()) {
+                    for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
+                        Log.v("con", c1.getString(2));
+                        try {
+                            sms.sendTextMessage(c1.getString(2), null, s + " "
+                                    + ymsg, null, null);
+                            Log.v("msg", c1.getString(1));
+                        } catch (Exception e) {
+                            Log.v("msg", "send fail!");
+                        }
+                    }
                 }
             } else {
                 inten.setAction("CHANGE_PICTUREY");
@@ -96,6 +93,7 @@ public class MessageSender extends IntentService implements ConnectionCallbacks,
             }
             db.close();
         }
+
         // Send SMS For Red Signal
         if (msg.equals("red")) {
             LocationFinder.getlc(con, "red");

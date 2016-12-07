@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +20,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -235,9 +238,13 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 
 						@Override
 						public void onClick(View v) {
-							// TODO Auto-generated method stub
+							if(!textgreen.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textgreen.startAnimation(animation);
+							}
 							textgreen.setVisibility(rootView.VISIBLE);
 							buttongreen.setVisibility(rootView.INVISIBLE);
+
 						}
 					});
 
@@ -247,8 +254,19 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textgreen.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								animation.setDuration(100);
+								textgreen.startAnimation(animation);
+							}
 							textgreen.setVisibility(rootView.INVISIBLE);
-							buttongreen.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttongreen.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 
@@ -319,6 +337,10 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(!textyellow.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textyellow.startAnimation(animation);
+							}
 							textyellow.setVisibility(rootView.VISIBLE);
 							buttonyellow.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -332,8 +354,19 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textyellow.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								animation.setDuration(100);
+								textyellow.startAnimation(animation);
+							}
 							textyellow.setVisibility(rootView.INVISIBLE);
-							buttonyellow.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttonyellow.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 
@@ -405,6 +438,10 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(!textred.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textred.startAnimation(animation);
+							}
 							textred.setVisibility(rootView.VISIBLE);
 							buttonred.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -417,8 +454,19 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textred.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								animation.setDuration(100);
+								textred.startAnimation(animation);
+							}
 							textred.setVisibility(rootView.INVISIBLE);
-							buttonred.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttonred.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 

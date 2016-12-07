@@ -9,17 +9,11 @@
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
-    <uses-feature
-        android:name="android.hardware.sensor.accelerometer"
-        android:required="true" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -28,6 +22,11 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -71,14 +70,17 @@
                 android:resource="@xml/widgetprovide" />
         </receiver>
 
-        <service android:name="com.bSecure.MessageSender" />
-
         <activity android:name="com.bSecure.WidgetSettings" />
         <activity android:name="com.bSecure.UserRegistration" />
         <activity android:name="com.bSecure.ApplicationSettings" />
 
+        <service android:name="com.bSecure.MessageSender" />
         <service android:name="com.bSecure.AudioRecorder" />
         <service android:name="com.bSecure.ShakeWakeupService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

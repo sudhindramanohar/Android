@@ -11,9 +11,6 @@ import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class AlarmScheduler {
 
     static AlarmManager alarmManager;
@@ -78,7 +75,6 @@ public class AlarmScheduler {
                 xc = 1;
 
             }
-
             db.close();
 
             Intent i = new Intent(ctxt, MessageSender.class);
@@ -105,80 +101,69 @@ public class AlarmScheduler {
                             alarmIntent);
                 }
             }
-
         }
 
         // YELLOW
         if (msg.equals("yellow")) {
             set_msg("yellow");
             sm = get_msg();
-            Intent i = new Intent(ctxt, MessageSender.class);
-
-            Log.v("hi", "ycreate " + msg + sm);
-            LocationFinder gl = new LocationFinder();
-            gl.getlc(ctxt, "yellow");
-            ymsg = appSetting.getString("ymsg1", "");
-            String g = ymsg;
-            String s = appSetting.getString("ymsg", "") + " " + g;
-            Log.v("ymsg1", s);
+            Log.v("hi", "ycreate" + sm);
+            gmsg = appSetting.getString("ymsg1", "");
+            String y = gmsg;
+            String s = appSetting.getString("ymsg", "") + " " + y;
+            Log.v("ymsg", s);
+            Intent intent = new Intent(ctxt, AudioRecorder.class);
+            // add infos for the service which file to download and where to store
+            intent.putExtra("audio", "loc");
+            ctxt.startService(intent);
             Cursor c1 = db.getContact("yellow");
             if (c1.getCount() > 0) {
                 if (c1.moveToLast()) {
                     for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-                        Log.v("con", c1.getString(2));
+                        Log.v("con", c1.getString(1));
                         try {
-
-                            sms.sendTextMessage(c1.getString(2), null, s, null,
-                                    null);
                             Log.v("msg", c1.getString(1));
-                            String timeStamp = new SimpleDateFormat("HHmmss")
-                                    .format(new Date());
-                            Integer t = Integer.parseInt(String
-                                    .valueOf(timeStamp.charAt(2))
-                                    + String.valueOf(timeStamp.charAt(3)));
-                            Log.v("mm", t.toString());
-                            Log.v("msg", timeStamp);
-                            sharedPrefEditor.putInt("starttime", t);
-                            sharedPrefEditor.commit();
                         } catch (Exception e) {
                             Log.v("msg", "send fail!");
                         }
                     }
-
                 }
             } else {
+                Log.v("data", "not found");
                 Intent ii = new Intent(ctxt, ApplicationSettings.class);
                 ii.putExtra("signal", "yellow");
                 ii.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctxt.startActivity(ii);
                 xc = 1;
-                Log.v("data", "not found");
 
             }
+
             db.close();
+
+            Intent i = new Intent(ctxt, MessageSender.class);
+            Log.v("hi", "ycreate");
             alarmIntent = PendingIntent.getService(ctxt, 0, i, 0);
+
+            greenTime = appSetting.getInt("ytime", 0);
+            Log.v("yellowTime", greenTime.toString());
             if (xc == 1) {
                 alarmManager.set(AlarmManager.ELAPSED_REALTIME, 0, alarmIntent);
-                sharedPrefEditor.putString("cset", "false");
-                sharedPrefEditor.commit();
+
                 xc = 0;
             } else {
-                sharedPrefEditor.putString("cset", "true");
-                sharedPrefEditor.commit();
-                yellowtime = appSetting.getInt("ytime", 0);
-                if (yellowtime == 0) {
+                if (greenTime == 0) {
 
                     Log.v("set", "time");
+
                     alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
-                            SystemClock.elapsedRealtime() + 5000, 600 * 1000,
+                            SystemClock.elapsedRealtime() + 5000, 5000,
                             alarmIntent);
                 } else {
                     alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
-                            SystemClock.elapsedRealtime() + 5000, yellowtime * 1000,
+                            SystemClock.elapsedRealtime() + 5000, greenTime * 1000,
                             alarmIntent);
                 }
             }
-
         }
 
         // RED
