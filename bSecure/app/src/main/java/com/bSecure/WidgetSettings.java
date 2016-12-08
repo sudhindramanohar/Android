@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +20,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,6 +42,7 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 	static TextView textgreen, textyellow, textred;
 	static SharedPreferences mode;
 	static SharedPreferences.Editor editor;
+	static boolean isWidgetHelpShown = false;
 	public static final String PREFS_NAME = "MyPrefs";
 
 	static WidgetReceiver wm = new WidgetReceiver();
@@ -60,17 +64,18 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 			Toast.makeText(getApplicationContext(), "not found",
 					Toast.LENGTH_SHORT).show();
 		}
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle("Hello User");
-		builder.setMessage(R.string.help);
-		builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		if(!isWidgetHelpShown) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setTitle("Hello User");
+			builder.setMessage(R.string.help);
+			builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
-			@Override
-			public void onClick(DialogInterface dialog, int whichButton) {
-
-			}
-		}).show();
-
+				@Override
+				public void onClick(DialogInterface dialog, int whichButton) {
+					isWidgetHelpShown = true;
+				}
+			}).show();
+		}
 		con = this;
 		intent = getIntent();
 
@@ -235,9 +240,13 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 
 						@Override
 						public void onClick(View v) {
-							// TODO Auto-generated method stub
+							if(!textgreen.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textgreen.startAnimation(animation);
+							}
 							textgreen.setVisibility(rootView.VISIBLE);
 							buttongreen.setVisibility(rootView.INVISIBLE);
+
 						}
 					});
 
@@ -247,8 +256,18 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textgreen.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								textgreen.startAnimation(animation);
+							}
 							textgreen.setVisibility(rootView.INVISIBLE);
-							buttongreen.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttongreen.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 
@@ -319,6 +338,10 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(!textyellow.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textyellow.startAnimation(animation);
+							}
 							textyellow.setVisibility(rootView.VISIBLE);
 							buttonyellow.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -332,8 +355,18 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textyellow.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								textyellow.startAnimation(animation);
+							}
 							textyellow.setVisibility(rootView.INVISIBLE);
-							buttonyellow.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttonyellow.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 
@@ -405,6 +438,10 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(!textred.isShown()){
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.pull_in_from_left);
+								textred.startAnimation(animation);
+							}
 							textred.setVisibility(rootView.VISIBLE);
 							buttonred.setVisibility(rootView.INVISIBLE);
 							textgreen.setVisibility(rootView.INVISIBLE);
@@ -417,8 +454,18 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
+							if(textred.isShown()) {
+								Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.push_out_to_left);
+								textred.startAnimation(animation);
+							}
 							textred.setVisibility(rootView.INVISIBLE);
-							buttonred.setVisibility(rootView.VISIBLE);
+							final Handler handler = new Handler();
+							handler.postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									buttonred.setVisibility(rootView.VISIBLE);
+								}
+							}, 100);
 						}
 					});
 
@@ -437,4 +484,17 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 		}
 	}
 
+	@Override
+	public void onBackPressed() {
+		new AlertDialog.Builder(this)
+				.setMessage("Are you sure you want to exit?")
+				.setCancelable(false)
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						WidgetSettings.this.finish();
+					}
+				})
+				.setNegativeButton("No", null)
+				.show();
+	}
 }

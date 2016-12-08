@@ -8,6 +8,12 @@
 package com.bSecure;
 
 public final class R {
+    public static final class anim {
+        public static final int anim=0x7f040000;
+        public static final int hold=0x7f040001;
+        public static final int pull_in_from_left=0x7f040002;
+        public static final int push_out_to_left=0x7f040003;
+    }
     public static final class attr {
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -297,40 +303,40 @@ containing a value of this type.
         public static final int zOrderOnTop=0x7f010010;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f080000;
-        public static final int common_signin_btn_dark_text_default=0x7f080001;
-        public static final int common_signin_btn_dark_text_disabled=0x7f080002;
-        public static final int common_signin_btn_dark_text_focused=0x7f080003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f080004;
-        public static final int common_signin_btn_default_background=0x7f080005;
-        public static final int common_signin_btn_light_text_default=0x7f080006;
-        public static final int common_signin_btn_light_text_disabled=0x7f080007;
-        public static final int common_signin_btn_light_text_focused=0x7f080008;
-        public static final int common_signin_btn_light_text_pressed=0x7f080009;
-        public static final int common_signin_btn_text_dark=0x7f080017;
-        public static final int common_signin_btn_text_light=0x7f080018;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f08000a;
-        public static final int wallet_bright_foreground_holo_dark=0x7f08000b;
-        public static final int wallet_bright_foreground_holo_light=0x7f08000c;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f08000d;
-        public static final int wallet_dim_foreground_holo_dark=0x7f08000e;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f08000f;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f080010;
-        public static final int wallet_highlighted_text_holo_dark=0x7f080011;
-        public static final int wallet_highlighted_text_holo_light=0x7f080012;
-        public static final int wallet_hint_foreground_holo_dark=0x7f080013;
-        public static final int wallet_hint_foreground_holo_light=0x7f080014;
-        public static final int wallet_holo_blue_light=0x7f080015;
-        public static final int wallet_link_text_light=0x7f080016;
-        public static final int wallet_primary_text_holo_light=0x7f080019;
-        public static final int wallet_secondary_text_holo_dark=0x7f08001a;
+        public static final int common_action_bar_splitter=0x7f090000;
+        public static final int common_signin_btn_dark_text_default=0x7f090001;
+        public static final int common_signin_btn_dark_text_disabled=0x7f090002;
+        public static final int common_signin_btn_dark_text_focused=0x7f090003;
+        public static final int common_signin_btn_dark_text_pressed=0x7f090004;
+        public static final int common_signin_btn_default_background=0x7f090005;
+        public static final int common_signin_btn_light_text_default=0x7f090006;
+        public static final int common_signin_btn_light_text_disabled=0x7f090007;
+        public static final int common_signin_btn_light_text_focused=0x7f090008;
+        public static final int common_signin_btn_light_text_pressed=0x7f090009;
+        public static final int common_signin_btn_text_dark=0x7f090017;
+        public static final int common_signin_btn_text_light=0x7f090018;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f09000a;
+        public static final int wallet_bright_foreground_holo_dark=0x7f09000b;
+        public static final int wallet_bright_foreground_holo_light=0x7f09000c;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f09000d;
+        public static final int wallet_dim_foreground_holo_dark=0x7f09000e;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f09000f;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f090010;
+        public static final int wallet_highlighted_text_holo_dark=0x7f090011;
+        public static final int wallet_highlighted_text_holo_light=0x7f090012;
+        public static final int wallet_hint_foreground_holo_dark=0x7f090013;
+        public static final int wallet_hint_foreground_holo_light=0x7f090014;
+        public static final int wallet_holo_blue_light=0x7f090015;
+        public static final int wallet_link_text_light=0x7f090016;
+        public static final int wallet_primary_text_holo_light=0x7f090019;
+        public static final int wallet_secondary_text_holo_dark=0x7f09001a;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int bkpage=0x7f020000;
+        public static final int bg=0x7f020000;
         public static final int bsecure=0x7f020001;
         public static final int common_signin_btn_icon_dark=0x7f020002;
         public static final int common_signin_btn_icon_disabled_dark=0x7f020003;
@@ -356,95 +362,112 @@ containing a value of this type.
         public static final int common_signin_btn_text_normal_light=0x7f020017;
         public static final int common_signin_btn_text_pressed_dark=0x7f020018;
         public static final int common_signin_btn_text_pressed_light=0x7f020019;
-        public static final int gabt=0x7f02001a;
-        public static final int greenicon=0x7f02001b;
-        public static final int greeniconon=0x7f02001c;
-        public static final int grnn=0x7f02001d;
-        public static final int grny=0x7f02001e;
-        public static final int gstng=0x7f02001f;
-        public static final int ic_launcher=0x7f020020;
-        public static final int ic_plusone_medium_off_client=0x7f020021;
-        public static final int ic_plusone_small_off_client=0x7f020022;
-        public static final int ic_plusone_standard_off_client=0x7f020023;
-        public static final int ic_plusone_tall_off_client=0x7f020024;
-        public static final int icon_home_select=0x7f020025;
-        public static final int pausegreen=0x7f020026;
-        public static final int pausered=0x7f020027;
-        public static final int pauseyellow=0x7f020028;
-        public static final int powered_by_google_dark=0x7f020029;
-        public static final int powered_by_google_light=0x7f02002a;
-        public static final int redicon=0x7f02002b;
-        public static final int redsignal=0x7f02002c;
-        public static final int side_nav_icon_home_d=0x7f02002d;
-        public static final int yellowicon=0x7f02002e;
+        public static final int contact=0x7f02001a;
+        public static final int gabt=0x7f02001b;
+        public static final int greenicon=0x7f02001c;
+        public static final int greeniconon=0x7f02001d;
+        public static final int greenwidgeticon=0x7f02001e;
+        public static final int grnn=0x7f02001f;
+        public static final int grny=0x7f020020;
+        public static final int gstng=0x7f020021;
+        public static final int ic_launcher=0x7f020022;
+        public static final int ic_plusone_medium_off_client=0x7f020023;
+        public static final int ic_plusone_small_off_client=0x7f020024;
+        public static final int ic_plusone_standard_off_client=0x7f020025;
+        public static final int ic_plusone_tall_off_client=0x7f020026;
+        public static final int icon_home_select=0x7f020027;
+        public static final int images=0x7f020028;
+        public static final int page=0x7f020029;
+        public static final int pause=0x7f02002a;
+        public static final int pausegreen=0x7f02002b;
+        public static final int pauseyellow=0x7f02002c;
+        public static final int powered_by_google_dark=0x7f02002d;
+        public static final int powered_by_google_light=0x7f02002e;
+        public static final int redabouticon=0x7f02002f;
+        public static final int redhomeicon=0x7f020030;
+        public static final int redicon=0x7f020031;
+        public static final int rediwidgetcon=0x7f020032;
+        public static final int redsettingicon=0x7f020033;
+        public static final int redsignal=0x7f020034;
+        public static final int yellow_about_icon=0x7f020035;
+        public static final int yellow_home_icon=0x7f020036;
+        public static final int yellow_settings_icon=0x7f020037;
+        public static final int yellowicon=0x7f020038;
+        public static final int yellowwidgeticon=0x7f020039;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b003e;
-        public static final int book_now=0x7f0b000e;
-        public static final int btnabtgrn=0x7f0b001e;
-        public static final int btnabtred=0x7f0b0024;
-        public static final int btnabtylw=0x7f0b0029;
-        public static final int btnaddcnt=0x7f0b0017;
-        public static final int btnhomegrn=0x7f0b0020;
-        public static final int btnhomered=0x7f0b0026;
-        public static final int btnhomeylw=0x7f0b002b;
-        public static final int btnhour=0x7f0b0019;
-        public static final int btnminute=0x7f0b0018;
-        public static final int btnsaveg=0x7f0b001a;
-        public static final int btnsetmsg=0x7f0b001b;
-        public static final int btnsettinggrn=0x7f0b001f;
-        public static final int btnsettingred=0x7f0b0025;
-        public static final int btnsettingylw=0x7f0b002a;
-        public static final int btnshake=0x7f0b001c;
-        public static final int buyButton=0x7f0b000a;
-        public static final int buy_now=0x7f0b000f;
-        public static final int buy_with_google=0x7f0b0010;
-        public static final int classic=0x7f0b0011;
-        public static final int email=0x7f0b0038;
-        public static final int grayscale=0x7f0b0012;
-        public static final int greenbtn=0x7f0b003b;
-        public static final int holo_dark=0x7f0b0005;
-        public static final int holo_light=0x7f0b0006;
-        public static final int hybrid=0x7f0b0000;
-        public static final int imggreen=0x7f0b001d;
-        public static final int imgred=0x7f0b0023;
-        public static final int imgylw=0x7f0b0028;
-        public static final int liscontact=0x7f0b0016;
-        public static final int match_parent=0x7f0b000c;
-        public static final int mobile_no=0x7f0b0037;
-        public static final int monochrome=0x7f0b0013;
-        public static final int name=0x7f0b0036;
-        public static final int none=0x7f0b0001;
-        public static final int normal=0x7f0b0002;
-        public static final int pager=0x7f0b0014;
-        public static final int production=0x7f0b0007;
-        public static final int redbtn=0x7f0b003d;
-        public static final int sandbox=0x7f0b0008;
-        public static final int satellite=0x7f0b0003;
-        public static final int scrollView1=0x7f0b0035;
-        public static final int selectionDetails=0x7f0b000b;
-        public static final int strict_sandbox=0x7f0b0009;
-        public static final int submit=0x7f0b003a;
-        public static final int tab1=0x7f0b002f;
-        public static final int tab2=0x7f0b0031;
-        public static final int tab3=0x7f0b0033;
-        public static final int tabhost=0x7f0b002e;
-        public static final int terrain=0x7f0b0004;
-        public static final int textView1=0x7f0b0039;
-        public static final int textView2=0x7f0b0030;
-        public static final int textView3=0x7f0b0032;
-        public static final int textView4=0x7f0b0034;
-        public static final int txtgps=0x7f0b002d;
-        public static final int txtgreenabt=0x7f0b0021;
-        public static final int txthelp=0x7f0b0022;
-        public static final int txtredabt=0x7f0b0027;
-        public static final int txtstghead=0x7f0b0015;
-        public static final int txtyellowabt=0x7f0b002c;
-        public static final int wrap_content=0x7f0b000d;
-        public static final int yellowbtn=0x7f0b003c;
+        public static final int action_settings=0x7f0c0044;
+        public static final int book_now=0x7f0c000e;
+        public static final int btnabtgrn=0x7f0c001e;
+        public static final int btnabtred=0x7f0c0024;
+        public static final int btnabtylw=0x7f0c0029;
+        public static final int btnaddcnt=0x7f0c0018;
+        public static final int btnhomegrn=0x7f0c0020;
+        public static final int btnhomered=0x7f0c0026;
+        public static final int btnhomeylw=0x7f0c002b;
+        public static final int btnhour=0x7f0c001a;
+        public static final int btnminute=0x7f0c001b;
+        public static final int btnsaveg=0x7f0c001c;
+        public static final int btnsetmsg=0x7f0c0016;
+        public static final int btnsettinggrn=0x7f0c001f;
+        public static final int btnsettingred=0x7f0c0025;
+        public static final int btnsettingylw=0x7f0c002a;
+        public static final int btnshake=0x7f0c0017;
+        public static final int buttonAddEmail=0x7f0c0031;
+        public static final int buyButton=0x7f0c000a;
+        public static final int buy_now=0x7f0c000f;
+        public static final int buy_with_google=0x7f0c0010;
+        public static final int classic=0x7f0c0011;
+        public static final int contact_name=0x7f0c002f;
+        public static final int contact_number=0x7f0c0030;
+        public static final int email=0x7f0c003e;
+        public static final int grayscale=0x7f0c0012;
+        public static final int greenbutton=0x7f0c0041;
+        public static final int holo_dark=0x7f0c0005;
+        public static final int holo_light=0x7f0c0006;
+        public static final int hybrid=0x7f0c0000;
+        public static final int imageView1=0x7f0c002e;
+        public static final int img1=0x7f0c0032;
+        public static final int imggreen=0x7f0c001d;
+        public static final int imgred=0x7f0c0023;
+        public static final int imgylw=0x7f0c0028;
+        public static final int listViewContact=0x7f0c0019;
+        public static final int match_parent=0x7f0c000c;
+        public static final int mobile_no=0x7f0c003d;
+        public static final int monochrome=0x7f0c0013;
+        public static final int name=0x7f0c003c;
+        public static final int none=0x7f0c0001;
+        public static final int normal=0x7f0c0002;
+        public static final int pager=0x7f0c0014;
+        public static final int production=0x7f0c0007;
+        public static final int redbutton=0x7f0c0043;
+        public static final int sandbox=0x7f0c0008;
+        public static final int satellite=0x7f0c0003;
+        public static final int scrollView1=0x7f0c003a;
+        public static final int selectionDetails=0x7f0c000b;
+        public static final int strict_sandbox=0x7f0c0009;
+        public static final int submit=0x7f0c0040;
+        public static final int tab1=0x7f0c0034;
+        public static final int tab2=0x7f0c0036;
+        public static final int tab3=0x7f0c0038;
+        public static final int tabhost=0x7f0c0033;
+        public static final int terrain=0x7f0c0004;
+        public static final int textEmailPwd=0x7f0c003f;
+        public static final int textView1=0x7f0c003b;
+        public static final int textView2=0x7f0c0035;
+        public static final int textView3=0x7f0c0037;
+        public static final int textView4=0x7f0c0039;
+        public static final int txtgps=0x7f0c002d;
+        public static final int txtgreenabt=0x7f0c0021;
+        public static final int txthelp=0x7f0c0022;
+        public static final int txtredabt=0x7f0c0027;
+        public static final int txtstghead=0x7f0c0015;
+        public static final int txtyellowabt=0x7f0c002c;
+        public static final int wrap_content=0x7f0c000d;
+        public static final int yellowbutton=0x7f0c0042;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f090000;
+        public static final int google_play_services_version=0x7f0a0000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -454,57 +477,59 @@ containing a value of this type.
         public static final int fragment_red=0x7f030004;
         public static final int fragment_yellow=0x7f030005;
         public static final int gps_activation=0x7f030006;
-        public static final int tab_layout=0x7f030007;
-        public static final int user_registration=0x7f030008;
-        public static final int widget_layout=0x7f030009;
+        public static final int listview_contacts=0x7f030007;
+        public static final int main_splash_screen=0x7f030008;
+        public static final int tab_layout=0x7f030009;
+        public static final int user_registration=0x7f03000a;
+        public static final int widget_layout=0x7f03000b;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
-        public static final int widget_layout=0x7f0a0001;
+        public static final int main=0x7f0b0000;
+        public static final int widget_layout=0x7f0b0001;
     }
     public static final class string {
-        public static final int action_settings=0x7f05001a;
-        public static final int adrs=0x7f05001b;
-        public static final int app_name=0x7f05001c;
-        public static final int common_google_play_services_enable_button=0x7f050000;
-        public static final int common_google_play_services_enable_text=0x7f050001;
-        public static final int common_google_play_services_enable_title=0x7f050002;
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f050003;
-        public static final int common_google_play_services_install_button=0x7f050004;
-        public static final int common_google_play_services_install_text_phone=0x7f050005;
-        public static final int common_google_play_services_install_text_tablet=0x7f050006;
-        public static final int common_google_play_services_install_title=0x7f050007;
-        public static final int common_google_play_services_invalid_account_text=0x7f050008;
-        public static final int common_google_play_services_invalid_account_title=0x7f050009;
-        public static final int common_google_play_services_needs_enabling_title=0x7f05000a;
-        public static final int common_google_play_services_network_error_text=0x7f05000b;
-        public static final int common_google_play_services_network_error_title=0x7f05000c;
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f05000d;
-        public static final int common_google_play_services_notification_needs_update_title=0x7f05000e;
-        public static final int common_google_play_services_notification_ticker=0x7f05000f;
-        public static final int common_google_play_services_unknown_issue=0x7f050010;
-        public static final int common_google_play_services_unsupported_date_text=0x7f050011;
-        public static final int common_google_play_services_unsupported_text=0x7f050012;
-        public static final int common_google_play_services_unsupported_title=0x7f050013;
-        public static final int common_google_play_services_update_button=0x7f050014;
-        public static final int common_google_play_services_update_text=0x7f050015;
-        public static final int common_google_play_services_update_title=0x7f050016;
-        public static final int common_signin_button_text=0x7f050017;
-        public static final int common_signin_button_text_long=0x7f050018;
-        public static final int fname=0x7f05001d;
-        public static final int greenabout=0x7f05001e;
-        public static final int hello_world=0x7f05001f;
-        public static final int help=0x7f050020;
-        public static final int login=0x7f050021;
-        public static final int lpage=0x7f050022;
-        public static final int phone=0x7f050023;
-        public static final int psw=0x7f050024;
-        public static final int redabout=0x7f050025;
-        public static final int rlink=0x7f050026;
-        public static final int rpage=0x7f050027;
-        public static final int sbmt=0x7f050028;
-        public static final int wallet_buy_button_place_holder=0x7f050019;
-        public static final int yellowabout=0x7f050029;
+        public static final int action_settings=0x7f06001a;
+        public static final int adrs=0x7f06001b;
+        public static final int app_name=0x7f06001c;
+        public static final int common_google_play_services_enable_button=0x7f060000;
+        public static final int common_google_play_services_enable_text=0x7f060001;
+        public static final int common_google_play_services_enable_title=0x7f060002;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f060003;
+        public static final int common_google_play_services_install_button=0x7f060004;
+        public static final int common_google_play_services_install_text_phone=0x7f060005;
+        public static final int common_google_play_services_install_text_tablet=0x7f060006;
+        public static final int common_google_play_services_install_title=0x7f060007;
+        public static final int common_google_play_services_invalid_account_text=0x7f060008;
+        public static final int common_google_play_services_invalid_account_title=0x7f060009;
+        public static final int common_google_play_services_needs_enabling_title=0x7f06000a;
+        public static final int common_google_play_services_network_error_text=0x7f06000b;
+        public static final int common_google_play_services_network_error_title=0x7f06000c;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f06000d;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f06000e;
+        public static final int common_google_play_services_notification_ticker=0x7f06000f;
+        public static final int common_google_play_services_unknown_issue=0x7f060010;
+        public static final int common_google_play_services_unsupported_date_text=0x7f060011;
+        public static final int common_google_play_services_unsupported_text=0x7f060012;
+        public static final int common_google_play_services_unsupported_title=0x7f060013;
+        public static final int common_google_play_services_update_button=0x7f060014;
+        public static final int common_google_play_services_update_text=0x7f060015;
+        public static final int common_google_play_services_update_title=0x7f060016;
+        public static final int common_signin_button_text=0x7f060017;
+        public static final int common_signin_button_text_long=0x7f060018;
+        public static final int fname=0x7f06001d;
+        public static final int greenabout=0x7f06001e;
+        public static final int hello_world=0x7f06001f;
+        public static final int help=0x7f060020;
+        public static final int login=0x7f060021;
+        public static final int lpage=0x7f060022;
+        public static final int phone=0x7f060023;
+        public static final int psw=0x7f060024;
+        public static final int redabout=0x7f060025;
+        public static final int rlink=0x7f060026;
+        public static final int rpage=0x7f060027;
+        public static final int sbmt=0x7f060028;
+        public static final int wallet_buy_button_place_holder=0x7f060019;
+        public static final int yellowabout=0x7f060029;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -515,18 +540,18 @@ containing a value of this type.
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int Theme_IAPTheme=0x7f070002;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f070003;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f070004;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f070005;
-        public static final int WalletFragmentDefaultStyle=0x7f070006;
+        public static final int AppTheme=0x7f080001;
+        public static final int Theme_IAPTheme=0x7f080002;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f080003;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f080004;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f080005;
+        public static final int WalletFragmentDefaultStyle=0x7f080006;
     }
     public static final class xml {
-        public static final int widgetprovide=0x7f040000;
+        public static final int widgetprovide=0x7f050000;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -535,9 +560,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.example.nirapp:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.example.nirapp:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.example.nirapp:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize com.bSecure:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.bSecure:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.bSecure:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -547,7 +572,7 @@ containing a value of this type.
             0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#adSize}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -557,11 +582,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:adSize
+          @attr name com.bSecure:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -571,11 +596,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:adSizes
+          @attr name com.bSecure:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -585,7 +610,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:adUnitId
+          @attr name com.bSecure:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a MapAttrs.
@@ -594,20 +619,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.example.nirapp:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.nirapp:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.nirapp:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.example.nirapp:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.example.nirapp:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.example.nirapp:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.example.nirapp:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.nirapp:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.nirapp:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.nirapp:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.nirapp:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.nirapp:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.nirapp:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.nirapp:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.bSecure:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.bSecure:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.bSecure:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.bSecure:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.bSecure:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.bSecure:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.bSecure:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.bSecure:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.bSecure:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.bSecure:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.bSecure:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.bSecure:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.bSecure:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.bSecure:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -631,7 +656,7 @@ containing a value of this type.
             0x7f01000f, 0x7f010010
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -641,11 +666,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:cameraBearing
+          @attr name com.bSecure:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -655,11 +680,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:cameraTargetLat
+          @attr name com.bSecure:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -669,11 +694,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:cameraTargetLng
+          @attr name com.bSecure:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -683,11 +708,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:cameraTilt
+          @attr name com.bSecure:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -697,11 +722,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:cameraZoom
+          @attr name com.bSecure:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -717,11 +742,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:mapType
+          @attr name com.bSecure:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -731,11 +756,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiCompass
+          @attr name com.bSecure:uiCompass
         */
         public static final int MapAttrs_uiCompass = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -745,11 +770,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiRotateGestures
+          @attr name com.bSecure:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -759,11 +784,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiScrollGestures
+          @attr name com.bSecure:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -773,11 +798,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiTiltGestures
+          @attr name com.bSecure:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -787,11 +812,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiZoomControls
+          @attr name com.bSecure:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -801,11 +826,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:uiZoomGestures
+          @attr name com.bSecure:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -815,11 +840,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:useViewLifecycle
+          @attr name com.bSecure:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -829,7 +854,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:zOrderOnTop
+          @attr name com.bSecure:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
         /** Attributes that can be used with a WalletFragmentOptions.
@@ -838,10 +863,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment com.example.nirapp:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.example.nirapp:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.example.nirapp:fragmentStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_theme com.example.nirapp:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment com.bSecure:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.bSecure:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.bSecure:fragmentStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_theme com.bSecure:theme}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_environment
            @see #WalletFragmentOptions_fragmentMode
@@ -852,7 +877,7 @@ containing a value of this type.
             0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#environment}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -866,11 +891,11 @@ containing a value of this type.
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:environment
+          @attr name com.bSecure:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -883,21 +908,21 @@ containing a value of this type.
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:fragmentMode
+          @attr name com.bSecure:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.nirapp:fragmentStyle
+          @attr name com.bSecure:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#theme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -910,7 +935,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:theme
+          @attr name com.bSecure:theme
         */
         public static final int WalletFragmentOptions_theme = 0;
         /** Attributes that can be used with a WalletFragmentStyle.
@@ -919,17 +944,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.example.nirapp:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.example.nirapp:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.example.nirapp:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.example.nirapp:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.example.nirapp:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.example.nirapp:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.example.nirapp:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.example.nirapp:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.example.nirapp:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.example.nirapp:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.example.nirapp:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.bSecure:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.bSecure:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.bSecure:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.bSecure:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.bSecure:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.bSecure:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.bSecure:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.bSecure:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.bSecure:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.bSecure:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.bSecure:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -949,7 +974,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e, 0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -963,11 +988,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:buyButtonAppearance
+          @attr name com.bSecure:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -988,11 +1013,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:buyButtonHeight
+          @attr name com.bSecure:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1006,11 +1031,11 @@ containing a value of this type.
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:buyButtonText
+          @attr name com.bSecure:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1031,11 +1056,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:buyButtonWidth
+          @attr name com.bSecure:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1043,11 +1068,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.nirapp:maskedWalletDetailsBackground
+          @attr name com.bSecure:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1055,31 +1080,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.nirapp:maskedWalletDetailsButtonBackground
+          @attr name com.bSecure:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.nirapp:maskedWalletDetailsButtonTextAppearance
+          @attr name com.bSecure:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.nirapp:maskedWalletDetailsHeaderTextAppearance
+          @attr name com.bSecure:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1092,11 +1117,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.nirapp:maskedWalletDetailsLogoImageType
+          @attr name com.bSecure:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -1107,17 +1132,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.nirapp:maskedWalletDetailsLogoTextColor
+          @attr name com.bSecure:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.nirapp.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link com.bSecure.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.nirapp:maskedWalletDetailsTextAppearance
+          @attr name com.bSecure:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };

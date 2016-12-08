@@ -65,7 +65,7 @@
     <integer name="google_play_services_version">5089000</integer>
     <string name="action_settings">Settings</string>
     <string name="adrs">Enter Address</string>
-    <string name="app_name">bSecure</string>
+    <string name="app_name">BSecure</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -99,31 +99,26 @@
 	</string>
     <string name="hello_world">Hello world!</string>
     <string name="help">
-	    first add widget on home sreen from widget store into smart phone
-	   
-	    after set the message,contacts and time duration in setting page of
-	    perticular signal in activty.
-	   
-	    First on Data enable for internet
-	    Put Gps On(Check all the check box of Location service in setting menu)
+	    Try to add widget on home sreen from widget store into smart phone
+	   	Then set the message, contacts and time duration in setting page.
+		Enable data for internet
+	    Enable GPS (Check all the check box of Location Service in settings menu)
 	</string>
     <string name="login">Login</string>
     <string name="lpage">Login Page</string>
     <string name="phone">Enter Phone No</string>
     <string name="psw">Enter Password</string>
     <string name="redabout">
-	    This SOS button is for sending trouble (for help) message to added 
-	    contact numbers with define or pre-defined message in 
-	    setable time duration with current location!
+	    This SOS button is for sending trouble (for help) pre-defined message to added
+	    contact numbers and set time duration with current location!
 	</string>
     <string name="rlink">Not user? Register Here</string>
     <string name="rpage">Registration Page</string>
     <string name="sbmt">Submit</string>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
     <string name="yellowabout">
-	    This SOS button is for sending critical situation message to added 
-	    contact numbers with define or pre-defined message in 
-	    setable time duration with current location!
+	    This SOS button is for sending critical pre-defined message to added
+	    contact numbers and set time duration with current location!
 	</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

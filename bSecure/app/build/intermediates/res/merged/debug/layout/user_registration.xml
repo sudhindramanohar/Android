@@ -2,20 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff" >
+    android:background="@drawable/bg">
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" >
+        android:layout_centerVertical="true">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10.0dip" >
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="User Registration"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/name"
@@ -24,11 +35,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Name" >
-
-                <requestFocus />
-            </EditText>
-s
+                android:hint="Name"></EditText>
 
             <EditText
                 android:id="@+id/mobile_no"
@@ -37,8 +44,8 @@ s
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:ems="10"
-                android:hint="Mobile Number" 
-                 android:inputType="phone"/>
+                android:hint="Mobile Number"
+                android:inputType="phone" />
 
             <EditText
                 android:id="@+id/email"
@@ -49,29 +56,28 @@ s
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/textEmailPwd"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_gravity="center"
+                android:hint="Email Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/AppBaseTheme"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/images"
+                android:text="Submit" />
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_above="@+id/scrollView1"
-        android:layout_centerHorizontal="true"
-        android:text="User Registration"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
-    <requestFocus />
-
-    <Button
-        android:id="@+id/submit"
-        style="@style/AppBaseTheme"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="46dp"
-        android:text="Submit" />
 
 </RelativeLayout>

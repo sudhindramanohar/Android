@@ -1,181 +1,189 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:2:1-84:12
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:2:1-82:12
 	package
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:3:5-26
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:3:5-26
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services:5.0.89] C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\AndroidManifest.xml:15:5-42
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:5.0.89] F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:22.0.0] F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_SMS
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:11:22-64
-uses-permission#com.android.alarm.permission.SET_ALARM
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:12:2-74
-	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:12:19-72
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:13:5-66
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:12:5-66
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:13:22-64
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:14:5-71
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:14:22-69
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:13:22-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:15:7-81
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:15:24-79
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:14:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:16:5-80
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:15:5-80
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:16:22-78
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:17:4-70
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:16:5-71
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:17:21-67
-uses-feature#android.hardware.sensor.accelerometer
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:18:5-97
-	android:required
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:18:72-95
-	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:18:19-71
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:16:22-68
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:19:5-65
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:17:5-65
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:19:22-63
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:17:22-63
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:20:3-79
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:18:5-81
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:20:20-76
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:21:5-79
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:19:5-79
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:21:22-76
-uses-permission#android.permission.ACCESS_MOCK_LOCATION
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:22:22-76
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:19:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:23:5-78
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:23:22-76
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:25:5-76
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:22:5-76
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:25:22-73
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:22:22-73
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:26:5-81
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:26:22-78
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:23:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:27:4-65
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:24:5-66
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:27:21-63
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:24:22-64
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:25:5-77
+	android:name
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:25:22-75
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:26:5-97
+	android:required
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:26:72-95
+	android:name
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:26:19-71
 application
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:30:5-82:26
-MERGED from [com.google.android.gms:play-services:5.0.89] C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\AndroidManifest.xml:16:5-19
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:28:5-80:19
+MERGED from [com.google.android.gms:play-services:5.0.89] F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:22.0.0] F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:33:9-41
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:31:9-41
 	android:allowBackup
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:31:9-35
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:29:9-35
 	android:icon
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:32:9-41
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:30:9-41
 	android:theme
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:34:9-40
-activity#com.bSecure.UserRegistration
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:36:9-44:20
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:32:9-40
+activity#com.bSecure.MainSplashScreen
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:34:9-42:20
 	android:label
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:38:13-45
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:36:13-45
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:35:13-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:40:27-74
 receiver#com.bSecure.WidgetActivity
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:45:9-54:20
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:43:9-52:20
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:45:19-60
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:43:19-60
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:46:13-49:29
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:44:13-47:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:47:17-48:80
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:45:17-46:80
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:48:21-77
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:46:21-77
 meta-data#android.appwidget.provider
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:51:13-53:57
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:49:13-51:57
 	android:resource
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:53:17-54
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:51:17-54
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:52:17-58
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:50:17-58
 receiver#com.bSecure.WidgetReceiver
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:56:10-73:12
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:54:9-71:20
 	android:label
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:58:5-28
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:56:13-36
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:57:5-46
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:55:13-54
 intent-filter#CHANGE_PICTUREG
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:59:5-61:21
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:57:13-59:29
 action#CHANGE_PICTUREG
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:60:9-50
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:58:17-58
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:60:17-47
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:58:25-55
 intent-filter#CHANGE_PICTUREY
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:63:5-65:21
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:61:13-63:29
 action#CHANGE_PICTUREY
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:64:9-50
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:62:17-58
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:64:17-47
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:62:25-55
 intent-filter#CHANGE_PICTURER
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:66:5-68:21
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:64:13-66:29
 action#CHANGE_PICTURER
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:67:9-50
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:65:17-58
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:67:17-47
-service#com.bSecure.MessageSender
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:75:10-70
-	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:75:19-59
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:65:25-55
 activity#com.bSecure.WidgetSettings
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:77:10-73
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:73:9-72
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:77:20-61
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:73:19-60
+activity#com.bSecure.UserRegistration
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:74:9-74
+	android:name
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:74:19-62
 activity#com.bSecure.ApplicationSettings
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:78:10-78
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:75:9-77
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:78:20-66
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:75:19-65
+service#com.bSecure.MessageSender
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:76:9-69
+	android:name
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:76:18-58
 service#com.bSecure.AudioRecorder
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:79:10-70
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:77:9-69
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:79:19-59
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:77:18-58
 service#com.bSecure.ShakeWakeupService
-ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:80:10-75
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:78:9-74
 	android:name
-		ADDED from C:\Users\sneha\Documents\GitHub\Android\bSecure\app\src\main\AndroidManifest.xml:80:19-64
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:78:18-63
+meta-data#com.google.android.gms.version
+ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:79:9-122
+	android:value
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:79:66-119
+	android:name
+		ADDED from F:\Android\Project\Android\bSecure\app\src\main\AndroidManifest.xml:79:20-65

@@ -113,7 +113,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			editor.putBoolean("greenimage", false);
 			editor.commit();
 
-			return R.drawable.greenicon;
+			return R.drawable.greenwidgeticon;
 
 		} else {
 
@@ -141,7 +141,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			editor.putBoolean("yellowimage", false);
 			editor.commit();
 
-			return R.drawable.yellowicon;
+			return R.drawable.yellowwidgeticon;
 
 		} else {
 
@@ -169,7 +169,7 @@ public class WidgetReceiver extends BroadcastReceiver {
 			editor.putBoolean("redimage", false);
 			editor.commit();
 
-			return R.drawable.redicon;
+			return R.drawable.rediwidgetcon;
 
 		} else {
 

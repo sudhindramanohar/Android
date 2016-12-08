@@ -1,6 +1,5 @@
 package com.bSecure;
 
-import java.util.ArrayList;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -13,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v4.app.FragmentActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +28,8 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class ApplicationSettings extends FragmentActivity {
     Context con = this;
     SharedPreferences appSettingSharedPref, prefs;
@@ -37,18 +39,26 @@ public class ApplicationSettings extends FragmentActivity {
     String phoneNumber, gvalue, yvalue, rvalue, total;
     ListView lv;
     ArrayList<String> stringArrayList;
-    ArrayList<myContactData> arrlstContactData = new ArrayList<myContactData>();
+    private static ArrayList<MyContactData> arrlstContactData = new ArrayList<MyContactData>();
     CustomAdapter adapter;
     int xc = 0;
     Database db;
     Cursor phoneCursor;
     Activity context;
+
+    @Override
+    protected void onPause() {
+        overridePendingTransition(R.anim.hold, R.anim.push_out_to_left);
+        super.onPause();
+    }
+
     @Override
     protected void onCreate(Bundle arg0) {
         // TODO Auto-generated method stub
         super.onCreate(arg0);
         setContentView(R.layout.application_settings);
-        context=this;
+        overridePendingTransition(R.anim.pull_in_from_left, R.anim.hold); //to add animation
+        context = this;
         db = new Database(con);
         bt = (Button) findViewById(R.id.btnaddcnt);
         lv = (ListView) findViewById(R.id.listViewContact);
@@ -59,16 +69,14 @@ public class ApplicationSettings extends FragmentActivity {
         btnShake = (Button) findViewById(R.id.btnshake);
 
         Intent i = getIntent();
-        lv.setAdapter (adapter);
+        lv.setAdapter(adapter);
 
         appSettingSharedPref = getSharedPreferences("signal", 0);
         String msg = i.getStringExtra("signal");
-        if (msg.equals("green"))
-        {
+        if (msg.equals("green")) {
             btnShake.setEnabled(false);
         }
-        if (msg.equals("yellow"))
-        {
+        if (msg.equals("yellow")) {
             btnShake.setEnabled(false);
         }
         int flg = i.getFlags();
@@ -78,7 +86,7 @@ public class ApplicationSettings extends FragmentActivity {
         edit = appSettingSharedPref.edit();
         prefs = getSharedPreferences("shake", 0);
         sedit = prefs.edit();
-        String sp = prefs.getString("shakeon",null);
+        String sp = prefs.getString("shakeon", null);
         if (sp != null) {
             btnShake.setText(prefs.getString("shakeon", ""));
         }
@@ -434,16 +442,20 @@ public class ApplicationSettings extends FragmentActivity {
                 public void onClick(View arg0) {
                     // TODO Auto-generated method stub
                     if (arrlstContactData.size() > 0) {
-                        rsec = getTime("red");
-                        if (rsec == 0) {
-                            Toast.makeText(
-                                    getApplicationContext(),
-                                    "You select Application Default time for send Message!",
-                                    Toast.LENGTH_LONG).show();
+                        if (checkIfContactHasEmailId()) {
+                            rsec = getTime("red");
+                            if (rsec == 0) {
+                                Toast.makeText(
+                                        getApplicationContext(),
+                                        "You select Application Default time for send Message!",
+                                        Toast.LENGTH_LONG).show();
+                            }
+                            edit.putInt("rtime", rsec);
+                            edit.commit();
+                            finish();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Email ID is missing for atleast one contact", Toast.LENGTH_SHORT).show();
                         }
-                        edit.putInt("rtime", rsec);
-                        edit.commit();
-                        finish();
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 "please add contact!", Toast.LENGTH_SHORT)
@@ -452,6 +464,14 @@ public class ApplicationSettings extends FragmentActivity {
                 }
             });
         }
+    }
+
+    public static ArrayList<MyContactData> getArrlstContactData() {
+        return arrlstContactData;
+    }
+
+    public static void setArrlstContactData(ArrayList<MyContactData> arrlstContactData) {
+        ApplicationSettings.arrlstContactData = arrlstContactData;
     }
 
     private int getTime(String sig) {
@@ -515,7 +535,7 @@ public class ApplicationSettings extends FragmentActivity {
 
     private void setcnt(int reqCode, int resultCode, Intent data, String signal) {
         String sig = null;
-        String name="", contact_id="";
+        String name = "", contact_id = "", contact_emailId = "";
 
         if (resultCode == Activity.RESULT_OK) {
             String s = data.getData().toString();
@@ -528,16 +548,13 @@ public class ApplicationSettings extends FragmentActivity {
                 // other data is available for the Contact. I have decided
                 // to only get the name of the Contact.
                 try {
-                    name = c
-                            .getString(c
-                                    .getColumnIndexOrThrow(ContactsContract.Contacts.DISPLAY_NAME));
+                    name = c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts.DISPLAY_NAME));
                     Log.v("nam", name);
                     int hasPhoneNumber = Integer
-                            .parseInt(c.getString(c
-                                    .getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)));
+                            .parseInt(c.getString(c.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)));
 
-                    contact_id = c.getString(c
-                            .getColumnIndex(ContactsContract.Contacts._ID));
+                    contact_id = c.getString(c.getColumnIndex(ContactsContract.Contacts._ID));
+
                     Log.v("hn", String.valueOf(hasPhoneNumber));
                     if (hasPhoneNumber > 0) {
 
@@ -561,19 +578,19 @@ public class ApplicationSettings extends FragmentActivity {
                         try {
                             if (signal.equals("green")) {
                                 Log.v("d", "c");
-                                db.addContact(new BSecureData(name,phoneNumber ),
+                                db.addContact(new BSecureData(name, phoneNumber, contact_emailId),
                                         "green");
                                 sig = "green";
                             }
                             if (signal.equals("yellow")) {
                                 Log.v("d", "c");
-                                db.addContact(new BSecureData(name,phoneNumber),
+                                db.addContact(new BSecureData(name, phoneNumber, contact_emailId),
                                         "yellow");
                                 sig = "yellow";
                             }
                             if (signal.equals("red")) {
                                 Log.v("d", "c");
-                                db.addContact(new BSecureData(name,phoneNumber), "red");
+                                db.addContact(new BSecureData(name, phoneNumber, contact_emailId), "red");
                                 sig = "red";
                             }
                         } catch (Exception e) {
@@ -610,7 +627,7 @@ public class ApplicationSettings extends FragmentActivity {
             xc = 0;
             Log.v("concatch", String.valueOf(xc));
         } else {
-            myContactData str=null;
+            MyContactData str = null;
             Cursor c1 = db.getContact(signal);
 
             if (c1.getCount() > 0) {
@@ -619,18 +636,20 @@ public class ApplicationSettings extends FragmentActivity {
                     if (s >= 0) {
                         str = arrlstContactData.get(s);
                     }
-
+                    if (signal.equals("red")) {
+                        contact_emailId = c1.getString(3);
+                    }
                     if (Integer.parseInt(c1.getString(0)) > 0) {
                         if (s >= 0) {
-                            if ((str!=null)&&(str.strID.equals(c1.getString(0)) && str.strNumber.equals(c1.getString(1))))   {
+                            if ((str != null) && (str.strID.equals(c1.getString(0)) && str.strNumber.equals(c1.getString(1)))) {
                                 Log.v("no", "no selected");
                             } else {
-                                myContactData tempContact = new myContactData(name, phoneNumber, contact_id);
+                                MyContactData tempContact = new MyContactData(name, phoneNumber, contact_id, contact_emailId);
                                 arrlstContactData.add(tempContact);
                                 adapter.notifyDataSetChanged();
                             }
                         } else {
-                            myContactData tempContact = new myContactData(name, phoneNumber, contact_id);
+                            MyContactData tempContact = new MyContactData(name, phoneNumber, contact_id, contact_emailId);
                             arrlstContactData.add(tempContact);
                             adapter.notifyDataSetChanged();
                         }
@@ -870,9 +889,9 @@ public class ApplicationSettings extends FragmentActivity {
 
     public void listcall(String signal) {
         Cursor c1 = null;
-        arrlstContactData = new ArrayList<myContactData>();
+        arrlstContactData = new ArrayList<MyContactData>();
         adapter = new CustomAdapter(context, R.layout.listview_contacts, arrlstContactData, lv, signal);
-        lv.setAdapter (adapter);
+        lv.setAdapter(adapter);
         Log.v("sur", "com");
         db = new Database(con);
         Log.v("sur", "com");
@@ -893,7 +912,12 @@ public class ApplicationSettings extends FragmentActivity {
                 for (c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
 
                     if (Integer.parseInt(c1.getString(0)) > 0) {
-                        myContactData tempMyContactData = getContactDetails (c1.getString(0),c1.getString(1), c1.getString(2));
+                        MyContactData tempMyContactData;
+                        if (signal.equals("red")) {
+                            tempMyContactData = getContactDetails(c1.getString(0), c1.getString(1), c1.getString(2), c1.getString(3));
+                        } else {
+                            tempMyContactData = getContactDetails(c1.getString(0), c1.getString(1), c1.getString(2), null);
+                        }
                         arrlstContactData.add(tempMyContactData);
                         adapter.notifyDataSetChanged();
                     } else {
@@ -908,28 +932,32 @@ public class ApplicationSettings extends FragmentActivity {
         }
     }
 
-    myContactData getContactDetails (String strID, String strName, String strPhoneno)
-    {
+    MyContactData getContactDetails(String strID, String strName, String strPhoneno, String strEmailId) {
         Log.d("Name", strName);
         Log.d("ID", strID);
         Log.d("Number", strPhoneno);
-        myContactData tempContact = new myContactData(strName, strPhoneno, strID);
+        if (strEmailId != null) {
+            Log.d("Email ID", strEmailId);
+        }
+        MyContactData tempContact = new MyContactData(strName, strPhoneno, strID, strEmailId);
         return tempContact;
     }
 
-    class CustomAdapter extends ArrayAdapter<myContactData> {
+    class CustomAdapter extends ArrayAdapter<MyContactData> {
         Context context;
         Activity actSel;
         String strSignal;
-        private LayoutInflater inflater=null;
-        public CustomAdapter(Activity actSelected, int resource, ArrayList<myContactData> arrlstAllContacts, ListView lstContacts, String strSignal) {
+        private LayoutInflater inflater = null;
+
+        public CustomAdapter(Activity actSelected, int resource, ArrayList<MyContactData> arrlstAllContacts, ListView lstContacts, String strSignal) {
             super(actSelected, resource);
             this.strSignal = strSignal;
-            context=actSelected;
+            context = actSelected;
             actSel = actSelected;
             inflater = (LayoutInflater) context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
+
         @Override
         public int getCount() {
             return arrlstContactData.size();
@@ -940,32 +968,66 @@ public class ApplicationSettings extends FragmentActivity {
             return position;
         }
 
-        public class Holder
-        {
+        public class Holder {
             ImageView img;
             TextView lblName;
             TextView lblPhoneNo;
+            Button buttonAddEmail;
         }
+
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
-            Holder holder=new Holder();
+            Holder holder = new Holder();
             final View rowView;
-            final myContactData curContact = arrlstContactData.get(position);
+            final MyContactData curContact = arrlstContactData.get(position);
             rowView = inflater.inflate(R.layout.listview_contacts, null);
             if (position % 2 == 1) {
-                rowView.setBackgroundColor(Color.parseColor ("#F3F3F1"));
+                rowView.setBackgroundColor(Color.parseColor("#F3F3F1"));
             } else {
                 rowView.setBackgroundColor(Color.WHITE);
             }
-            holder.img=(ImageView) rowView.findViewById (R.id.imageView1);
-            holder.lblName=(TextView) rowView.findViewById(R.id.contact_name);
-            holder.lblPhoneNo=(TextView) rowView.findViewById(R.id.contact_number);
-            holder.lblName.setText (curContact.strName);
-            holder.lblPhoneNo.setText (curContact.strNumber);
-            rowView.setOnClickListener(new View.OnClickListener () {
+            holder.img = (ImageView) rowView.findViewById(R.id.imageView1);
+            holder.lblName = (TextView) rowView.findViewById(R.id.contact_name);
+            holder.lblPhoneNo = (TextView) rowView.findViewById(R.id.contact_number);
+            holder.lblName.setText(curContact.strName);
+            holder.lblPhoneNo.setText(curContact.strNumber);
+            holder.buttonAddEmail = (Button) rowView.findViewById(R.id.buttonAddEmail);
+            if (strSignal.equals("red")) {
+                holder.buttonAddEmail.setVisibility(View.VISIBLE);
+                holder.buttonAddEmail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(ApplicationSettings.this);
+                        final EditText emailId = new EditText(con);
+                        String tempEmail = arrlstContactData.get(position).strEmailId;
+                        emailId.setText((tempEmail != null) ? tempEmail : "");
+                        emailId.setHint("Email ID");
+                        emailId.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+                        builder.setView(emailId);
+                        builder.setCancelable(false)
+                                .setMessage("Please add email Id")
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                    }
+                                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                        Button theButton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+                        theButton.setOnClickListener(new CustomListener(alertDialog, emailId, position, db));
+                    }
+                });
+            } else {
+                holder.buttonAddEmail.setVisibility(View.INVISIBLE);
+            }
+
+            rowView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText (context, curContact.strName + "\t\tPhone No.: " + curContact.strNumber, Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, curContact.strName + "\t\tPhone No.: " + curContact.strNumber, Toast.LENGTH_LONG).show();
                     // TODO Auto-generated method stub
                     AlertDialog.Builder builder = new AlertDialog.Builder(context);
                     builder.setTitle("Hello User");
@@ -1000,22 +1062,34 @@ public class ApplicationSettings extends FragmentActivity {
             return rowView;
         }
 
+    }
 
+    public boolean checkIfContactHasEmailId() {
+        boolean contactHasEmailId = true;
+        if (arrlstContactData != null && !arrlstContactData.isEmpty()) {
+            for (MyContactData myContactData : arrlstContactData) {
+                if (myContactData.strEmailId.equals("")) {
+                    contactHasEmailId = false;
+                    break;
+                }
+            }
+        }
+        return contactHasEmailId;
     }
 }
 
 
-class myContactData
-{
+class MyContactData {
     String strName;
     String strNumber;
     String strID;
+    String strEmailId;
 
-    myContactData(String strName, String strNumber, String strID)
-    {
+    MyContactData(String strName, String strNumber, String strID, String strEmailId) {
         this.strName = strName;
         this.strNumber = strNumber;
         this.strID = strID;
+        this.strEmailId = strEmailId;
     }
 }
 

@@ -18,6 +18,7 @@ public class Database extends SQLiteOpenHelper {
 	private static final String KEY_ID = "id";
 	private static final String KEY_NAME = "name";
 	private static final String KEY_PHONENO ="phoneno";
+	private static final String KEY_EMAIL_ID ="emailId";
 
 	public Database(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -36,7 +37,7 @@ public class Database extends SQLiteOpenHelper {
 		db.execSQL(CREATE_TABLEY);
 
 		String CREATE_TABLER = "CREATE TABLE " + TABLE_RCONTACT + "(" + KEY_ID
-				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT, " + KEY_PHONENO + " TEXT)";
+				+ " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT, " + KEY_PHONENO + " TEXT, " + KEY_EMAIL_ID + " TEXT)";
 		db.execSQL(CREATE_TABLER);
 	}
 
@@ -48,6 +49,14 @@ public class Database extends SQLiteOpenHelper {
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_YCONTACT);
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_RCONTACT);
 		onCreate(db);
+	}
+
+	public void updateEmailId(String newEmailId, String phoneNo){
+		SQLiteDatabase db = this.getWritableDatabase();
+			ContentValues values = new ContentValues();
+			values.put(KEY_EMAIL_ID, newEmailId);
+			db.update(TABLE_RCONTACT, values, KEY_PHONENO + " = '" + phoneNo + "'", null);
+			db.close();
 	}
 
 	public void addContact(BSecureData data, String sig) {
@@ -67,6 +76,7 @@ public class Database extends SQLiteOpenHelper {
 		if (sig.equals("red")) {
 			values.put(KEY_NAME, data.getName1());
 			values.put(KEY_PHONENO, data.getPhone_no());
+			values.put(KEY_EMAIL_ID, data.getEmailId());
 			db.insert(TABLE_RCONTACT, null, values);
 		}
 	}
@@ -74,19 +84,26 @@ public class Database extends SQLiteOpenHelper {
 	public Cursor getContact(String sig) throws SQLException {
 
 		String table = null;
+		Cursor mCursor =null;
 		SQLiteDatabase db = this.getWritableDatabase();
 		if (sig.equals("green")) {
 			table = TABLE_GCONTACT;
+			 mCursor = db.query(true, table,
+					new String[] { KEY_ID, KEY_NAME, KEY_PHONENO}, null, null, null, null,
+					null, null);
 		}
 		if (sig.equals("yellow")) {
 			table = TABLE_YCONTACT;
+			mCursor = db.query(true, table,
+					new String[] { KEY_ID, KEY_NAME, KEY_PHONENO}, null, null, null, null,
+					null, null);
 		}
 		if (sig.equals("red")) {
 			table = TABLE_RCONTACT;
+			mCursor = db.query(true, table,
+					new String[] { KEY_ID, KEY_NAME, KEY_PHONENO,KEY_EMAIL_ID}, null, null, null, null,
+					null, null);
 		}
-		Cursor mCursor = db.query(true, table,
-				new String[] { KEY_ID, KEY_NAME, KEY_PHONENO}, null, null, null, null,
-				null, null);
 
 		if (mCursor != null) {
 

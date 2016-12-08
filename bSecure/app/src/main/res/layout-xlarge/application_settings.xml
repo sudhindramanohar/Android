@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txtstghead"
+        android:layout_width="405dp"
+        android:text="Setting Page"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:layout_height="82dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/btnsetmsg"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Message"
+            android:layout_width="400dp" />
+
+        <Button
+            android:id="@+id/btnshake"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Shake Enable"
+            android:layout_width="400dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnaddcnt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:background="@drawable/images"
+        android:text="Add Contact"
+        android:layout_height="90dp" />
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="687dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:layout_weight="0.09"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/btnhour"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Hour"
+            android:layout_width="200dp"
+            android:layout_weight="0.51" />
+
+        <Button
+            android:id="@+id/btnminute"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/images"
+            android:text="Set Minute"
+            android:layout_weight="0.44" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsaveg"
+        android:layout_width="match_parent"
+        android:background="@drawable/images"
+        android:text="Save"
+        android:layout_gravity="bottom"
+        android:layout_height="90dp" />
+
+
+</LinearLayout>

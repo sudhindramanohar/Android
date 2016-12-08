@@ -9,9 +9,11 @@ import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
 import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -23,12 +25,13 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
         OnConnectionFailedListener {
 
     static MediaRecorder mRecorder;
-    String mFileName;
+    static String mFileName;
     static GPSTracker gps;
     static double latitude;
     static double longitude;
     static String gm;
     static SharedPreferences appSettings;
+    static SharedPreferences registrationSettings;
     static SharedPreferences.Editor edit;
     static String smsg;
     static String ymsg;
@@ -40,6 +43,7 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
     }
 
     public void startRec() {
+        registrationSettings = getSharedPreferences("reg",0);
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String root = Environment.getExternalStorageDirectory().toString();
         File mediaStorageDir = new File(root + "/bSecure/AUDIO_RECORD");
@@ -65,8 +69,28 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
     }
 
     public static void stopRec() {
-        mRecorder.stop();
-        mRecorder.release();
+        if(mRecorder!=null){
+            mRecorder.stop();
+            mRecorder.release();
+        }
+        //now send recorded audio file through smtp
+        sentEmailThroughGmail();
+    }
+
+    private static void sentEmailThroughGmail() {
+        List<MyContactData> myContactDataList = ApplicationSettings.getArrlstContactData();
+        String[] toAddress= new String[myContactDataList.size()];
+        int index =0;
+        for(MyContactData emailData: myContactDataList){
+            toAddress[index] = emailData.strEmailId;
+            index = index+1;
+        }
+        //SharedPreferences regpage = getSharedPreferences("reg", 0);
+        if(myContactDataList != null && !myContactDataList.isEmpty()){
+            SendMail sm = new SendMail(toAddress,registrationSettings.getString("email",""),registrationSettings.getString("emailPassword",""),mFileName);
+            //Executing sendmail to send email
+            sm.execute();
+        }
     }
 
     @Override
