@@ -42,6 +42,7 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 	static TextView textgreen, textyellow, textred;
 	static SharedPreferences mode;
 	static SharedPreferences.Editor editor;
+	static boolean isWidgetHelpShown = false;
 	public static final String PREFS_NAME = "MyPrefs";
 
 	static WidgetReceiver wm = new WidgetReceiver();
@@ -63,17 +64,18 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 			Toast.makeText(getApplicationContext(), "not found",
 					Toast.LENGTH_SHORT).show();
 		}
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle("Hello User");
-		builder.setMessage(R.string.help);
-		builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		if(!isWidgetHelpShown) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setTitle("Hello User");
+			builder.setMessage(R.string.help);
+			builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
-			@Override
-			public void onClick(DialogInterface dialog, int whichButton) {
-
-			}
-		}).show();
-
+				@Override
+				public void onClick(DialogInterface dialog, int whichButton) {
+					isWidgetHelpShown = true;
+				}
+			}).show();
+		}
 		con = this;
 		intent = getIntent();
 
