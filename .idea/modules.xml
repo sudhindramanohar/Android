@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bSecure/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.0.89/5.0.89.iml" filepath="$PROJECT_DIR$/bSecure/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.0.89/5.0.89.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bSecure/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/bSecure/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bSecure/app/build/intermediates/manifests/full/debug/debug.iml" filepath="$PROJECT_DIR$/bSecure/app/build/intermediates/manifests/full/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bSecure/app/src/main/main.iml" filepath="$PROJECT_DIR$/bSecure/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bSecure/app/build/generated/source/r/r.iml" filepath="$PROJECT_DIR$/bSecure/app/build/generated/source/r/r.iml" />
+    </modules>
+  </component>
+</project>

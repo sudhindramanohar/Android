@@ -94,23 +94,24 @@
     <string name="fname">Enter User Name</string>
     <string name="greenabout">
 	    This SOS button is for sending safety message to added 
-	    contact numbers with define or pre-defined message in 
-	    setable time duration with current location!
+	    contact numbers with pre-defined message in
+	    configured time duration.
 	</string>
     <string name="hello_world">Hello world!</string>
     <string name="help">
-	    Try to add widget on home sreen from widget store into smart phone
+	    Try to add widget on home sreen from widget store into smart phone.
 	   	Then set the message, contacts and time duration in setting page.
-		Enable data for internet
-	    Enable GPS (Check all the check box of Location Service in settings menu)
+		Enable data for internet.
+	    Enable GPS (Check all the check box of Location Service in settings menu).
 	</string>
     <string name="login">Login</string>
     <string name="lpage">Login Page</string>
     <string name="phone">Enter Phone No</string>
     <string name="psw">Enter Password</string>
     <string name="redabout">
-	    This SOS button is for sending trouble (for help) pre-defined message to added
-	    contact numbers and set time duration with current location!
+	    This SOS button is for sending trouble (for help) with pre-defined message to added
+	    contact numbers and set time duration with current location and
+		an email of recent recorded audio.
 	</string>
     <string name="rlink">Not user? Register Here</string>
     <string name="rpage">Registration Page</string>
@@ -118,7 +119,7 @@
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
     <string name="yellowabout">
 	    This SOS button is for sending critical pre-defined message to added
-	    contact numbers and set time duration with current location!
+	    contact numbers and set time duration with current location.
 	</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_out_to_left.xml",
+        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\anim\\push_out_to_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\anim\\hold.xml",
+        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\anim\\hold.xml"
+    },
+    {
+        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim.xml",
+        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\anim\\anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pull_in_from_left.xml",
+        "source": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\anim\\pull_in_from_left.xml"
+    }
+]

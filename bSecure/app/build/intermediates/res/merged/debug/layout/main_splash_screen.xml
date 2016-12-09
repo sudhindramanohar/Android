@@ -11,9 +11,7 @@
      android:id="@+id/img1"
      android:layout_width="fill_parent"
      android:layout_height="fill_parent"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentRight="true"
-     android:scaleType="center"
+       android:scaleType="centerCrop"
      android:background="#ffffff"
      android:src="@drawable/page" />
 </RelativeLayout>

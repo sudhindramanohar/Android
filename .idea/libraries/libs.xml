@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bSecure/app/libs/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bSecure/app/libs/additionnal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bSecure/app/libs/google-play-services_lib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bSecure/app/libs/activation.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

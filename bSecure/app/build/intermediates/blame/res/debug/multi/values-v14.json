@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "C:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

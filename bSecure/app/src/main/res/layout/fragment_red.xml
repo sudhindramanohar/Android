@@ -34,11 +34,18 @@
 
     <TextView
         android:id="@+id/txtredabt"
-        android:layout_width="wrap_content"
+        android:layout_width="276dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:text="@string/redabout"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:textAppearance="@android:style/TextAppearance"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewStart" />
 
 </FrameLayout>

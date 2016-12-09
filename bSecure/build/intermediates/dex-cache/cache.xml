@@ -3,93 +3,93 @@
 
     <item
         is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\libs\activation.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_63b834ad99f967fdb6d0b5b88c99b1843cb7a742\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="83d65061c3fcbc2d306ce73c22bc3e4b39e5a2d9">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c8b719c95d59ab7f46c032be01c7b19c7e519432\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sudhi\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.0.0_e37270a717fc33b0825c3db62ecc1333127ca675\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-4.4.52_3ff28de3f216f537b55ab424ffe285546cfdc4ac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7c82d347199011650b61b042c86375ac642f6b9f">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_01841766d9dcbf45ebe1387a25c8d7d43a6cac2b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\libs\additionnal.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_c83865ba89bb796dc8725502dc26ee894d440d8a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\libs\google-play-services_lib.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ea923d54b5abcba085c4f54e1ac7e7859819e3e0">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-play-services_lib_24c079833246eac3b531b7c5df4854905c660d37\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.0.0_ffd71b2aa22f854f08bb1e33802da542f8bd0826\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\libs\mail.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="428e267abff0d10802ccde86b915da2c20471160">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_d0aaccb4c579ea0bd359b307e6967722af94b530\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\Android\Project\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.0.0_dfbfeddb492b4b6a4e99059407653cfd4666a87e\classes.dex" />
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.0.0_1da7f2508118407a90e702e77c8e4f429775777e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d71573c9c5ea98a8db47ad6ff993a63d492b3bfa">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-5.0.89_0c6fe82c1344c24f9855171761e11c06b4f259b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\libs\mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_5b51750eb42cb27ef1a5eb240cb021f094f1f24a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\libs\google-play-services_lib.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ea923d54b5abcba085c4f54e1ac7e7859819e3e0">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-play-services_lib_aa4f0b39ec69608242d86ab059e50f5610abe050\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2dee68398f347d7168df28251854c70afcffa0c1">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_59b95092ba5057c8a93366b57405de5b2d1e8e6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\libs\activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_7f1f6d5defb6f7886d775e4d2ed5140e6b9ee1a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.0.0_b4df19d40691ea039e62725158bde1170540fc8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="083012bf63ebfa8f68875c370c50ca96043e3a77">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d49baf945d8910edd5f15c12dcb750840e155742\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\libs\additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_7778c0c21142ad0c8178457436d0847c0e927a8f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.0.0_aab3f374da8f4025a8fbe600c58a9cc926df4b43\classes.dex" />
     </item>
 
 </items>

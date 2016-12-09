@@ -15,7 +15,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10.0dip">
+            android:padding="10.0dip"
+            android:weightSum="1">
 
             <TextView
                 android:id="@+id/textView1"
@@ -26,7 +27,8 @@
                 android:layout_gravity="center"
                 android:text="User Registration"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_weight="0.68" />
 
             <EditText
                 android:id="@+id/name"
@@ -35,7 +37,11 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Name"></EditText>
+                android:hint="Name"
+                style="@android:style/Widget.Holo.AutoCompleteTextView"
+                android:background="@drawable/btn_format"
+                android:singleLine="false"
+                android:selectAllOnFocus="true"></EditText>
 
             <EditText
                 android:id="@+id/mobile_no"
@@ -45,7 +51,8 @@
                 android:layout_marginTop="5dp"
                 android:ems="10"
                 android:hint="Mobile Number"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:background="@drawable/btn_format" />
 
             <EditText
                 android:id="@+id/email"
@@ -55,7 +62,8 @@
                 android:layout_gravity="center"
                 android:ems="10"
                 android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:background="@drawable/btn_format" />
 
             <EditText
                 android:id="@+id/textEmailPwd"
@@ -64,7 +72,8 @@
                 android:layout_below="@+id/email"
                 android:layout_gravity="center"
                 android:hint="Email Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:background="@drawable/btn_format" />
 
             <Button
                 android:id="@+id/submit"
@@ -76,7 +85,8 @@
                 android:layout_marginBottom="46dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/images"
-                android:text="Submit" />
+                android:text="Submit"
+                android:layout_weight="1.00" />
         </LinearLayout>
     </ScrollView>
 
