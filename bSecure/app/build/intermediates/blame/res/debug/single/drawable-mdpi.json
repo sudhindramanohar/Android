@@ -20,12 +20,12 @@
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\powered_by_google_light.png",
-        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-mdpi\\powered_by_google_light.png"
-    },
-    {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\common_signin_btn_text_normal_light.9.png",
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-mdpi\\common_signin_btn_text_normal_light.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\powered_by_google_light.png",
+        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-mdpi\\powered_by_google_light.png"
     },
     {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\common_signin_btn_text_disabled_focus_dark.9.png",

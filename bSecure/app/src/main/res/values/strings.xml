@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BSecure</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="fname">Enter User Name</string>
+	<string name="app_name">BSecure</string>
+	<string name="action_settings">Settings</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="fname">Enter User Name</string>
 	<string name="psw">Enter Password</string>
 	<string name="adrs">Enter Address</string>
 	<string name="phone">Enter Phone No</string>
@@ -31,9 +31,10 @@
 	</string>
 	
 	<string name="help">
-	    Try to add widget on home sreen from widget store into smart phone.
-	   	Then set the message, contacts and time duration in setting page.
-		Enable data for internet.
-	    Enable GPS (Check all the check box of Location Service in settings menu).
+		1. Add widget on home screen.
+		   \n2. Choose Mode.
+	   \n3. Set the message, contacts and time duration in setting page.
+	   \n4. Enable data for internet.
+		\n5. Enable GPS.
 	</string>
 </resources>

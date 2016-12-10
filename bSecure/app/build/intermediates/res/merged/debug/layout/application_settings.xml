@@ -22,13 +22,14 @@
     <Button
         android:id="@+id/btnaddcnt"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:background="@drawable/black_rectangle"
         android:text="Select Contact"
         android:layout_marginBottom="10dp"
         android:textColor="@android:color/white"
         android:layout_height="50dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
 
     <ListView
         android:id="@+id/listViewContact"
@@ -81,10 +82,10 @@
             android:id="@+id/btnshake"
             android:background="@drawable/black_rectangle"
             android:text="Shake Enable"
-            android:layout_width="92dp"
-            android:layout_weight="0.04"
+            android:layout_width="84dp"
             android:textSize="14sp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_height="45dp"
             android:textColor="@android:color/white" />
 

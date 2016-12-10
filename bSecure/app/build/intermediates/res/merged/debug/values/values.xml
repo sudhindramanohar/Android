@@ -99,10 +99,11 @@
 	</string>
     <string name="hello_world">Hello world!</string>
     <string name="help">
-	    Try to add widget on home sreen from widget store into smart phone.
-	   	Then set the message, contacts and time duration in setting page.
-		Enable data for internet.
-	    Enable GPS (Check all the check box of Location Service in settings menu).
+		1. Add widget on home screen.
+		   \n2. Choose Mode.
+	   \n3. Set the message, contacts and time duration in setting page.
+	   \n4. Enable data for internet.
+		\n5. Enable GPS.
 	</string>
     <string name="login">Login</string>
     <string name="lpage">Login Page</string>
@@ -122,14 +123,10 @@
 	    contact numbers and set time duration with current location.
 	</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>

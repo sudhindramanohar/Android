@@ -510,7 +510,9 @@ public class ApplicationSettings extends FragmentActivity {
             sec += 0;
         }
         String s = sec.toString();
-        Toast.makeText(con, s, Toast.LENGTH_SHORT).show();
+        if(s!= null && !s.equals("0")){
+            Toast.makeText(con, s, Toast.LENGTH_SHORT).show();
+        }
 
         return sec;
     }

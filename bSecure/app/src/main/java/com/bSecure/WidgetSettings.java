@@ -54,7 +54,7 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 		editor = mode.edit();
 		try {
 			Intent intent = new Intent(getApplicationContext(), AudioRecorder.class);
-			// add infos for the service which file to download and where to
+			// add infos for the service  which file to download and where to
 			// store
 			intent.putExtra("audio", "loc");
 
@@ -83,7 +83,6 @@ public class WidgetSettings extends FragmentActivity implements ActionBar.TabLis
 				getSupportFragmentManager());
 
 		final ActionBar actionBar = getActionBar();
-
 		actionBar.setHomeButtonEnabled(false);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
