@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class UserRegistration extends Activity {
-	EditText name, mobile_no, email,emailPassword;;
+	EditText name, mobile_no, email;;
 	SharedPreferences regpage;
 	SharedPreferences.Editor edit;
 	SharedPreferences setting;
@@ -32,8 +32,7 @@ public class UserRegistration extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.user_registration);
 		overridePendingTransition(R.anim.pull_in_from_left, R.anim.hold); //to add animation
-		SharedPreferences wmbPreference = PreferenceManager
-				.getDefaultSharedPreferences(this);
+		SharedPreferences wmbPreference = PreferenceManager.getDefaultSharedPreferences(this);
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		if (!prefs.getBoolean("firstTime", false)) {
 			// run your one time code here
@@ -52,7 +51,6 @@ public class UserRegistration extends Activity {
 			edit = regpage.edit();
 			name = (EditText) findViewById(R.id.name);
 			mobile_no = (EditText) findViewById(R.id.mobile_no);
-			emailPassword = (EditText) findViewById(R.id.textEmailPwd);
 			email = (EditText) findViewById(R.id.email);
 			submitbutton = (Button) findViewById(R.id.submit);
 
@@ -63,13 +61,11 @@ public class UserRegistration extends Activity {
 					try {
 						if (name.getText().toString().equals("")
 								|| mobile_no.getText().toString().equals("")
-								|| email.getText().toString().equals("") || emailPassword.getText().toString().equals("")) {
+								|| email.getText().toString().equals("")) {
 							Toast.makeText(UserRegistration.this, "Please Fill All Data",
 									Toast.LENGTH_SHORT).show();
 
-						} else
-
-						{
+						} else {
 							SharedPreferences.Editor editor = prefs.edit();
 							editor.putBoolean("firstTime", true);
 							editor.commit();
@@ -82,17 +78,12 @@ public class UserRegistration extends Activity {
 											.toString());
 									edit.putString("email", email.getText()
 											.toString());
-									edit.putString("emailPassword", emailPassword.getText().toString());
 									edit.commit();
-
 									showMessage();
-
 									Intent intent_first = new Intent(UserRegistration.this,
 											WidgetSettings.class);
 									startActivity(intent_first);
-
 									finish();
-
 								} else {
 									Toast.makeText(UserRegistration.this,
 											"Enter Valid Email Address",

@@ -2,17 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:weightSum="1">
 
     <TextView
         android:id="@+id/txtstghead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Setting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Settings "
+        android:layout_gravity="center_vertical|center_horizontal"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnaddcnt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:background="@drawable/black_rectangle"
+        android:text="Select Contact"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:layout_weight="0.82"></ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,70 +45,60 @@
         android:weightSum="1">
 
         <Button
-            android:id="@+id/btnsetmsg"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_height="match_parent"
-            android:background="@drawable/images"
-            android:text="Set Message"
-            android:layout_width="298dp" />
-
-        <Button
-            android:id="@+id/btnshake"
-            android:layout_height="match_parent"
-            android:background="@drawable/images"
-            android:text="Shake Enable"
-            android:layout_width="match_parent" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnaddcnt"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/images"
-        android:text="Add Contact" />
-
-    <ListView
-        android:id="@+id/listViewContact"
-        android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:background="@android:drawable/alert_dark_frame"
-        android:layout_weight="1.17"></ListView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_height="45dp">
-
-        <Button
             android:id="@+id/btnhour"
             style="?android:attr/buttonStyleSmall"
-            android:layout_height="match_parent"
-            android:background="@drawable/btn"
+            android:layout_height="45dp"
+            android:background="@drawable/black_rectangle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Set Hour"
-            android:layout_width="200dp"
-            android:layout_weight="0.51" />
+            android:layout_width="72dp"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnminute"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/images"
+            android:background="@drawable/black_rectangle"
             android:text="Set Minute"
-            android:layout_weight="0.44" />
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.17"
+            android:layout_height="45dp"
+            android:layout_width="72dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnsetmsg"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="45dp"
+            android:background="@drawable/black_rectangle"
+            android:text="Set Message"
+            android:layout_width="92dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnshake"
+            android:background="@drawable/black_rectangle"
+            android:text="Shake Enable"
+            android:layout_width="92dp"
+            android:layout_weight="0.04"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="45dp"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnsaveg"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:background="@drawable/black_rectangle"
         android:text="Save"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_height="45dp" />
-
-
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/white" />
 </LinearLayout>

@@ -3,15 +3,24 @@ package com.bSecure;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import java.util.Date;
 import java.util.Properties;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
+import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
 
 //Class is extending AsyncTask because this class is going to perform a networking operation
 public class SendMail extends AsyncTask<Void,Void,Void> {
@@ -21,18 +30,16 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
 
     //Information to send recipientEmailIds
     private String[] recipientEmailIds;
-    private String senderEmailId;
+    private String userEmailId;
     private String subject;
     private String emailBody;
     private String audioRecordFileName;
-    private String password;
 
     //Class Constructor
-    public SendMail(String[] recipientEmailIds, String senderEmailId, String emailPassword , String audioRecordFileName){
+    public SendMail(String[] recipientEmailIds, String userEmailId, String audioRecordFileName){
         //Initializing variables
         this.recipientEmailIds = recipientEmailIds;
-        this.senderEmailId = senderEmailId;
-        this.password = emailPassword;
+        this.userEmailId = userEmailId;
         this.subject = Config.EMAIL_SUBJECT;
         this.emailBody = Config.EMAIL_BODY;
         this.audioRecordFileName = audioRecordFileName;
@@ -71,7 +78,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
                 new javax.mail.Authenticator() {
                     //Authenticating the password
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(senderEmailId, password);
+                        return new PasswordAuthentication(Config.EMAIL_ID, Config.PASSWORD);
                     }
                 });
 
@@ -80,20 +87,40 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
             MimeMessage mm = new MimeMessage(session);
 
             //Setting sender address
-            mm.setFrom(new InternetAddress(senderEmailId));
-            //Adding receiver
+            mm.setFrom(new InternetAddress(Config.EMAIL_ID));
+            mm.setSentDate(new Date());
+            //Adding recipients
             InternetAddress[] addressTo = new InternetAddress[recipientEmailIds.length];
             for (int i = 0; i < recipientEmailIds.length; i++) {
                 addressTo[i] = new InternetAddress(recipientEmailIds[i]);
             }
             mm.addRecipients(Message.RecipientType.TO, addressTo);
+            mm.addRecipient(Message.RecipientType.CC, new InternetAddress(userEmailId));
             //Adding subject
             mm.setSubject(subject);
-            //Adding emailBody
-            mm.setText(emailBody);
-            //set filename
-            mm.setFileName(audioRecordFileName);
-            //Sending recipientEmailIds
+
+            // Create the message part
+            BodyPart messageBodyPart = new MimeBodyPart();
+
+            // Now set the actual message
+            messageBodyPart.setText(emailBody);
+            // Create a multipar message
+            Multipart multipart = new MimeMultipart();
+
+            // Set text message part
+            multipart.addBodyPart(messageBodyPart);
+
+            // Part two is attachment
+            messageBodyPart = new MimeBodyPart();
+            String filename = audioRecordFileName;
+            DataSource source = new FileDataSource(filename);
+            messageBodyPart.setDataHandler(new DataHandler(source));
+            messageBodyPart.setFileName(filename);
+            multipart.addBodyPart(messageBodyPart);
+
+            // Send the complete message parts
+            mm.setContent(multipart);
+
             Transport.send(mm);
 
         } catch (MessagingException e) {

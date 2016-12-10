@@ -1,7 +1,7 @@
-#Fri Dec 09 21:31:03 CST 2016
-base.0=C\:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d49baf945d8910edd5f15c12dcb750840e155742
+#Fri Dec 09 23:25:03 CST 2016
+base.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_01841766d9dcbf45ebe1387a25c8d7d43a6cac2b
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_59b95092ba5057c8a93366b57405de5b2d1e8e6c\\classes.dex
-base.1=C\:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_59b95092ba5057c8a93366b57405de5b2d1e8e6c
-file.0=C\:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d49baf945d8910edd5f15c12dcb750840e155742\\classes.dex
+file.1=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c8b719c95d59ab7f46c032be01c7b19c7e519432\\classes.dex
+base.1=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c8b719c95d59ab7f46c032be01c7b19c7e519432
+file.0=F\:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_01841766d9dcbf45ebe1387a25c8d7d43a6cac2b\\classes.dex

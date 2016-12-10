@@ -414,7 +414,7 @@ containing a value of this type.
         public static final int yellowwidgeticon=0x7f02004b;
     }
     public static final class id {
-        public static final int action_settings=0x7f0c0044;
+        public static final int action_settings=0x7f0c0043;
         public static final int book_now=0x7f0c000e;
         public static final int btnabtgrn=0x7f0c001e;
         public static final int btnabtred=0x7f0c0024;
@@ -438,9 +438,9 @@ containing a value of this type.
         public static final int classic=0x7f0c0011;
         public static final int contact_name=0x7f0c002f;
         public static final int contact_number=0x7f0c0030;
-        public static final int email=0x7f0c003d;
+        public static final int email=0x7f0c003e;
         public static final int grayscale=0x7f0c0012;
-        public static final int greenbutton=0x7f0c0041;
+        public static final int greenbutton=0x7f0c0040;
         public static final int holo_dark=0x7f0c0005;
         public static final int holo_light=0x7f0c0006;
         public static final int hybrid=0x7f0c0000;
@@ -451,14 +451,14 @@ containing a value of this type.
         public static final int imgylw=0x7f0c0028;
         public static final int listViewContact=0x7f0c0017;
         public static final int match_parent=0x7f0c000c;
-        public static final int mobile_no=0x7f0c003c;
+        public static final int mobile_no=0x7f0c003d;
         public static final int monochrome=0x7f0c0013;
-        public static final int name=0x7f0c003b;
+        public static final int name=0x7f0c003c;
         public static final int none=0x7f0c0001;
         public static final int normal=0x7f0c0002;
         public static final int pager=0x7f0c0014;
         public static final int production=0x7f0c0007;
-        public static final int redbutton=0x7f0c0043;
+        public static final int redbutton=0x7f0c0042;
         public static final int sandbox=0x7f0c0008;
         public static final int satellite=0x7f0c0003;
         public static final int scrollView1=0x7f0c003a;
@@ -470,8 +470,7 @@ containing a value of this type.
         public static final int tab3=0x7f0c0038;
         public static final int tabhost=0x7f0c0033;
         public static final int terrain=0x7f0c0004;
-        public static final int textEmailPwd=0x7f0c003e;
-        public static final int textView1=0x7f0c0040;
+        public static final int textView1=0x7f0c003b;
         public static final int textView2=0x7f0c0035;
         public static final int textView3=0x7f0c0037;
         public static final int textView4=0x7f0c0039;
@@ -482,7 +481,7 @@ containing a value of this type.
         public static final int txtstghead=0x7f0c0015;
         public static final int txtyellowabt=0x7f0c002c;
         public static final int wrap_content=0x7f0c000d;
-        public static final int yellowbutton=0x7f0c0042;
+        public static final int yellowbutton=0x7f0c0041;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f0a0000;

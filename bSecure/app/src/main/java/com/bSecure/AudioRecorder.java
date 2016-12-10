@@ -87,7 +87,7 @@ public class AudioRecorder extends IntentService implements ConnectionCallbacks,
         }
         //SharedPreferences regpage = getSharedPreferences("reg", 0);
         if(myContactDataList != null && !myContactDataList.isEmpty()){
-            SendMail sm = new SendMail(toAddress,registrationSettings.getString("email",""),registrationSettings.getString("emailPassword",""),mFileName);
+            SendMail sm = new SendMail(toAddress,registrationSettings.getString("email",""),mFileName);
             //Executing sendmail to send email
             sm.execute();
         }

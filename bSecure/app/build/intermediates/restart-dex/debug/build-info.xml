@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="560dpi"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="15456913342419"
-    token="6803504082820072076"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="11178832526815"
+    token="8829231973932389562"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2604" />
+        duration="519" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="395" />
+        duration="39" />
     <task
         name="verifier"
-        duration="231" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="15456913342419"
+        timestamp="9124750403061"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\outputs\apk\app-debug.apk"
+            location="F:\Android\Project\Android\bSecure\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="11178832526815"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="F:\Android\Project\Android\bSecure\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
