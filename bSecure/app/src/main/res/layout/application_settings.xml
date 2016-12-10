@@ -53,7 +53,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="Set Hour"
-            android:layout_width="72dp"
+            android:layout_width="58dp"
             android:textColor="@android:color/white" />
 
         <Button
@@ -73,7 +73,7 @@
             android:layout_height="45dp"
             android:background="@drawable/black_rectangle"
             android:text="Set Message"
-            android:layout_width="92dp"
+            android:layout_width="88dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:textColor="@android:color/white" />
@@ -82,12 +82,13 @@
             android:id="@+id/btnshake"
             android:background="@drawable/black_rectangle"
             android:text="Shake Enable"
-            android:layout_width="84dp"
-            android:textSize="14sp"
+            android:layout_width="90dp"
+            android:textSize="12sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_height="45dp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:layout_weight="0.37" />
 
     </LinearLayout>
 

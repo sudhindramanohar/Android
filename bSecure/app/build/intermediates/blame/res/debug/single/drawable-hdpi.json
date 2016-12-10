@@ -84,12 +84,12 @@
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\redicon.png"
     },
     {
-        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\black_rectangle.png",
-        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\black_rectangle.png"
-    },
-    {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\redsignal.png",
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\redsignal.png"
+    },
+    {
+        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\black_rectangle.png",
+        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\black_rectangle.png"
     },
     {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_normal_light.9.png",
@@ -160,12 +160,12 @@
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\btn_format.png"
     },
     {
-        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone.png",
-        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\phone.png"
-    },
-    {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\common_signin_btn_text_pressed_dark.9.png",
         "source": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\5.0.89\\res\\drawable-hdpi\\common_signin_btn_text_pressed_dark.9.png"
+    },
+    {
+        "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone.png",
+        "source": "F:\\Android\\Project\\Android\\bSecure\\app\\src\\main\\res\\drawable-hdpi\\phone.png"
     },
     {
         "merged": "F:\\Android\\Project\\Android\\bSecure\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_btn_format_d.png",
