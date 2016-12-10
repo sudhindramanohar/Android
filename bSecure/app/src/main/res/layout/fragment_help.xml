@@ -12,6 +12,6 @@
         android:lineSpacingExtra="8sp"
         android:textStyle="normal|italic"
         android:textAlignment="textEnd"
-        android:textColor="@drawable/bg" />
+        android:textColor="@drawable/gradient" />
 
 </FrameLayout>

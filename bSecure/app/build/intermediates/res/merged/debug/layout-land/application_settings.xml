@@ -62,7 +62,7 @@
             android:id="@+id/btnhour"
             style="?android:attr/buttonStyleSmall"
             android:layout_height="match_parent"
-            android:background="@drawable/images"
+            android:background="@drawable/btn"
             android:text="Set Hour"
             android:layout_width="200dp"
             android:layout_weight="0.51" />
@@ -81,9 +81,9 @@
     <Button
         android:id="@+id/btnsaveg"
         android:layout_width="match_parent"
-        android:background="@drawable/images"
+        android:background="@drawable/black_rectangle"
         android:text="Save"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:layout_height="45dp" />
 
 

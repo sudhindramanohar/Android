@@ -1,4 +1,4 @@
-#Fri Dec 09 00:08:56 CST 2016
+#Fri Dec 09 21:31:03 CST 2016
 base.0=C\:\\Users\\sneha\\Documents\\GitHub\\Android\\bSecure\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d49baf945d8910edd5f15c12dcb750840e155742
 renamed.1=classes2.dex
 renamed.0=classes.dex

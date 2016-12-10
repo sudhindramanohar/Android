@@ -5,40 +5,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="975409083274008"
+    timestamp="15456913342419"
     token="6803504082820072076"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2604" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="395" />
     <task
         name="verifier"
-        duration="0" />
+        duration="231" />
 
     <artifact
-        location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="973272825219674"
+        timestamp="15456913342419"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="975409083274008"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\sneha\Documents\GitHub\Android\bSecure\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>
